@@ -159,7 +159,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2019/07/07/如何搭建一个自己的博客（hexo,githubpages）/">如何搭建一个自己的博客（hexo,githubpages）</a>
+      <a class="article-title" href="/2019/07/07/如何搭建一个自己的博客（hexo,githubpages）/">如何搭建一个自己的博客简明教程（Git + Github Pages + Hexo）</a>
     </h1>
   
 
@@ -172,7 +172,72 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>##</p>
+        <h2 id="一-前言"><a href="#一-前言" class="headerlink" title="一. 前言"></a>一. 前言</h2><p>由于 Hexo 官方文档写的不是好，还有网上写的一些关于 Hexo 搭建博客的文章都比较容易踩坑，于是写一篇比较简明的用 Hexo 搭建个人博客的文章。</p>
+<h2 id="二-为什么使用-Hexo"><a href="#二-为什么使用-Hexo" class="headerlink" title="二. 为什么使用 Hexo"></a>二. 为什么使用 Hexo</h2><p>Hexo 是一款基于 Node.js 的静态博客框架，依赖少易于安装，可以方便的生成静态网页托管在 GitHub 上。</p>
+<ul>
+<li>免费 托管在 GitHub</li>
+<li>简洁 支持 Markdown</li>
+</ul>
+<h2 id="三-Hexo-工作机制"><a href="#三-Hexo-工作机制" class="headerlink" title="三. Hexo 工作机制"></a>三. Hexo 工作机制</h2><p>Hexo 基于 Node.js,将 source 文件夹下的资源（如_posts 文章等），按照预定的配置文件（_config.yml），转换成静态页面放到 public 目录下。于是当我们预览或者部署时，Hexo 会把 public 作为 web 目录处理。</p>
+<h2 id="四-搭建流程"><a href="#四-搭建流程" class="headerlink" title="四. 搭建流程"></a>四. 搭建流程</h2><h4 id="1-安装-Git"><a href="#1-安装-Git" class="headerlink" title="1. 安装 Git"></a>1. 安装 Git</h4><ul>
+<li>官网下载：<a href="https://git-scm.com/" target="_blank" rel="noopener">https://git-scm.com/</a></li>
+</ul>
+<p>如果想要详细了解下 Git 推荐看廖雪峰的 Git 教程（简洁明了）：<a href="https://www.liaoxuefeng.com/wiki/896043488029600" target="_blank" rel="noopener">https://www.liaoxuefeng.com/wiki/896043488029600</a></p>
+<h4 id="2-安装-Node-js"><a href="#2-安装-Node-js" class="headerlink" title="2. 安装 Node.js"></a>2. 安装 Node.js</h4><ul>
+<li>官网下载：<a href="https://nodejs.org/en/" target="_blank" rel="noopener">https://nodejs.org/en/</a></li>
+<li>安装：直接默认路径，全部点继续就好</li>
+<li>查看：在命令行输 <code>node -v</code> <code>npm -v</code> 查看安装是否安装上</li>
+</ul>
+<h4 id="3-安装-Hexo"><a href="#3-安装-Hexo" class="headerlink" title="3. 安装 Hexo"></a>3. 安装 Hexo</h4><ul>
+<li>安装：命令行输入 <code>npm install -g hexo-cli</code></li>
+<li>查看：命令行输入 <code>hexo -v</code></li>
+</ul>
+<h4 id="4-使用-Hexo"><a href="#4-使用-Hexo" class="headerlink" title="4.使用 Hexo"></a>4.使用 Hexo</h4><h5 id="新建-blog"><a href="#新建-blog" class="headerlink" title="新建 blog"></a>新建 blog</h5><blockquote>
+<ol>
+<li>在 D 盘新建 blogg 目录，在该目录下打开 gitbush</li>
+<li><code>hexo init</code> [文件名]，然后进入该文件，再打开 gitbush</li>
+<li>启动：<code>hexo s</code><br>接着就可以通过默认的 <code>localhost:4000</code> 预览博客页面</li>
+</ol>
+</blockquote>
+<h5 id="新建文章"><a href="#新建文章" class="headerlink" title="新建文章"></a>新建文章</h5><blockquote>
+<ol>
+<li><code>hexo n</code> “我的第一篇博客”</li>
+<li>查看：进入到 source/_posts ,查看是否有“我的第一篇博客<code>.md</code>”</li>
+<li>修改添加内容：用 <code>vscode</code> 或者 <code>Notepad++</code>等工具对<code>.md</code> 文件进行编辑</li>
+<li>生成：<code>hexo g</code></li>
+<li>启动：<code>hexo s</code></li>
+</ol>
+</blockquote>
+<h5 id="博客部署到-GitHub-上"><a href="#博客部署到-GitHub-上" class="headerlink" title="博客部署到 GitHub 上"></a>博客部署到 GitHub 上</h5><p>为了使博客不仅仅是在本地访问，我将<br>博客部署到 GitHub,首先就需要新建一个 GitHub 仓库</p>
+<blockquote>
+<p>新建一个 GitHub 仓库（注意该仓库的名字前缀必须和自己 GitHub 的 <code>username</code> 相同，后缀必须是 github.io）例如：lxy17761018921/lxy17761018921.github.io</p>
+</blockquote>
+<p>在部署之前需要安装一个插件 hexo-deployer-git</p>
+<blockquote>
+<p><code>npm install hexo-deployer-git --save</code></p>
+</blockquote>
+<p>然后做重要的是，配置 _config.yml 文件<br>此处有坑：冒号后面需要有个空格</p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Deployment</span></span><br><span class="line"><span class="comment">## Docs: https://hexo.io/docs/deployment.html</span></span><br><span class="line"><span class="attr">deploy:</span></span><br><span class="line"><span class="attr">  type:</span> <span class="string">git</span></span><br><span class="line"><span class="attr">  repo:</span> <span class="attr">https://github.com/lxy17761018921/lxy17761018921.github.io</span></span><br><span class="line"><span class="attr">  branch:</span> <span class="string">master</span></span><br></pre></td></tr></table></figure>
+
+<p>最后部署：<br>注意，中间提示输入 GitHub 账号密码，必须手打，不能复制粘贴，不然有奇怪的符号</p>
+<blockquote>
+<p>hexo d</p>
+</blockquote>
+<p>最终可以输入 仓库名（lxy17761018921.github.io） 加载我们的博客</p>
+<h5 id="自定义主题"><a href="#自定义主题" class="headerlink" title="自定义主题"></a>自定义主题</h5><p>一个方法是直接在 GitHubPages 里面，用它提供的主题<br>第二个方法是自己克隆别人的主题，这里我讲一下第二种方法的步骤。</p>
+<p>在 GitHub 上 clone 他人的主题,并放到 theme 文件夹下：</p>
+<blockquote>
+<p><code>git clone https://github.com/litten/hexo-theme-yilia.git themes/yilia</code></p>
+</blockquote>
+<p>接着还是配置 _config.yml 文件：</p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Extensions</span></span><br><span class="line"><span class="comment">## Plugins: https://hexo.io/plugins/</span></span><br><span class="line"><span class="comment">## Themes: https://hexo.io/themes/</span></span><br><span class="line"><span class="attr">theme:</span> <span class="string">yilia</span></span><br></pre></td></tr></table></figure>
+
+<p>最后:生成，启动，部署, 就可以打开我们的博客查看网页的主题已经变了</p>
+<blockquote>
+<p><code>hexo g</code> &gt; <code>hexo s</code> &gt; <code>hexo d</code></p>
+</blockquote>
+<h4 id="5-总结"><a href="#5-总结" class="headerlink" title="5. 总结"></a>5. 总结</h4><p>以上就是我搭建一个博客的全部内容了，现暂时还没有贴图进去后面一定会加上的。这是我的第一篇博客，内容不足请多多包含。</p>
+<h4 id="6-参考链接"><a href="#6-参考链接" class="headerlink" title="6. 参考链接"></a>6. 参考链接</h4><p><a href="https://www.bilibili.com/video/av44544186?from=search&amp;seid=10605979974887129883" target="_blank" rel="noopener">https://www.bilibili.com/video/av44544186?from=search&amp;seid=10605979974887129883</a></p>
 
       
 
@@ -186,7 +251,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">GithubPages Hexo 个人博客</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">GithubPages Hexo Git 个人博客</a>
         		</li>
       		
 		</ul>
@@ -394,7 +459,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">GithubPages Hexo 个人博客</a>
+                <a href="javascript:void(0)" class="js-tag color1">GithubPages Hexo Git 个人博客</a>
               </li>
             
             <div class="clearfix"></div>
