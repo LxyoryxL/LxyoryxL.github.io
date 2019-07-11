@@ -1,0 +1,15 @@
+.nav li:nth-child(1)::before {
+    content: "";
+    position: absolute;
+    left: 10%;
+    bottom: 15px;
+    width: 80%;
+    height: 1px;
+    background: #777777;
+    transition: all .5s ease-in-out;
+    transform: scale(0);
+}
+
+.nav li:nth-child(1):hover::before {
+    transform: scale(0.9);
+}
