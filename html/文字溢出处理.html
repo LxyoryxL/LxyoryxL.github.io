@@ -17,7 +17,7 @@
 <!--<![endif]-->
 
 <head>
-  <title>解决单行或者多行文本溢出的方法总结 | lxy&#39;s blog</title>
+  <title>lxy&#39;s blog</title>
   <!-- Meta data -->
     <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" >
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
@@ -162,111 +162,198 @@
     </div>
 
     <!-- ============================ Header & Logo bar =========================== -->
-      
+      <!-- ============================ Hero Image =========================== -->
+
+<section id="hero" class="scrollme">
+    <div class="container-fluid element-img"
+        style="background: url(/img/bg_img.jpg) no-repeat center center fixed;background-size: cover">
+        <div class="row">
+            <div
+                class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2 vertical-align cover boost text-center">
+                <div class="center-me animateme" data-when="exit" data-from="0" data-to="0.6" data-opacity="0"
+                    data-translatey="100">
+                    <div>
+                        
+                        <h2></h2>
+                        <p></p>
+                        
+                        <h2></h2>
+                        <p></p>
+                        
+
+                    </div>
+                </div>
+            </div>
+            <!-- // .col-md-12 -->
+        </div>
+        <div class="herofade beige-dk"></div>
+    </div>
+</section>
+
+<!-- Height spacing helper -->
+<div class="heightblock"></div>
+<!-- // End height spacing helper -->
+
+<!-- ============================ END Hero Image =========================== -->
 <section id="intro">
     <div class="container">
         <div class="row col-md-offset-2">
             <div class="col-md-8">
-    			<span class="post-meta">
-      <time datetime="2019-07-08T08:04:53.000Z" itemprop="datePublished">
-          2019-07-08
-      </time>
-    
-</span>
-                <h1>解决单行或者多行文本溢出的方法总结</h1>
+                <h1></h1>
             </div>
         </div>
         <div class="col-md-8 col-md-offset-2">
-      		<h3 id="一-前言"><a href="#一-前言" class="headerlink" title="一. 前言"></a>一. 前言</h3><p>今天再写页面的时候，看到几行文字，感觉这部分的文字在这个部分显得很冗余，而且因为文字长度的不确定性，还容易影响布局。</p>
-<p>然后我查看了下百度新闻的网页，发现他们都是用对文字溢出做了处理，显示的文字内容多少有规定，末尾用省略号代替。</p>
-<blockquote>
-<p><img src="https://raw.githubusercontent.com/lxy17761018921/lxy17761018921.github.io/master/2019/07/08/%E8%A7%A3%E5%86%B3%E5%8D%95%E8%A1%8C%E6%88%96%E8%80%85%E5%A4%9A%E8%A1%8C%E6%96%87%E6%9C%AC%E6%BA%A2%E5%87%BA%E7%9A%84%E6%96%B9%E6%B3%95%E6%80%BB%E7%BB%93/baidu_news.png" alt="baidu_news"></p>
-</blockquote>
-<p>于是就搜了下‘列表文字太多,溢出使用省略号’的解决方法，本文就此进行总结。</p>
-<br>
+            <!DOCTYPE html>
 
-<h3 id="二-单行文本溢出"><a href="#二-单行文本溢出" class="headerlink" title="二. 单行文本溢出"></a>二. 单行文本溢出</h3><p>主要使用 <code>text-overflow</code> 属性，具体使用如下：</p>
-<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">over-flow</span>: <span class="selector-tag">hidden</span>;</span><br><span class="line"><span class="selector-tag">text-overflow</span>: <span class="selector-tag">ellipsis</span>;</span><br><span class="line"><span class="selector-tag">white-space</span>: <span class="selector-tag">nowrap</span>;</span><br></pre></td></tr></table></figure>
+<head><meta name="generator" content="Hexo 3.9.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0,minimal-ui:ios">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.4.0.js"></script>
+    <script src="https://cdn.bootcss.com/jQuery.dotdotdot/4.0.9/dotdotdot.es6.js"></script>
+</head>
+<style>
+    .p1 {
+        /* 单行文本溢出点点点 */
+        width: 400px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
 
-<br>
-### 三. 多行文本溢出
+    }
 
-<h5 id="方法一-使用-webkit-line-clamp-属性"><a href="#方法一-使用-webkit-line-clamp-属性" class="headerlink" title="方法一. 使用 -webkit-line-clamp 属性"></a>方法一. 使用 -webkit-line-clamp 属性</h5><p>-webkit-line-clamp 属性限制块元素显示的文本行数，但它是一个不规范的属性，它没有在 CSS 的规范草案中。该方法主要适用与 webkit 内核的浏览器或移动端,firefox 不适用。具体使用如下：</p>
-<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">display</span>: <span class="selector-tag">-webkit-box</span>;</span><br><span class="line"><span class="selector-tag">-webkit-line-clamp</span>: 2;</span><br><span class="line"><span class="selector-tag">-webkit-box-orient</span>: <span class="selector-tag">vertical</span>;</span><br><span class="line"><span class="selector-tag">overflow</span>: <span class="selector-tag">hidden</span>;</span><br></pre></td></tr></table></figure>
+    /* 多行文本最后点点点 */
+    .p2 {
+        width: 400px;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        /* 这个属性是一个 不规范的属性 */
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        /* 仅支持webkit浏览器，比较合适WebKit浏览器或移动端 */
+        /* firefox不支持 */
+    }
 
-<h5 id="方法二-使用-after-伪元素"><a href="#方法二-使用-after-伪元素" class="headerlink" title="方法二.使用 after 伪元素"></a>方法二.使用 after 伪元素</h5><p>使用伪元素在元素，在文字最后添加省略号 ‘…’，这是一个比较简单靠谱的做法，兼容性较好</p>
-<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">xx</span><span class="selector-pseudo">::after</span> &#123;</span><br><span class="line">  <span class="attribute">content</span>: <span class="string">"..."</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<br>
 
-<h3 id="四-总结"><a href="#四-总结" class="headerlink" title="四. 总结"></a>四. 总结</h3><p>这里附上我写的测试 demo：</p>
-<h3 id="五-参考链接"><a href="#五-参考链接" class="headerlink" title="五. 参考链接"></a>五. 参考链接</h3><p>https: ; //<a href="http://www.zhangxinxu.com/wordpress/2009/09/%E5%85%B3%E4%BA%8E%E6%96%87%E5%AD%97%E5%86%85%E5%AE%B9%E6%BA%A2%E5%87%BA%E7%94%A8%E7%82%B9%E7%82%B9%E7%82%B9-%E7%9C%81%E7%95%A5%E5%8F%B7%E8%A1%A8%E7%A4%BA/comment-page-1/" target="_blank" rel="noopener">www.zhangxinxu.com/wordpress/2009/09/%E5%85%B3%E4%BA%8E%E6%96%87%E5%AD%97%E5%86%85%E5%AE%B9%E6%BA%A2%E5%87%BA%E7%94%A8%E7%82%B9%E7%82%B9%E7%82%B9-%E7%9C%81%E7%95%A5%E5%8F%B7%E8%A1%A8%E7%A4%BA/comment-page-1/</a></p>
+    /* 伪元素的方式 */
+    .p3 {
+        width: 400px;
+    }
+
+    .p3::after {
+        content: '...'
+            /* 比较靠谱简单的做法 */
+    }
+
+
+    /* 使用插件jQuery.dotdotdot的方式 */
+    .p4 {
+        width: 400px;
+        height: 40px;
+    }
+</style>
+
+<body>
+    <p class="p1">元素可提供相关页面的元信息（meta-information），比如针对搜索引擎和更新频度的描述和关键词。 标签位于文档的头部，不包含任何内容。 标签的</p>
+    <p class="p2">
+        元素可提供相关页面的元信息（meta-information），比如针对搜索引擎和更新频度的描述和关键词。 标签元素可提供相关页面的元信息（meta-information），比如针对搜索引擎和更新频度的描述和关键词。
+        标签元素可提供相关页面的元信息（meta-information），比如针对搜索引擎和更新频度的描述和关键词。
+        标签元素可提供相关页面的元信息（meta-information），比如针对搜索引擎和更新频度的描述和关键词。 标签关键词。 标签
+    </p>
+    <p class="p3">
+        元素可提供相关页面的元信息（meta-information），比如针对搜索引擎和更新频度的描述和关键词。 标签元素可提供相关页面的元信息（meta-information），比如针对搜索引擎和更新频度的描述和关键词。
+        标签元素可提供相关页面的元信息（meta-information），比如针对搜索引擎和更新频度的描述和关键词。
+        标签元素可提供相关页面的元信息（meta-information），比如针对搜索引擎和更新频度的描述和关键词。 标签
+    </p>
+    <div class="p4">
+        元素可提供相关页面的元信息（meta-information），比如针对搜索引擎和更新频度的描述和关键词。 标签元素可提供相关页面的元信息（meta-information），比如针对搜索引擎和更新频度的描述和关键词。
+        标签元素可提供相关页面的元信息（meta-information），比如针对搜索引擎和更新频度的描述和关键词。
+        标签元素可提供相关页面的元信息（meta-information），比如针对搜索引擎和更新频度的描述和关键词。 标签
+    </div>
+    <script>
+        /* 使用插件jQuery.dotdotdot的方式 */
+        // http://dotdotdot.frebsite.nl/
+        $(function () {
+            $(".p4").dotdotdot({
+                wrap: 'letter',
+                ellipsis: "...",
+                /* 添加的文本为省略号 */
+                height: 2,
+                watch: true
+            });
+        })
+    </script>
+</body>
+
 
             <div class="clearfix"></div>
-            <hr class="nogutter">
         </div>
-        <nav class="m-pagination col-md-8 col-md-offset-2 col-sm-24" role="pagination">
-    
-    
-    <a class="pull-right" href="/2019/07/08/总结水平居中和垂直居中/">
-        总结水平居中和垂直居中 →
-    </a>
-    
-</nav>
 
-        <div class="col-md-8 col-md-offset-2 col-sm-24"><script type="text/javascript">
-  /**
-   * 搜狐畅言
-   */
-
-  /*
-  document.write('<div id="SOHUCS" sid="' + window.location.pathname.slice(1) + '" ></div>');
-
-  window.onload = function () {
-    (function () {
-      var appid = 'cytXXXX';
-      var conf = 'prod_xxxxxxxxxxxxxxxxx';
-      var width = window.innerWidth || document.documentElement.clientWidth;
-      var loadJs = function (d, a, id) {
-        var c = document.getElementsByTagName("head")[0] || document.head || document.documentElement;
-        var b = document.createElement("script");
-        b.setAttribute("type", "text/javascript");
-        b.setAttribute("charset", "UTF-8");
-        b.setAttribute("src", d);
-        if (id) {
-          b.setAttribute("id", id);
-        }
-        if (typeof a === "function") {
-          if (window.attachEvent) {
-            b.onreadystatechange = function () {
-              var e = b.readyState;
-              if (e === "loaded" || e === "complete") {
-                b.onreadystatechange = null;
-                a()
-              }
-            }
-          } else {
-            b.onload = a
-          }
-        }
-        c.appendChild(b)
-      };
-
-      loadJs("https://changyan.sohu.com/upload/changyan.js", function () {
-        window.changyan.api.config({
-          appid: appid,
-          conf: conf
-        })
-      });
-    })();
-  }
-  */
-
-</script>
-</div>
     </div>
 </section>
-
+<section id="process">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-8 col-md-offset-2">
+                <div class="timeline-centered">
+                    <div class="line"></div>
+                    <div class="present">Past</div>
+                    <div class="dot_tp"></div>
+                    <div class="born">Now</div>
+                    <div class="dot_bt"></div>
+                    
+                    <div class="timeline-entry">
+                        <div class="timeline-entry-inner">
+                            <div class="timeline-icon wow fadeInUp" data-wow-delay="0.2s">
+                                <span class="number">1lxy</span>
+                            </div>
+                            <div class="timeline-label wow fadeInUp" data-wow-delay="0.2s">
+                                <p>2014/06/12-Start</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-entry">
+                        <div class="timeline-entry-inner">
+                            <div class="timeline-icon wow fadeInUp" data-wow-delay="0.2s">
+                                <span class="number">2</span>
+                            </div>
+                            <div class="timeline-label wow fadeInUp" data-wow-delay="0.2s">
+                                <p>2014/11/29-XXX</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-entry">
+                        <div class="timeline-entry-inner">
+                            <div class="timeline-icon wow fadeInUp" data-wow-delay="0.2s">
+                                <span class="number">3</span>
+                            </div>
+                            <div class="timeline-label wow fadeInUp" data-wow-delay="0.2s">
+                                <p>2015/02/18-DDD</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-entry">
+                        <div class="timeline-entry-inner">
+                            <div class="timeline-icon wow fadeInUp" data-wow-delay="0.2s">
+                                <span class="number">4</span>
+                            </div>
+                            <div class="timeline-label wow fadeInUp" data-wow-delay="0.2s">
+                                <p>More</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <!-- timeline-centered -->
+            </div>
+        </div>
+    </div>
+</section>
 
       
 <!-- ============================ Footer =========================== -->
