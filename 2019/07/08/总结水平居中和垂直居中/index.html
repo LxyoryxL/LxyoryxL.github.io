@@ -177,7 +177,60 @@
             </div>
         </div>
         <div class="col-md-8 col-md-offset-2">
-      		
+      		<p>本文总结：<br>几种水平居中和垂直居中的方法</p>
+<a id="more"></a>
+
+<h3 id="一-水平居中"><a href="#一-水平居中" class="headerlink" title="一. 水平居中"></a>一. 水平居中</h3><h5 id="1-行内元素水平居中"><a href="#1-行内元素水平居中" class="headerlink" title="1. 行内元素水平居中"></a>1. <strong>行内元素水平居中</strong></h5><p>1.1 <strong>text-align:center</strong></p>
+<p>给父元素设置 <code>text-align:center</code></p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.box1</span> &#123;</span><br><span class="line">  <span class="attribute">text-align</span>: center;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"box1"</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">p</span> <span class="attr">class</span>=<span class="string">"p1"</span>&gt;</span>行内元素p<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p><img src alt="行内"></p>
+<br>
+
+<h5 id="2-块级元素水平居中"><a href="#2-块级元素水平居中" class="headerlink" title="2. 块级元素水平居中"></a>2. <strong>块级元素水平居中</strong></h5><p>2.1 <strong>margin:0 auto</strong><br>给要居中的块级元素加 <code>margin:0 auto</code>, 注意：该块元素一定要指定宽度</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.box2</span> &#123;</span><br><span class="line">  width: 200px; //这里一定要指定宽度</span><br><span class="line">  <span class="selector-tag">height</span>: 200<span class="selector-tag">px</span>;</span><br><span class="line">  <span class="selector-tag">border</span>: 1<span class="selector-tag">px</span> <span class="selector-tag">solid</span> <span class="selector-tag">red</span>;</span><br><span class="line">  <span class="selector-tag">margin</span>: 0 <span class="selector-tag">auto</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"box2"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p><img src alt></p>
+<br>
+
+<p>2.2 <strong>display:flex</strong><br>使用弹性盒子布局，给父元素设置 <code>display:flex</code> <code>justify-content: center</code>,使子元素居中</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.box3</span> &#123;</span><br><span class="line">  <span class="attribute">height</span>: <span class="number">300px</span>;</span><br><span class="line">  <span class="attribute">border</span>: <span class="number">1px</span> solid black;</span><br><span class="line">  <span class="attribute">display</span>: flex;</span><br><span class="line">  <span class="attribute">justify-content</span>: center;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"box3"</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">p</span> <span class="attr">style</span>=<span class="string">"background: darkcyan"</span>&gt;</span>p元素<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">span</span> <span class="attr">style</span>=<span class="string">"background: chocolate"</span>&gt;</span>span元素<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">"width: 100px;height:100px;background:blue"</span>&gt;</span>div元素<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p><img src alt></p>
+<br>
+
+<p>2.3 <strong>已知宽度，用 positon</strong><br>前提是已知宽度，要居中的元素加 <code>position: absolute</code> <code>left: 50%</code> <code>margin-left: -50px</code></p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.box4</span> &#123;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">100px</span>;</span><br><span class="line">  <span class="attribute">height</span>: <span class="number">100px</span>;</span><br><span class="line">  <span class="attribute">background</span>: pink;</span><br><span class="line">  <span class="attribute">position</span>: absolute;</span><br><span class="line">  <span class="attribute">left</span>: <span class="number">50%</span>;</span><br><span class="line">  <span class="attribute">margin-left</span>: -<span class="number">50px</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"box4"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p><img src alt></p>
+<br>
+
+<p>2.4 <strong>未知宽度，用 positon，transfrom 结合</strong><br>对于未知宽度的块元素要实现居中，对该元素添加<code>position: absolute</code> <code>left: 50%</code> <code>transform: translate(-50%, 0)</code></p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.box5</span> &#123;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">50px</span>;</span><br><span class="line">  <span class="attribute">height</span>: <span class="number">100px</span>;</span><br><span class="line">  <span class="attribute">background</span>: peru;</span><br><span class="line">  <span class="attribute">position</span>: absolute;</span><br><span class="line">  <span class="attribute">left</span>: <span class="number">50%</span>;</span><br><span class="line">  <span class="attribute">transform</span>: <span class="built_in">translate</span>(-50%, 0);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"box5"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p><img src alt></p>
+<br>
+
+<p>2.5 <strong>fit-content</strong><br>该属性是 CSS3 中 width 属性新加 的一个属性值，它配合 <code>margin:auto</code> 可以轻松实现居中效果。可以在不设置具体宽度的情况下，直接给要居中的元素设置 <code>width:fit-content</code> <code>margin:auto</code> 达到居中效果</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.box6</span> &#123;</span><br><span class="line">  <span class="attribute">margin</span>: auto;</span><br><span class="line">  <span class="attribute">width</span>: fit-content;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"box6"</span>&gt;</span>234<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p><img src alt></p>
+<br>
+
+<h3 id="二-垂直居中"><a href="#二-垂直居中" class="headerlink" title="二. 垂直居中"></a>二. 垂直居中</h3><h3 id="三-总结"><a href="#三-总结" class="headerlink" title="三. 总结"></a>三. 总结</h3><h3 id="四-参考链接"><a href="#四-参考链接" class="headerlink" title="四. 参考链接"></a>四. 参考链接</h3><p><a href="https://segmentfault.com/a/1190000014116655" target="_blank" rel="noopener">https://segmentfault.com/a/1190000014116655</a><br><a href="https://jingyan.baidu.com/article/86112f1381081127379787bb.html" target="_blank" rel="noopener">https://jingyan.baidu.com/article/86112f1381081127379787bb.html</a></p>
+
             <div class="clearfix"></div>
             <hr class="nogutter">
         </div>
@@ -188,8 +241,8 @@
     </a>
     
     
-    <a class="pull-right" href="/2019/07/07/hello-world/">
-        Hello World →
+    <a class="pull-right" href="/2019/07/07/Markdown-常用语法/">
+        Markdown 常用语法 →
     </a>
     
 </nav>

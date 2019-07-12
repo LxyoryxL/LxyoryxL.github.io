@@ -3996,3 +3996,9 @@ template {
 .nav li:nth-child(1):hover::before {
     transform: scale(0.9);
 }
+.col-md-8 p {
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
