@@ -188,7 +188,7 @@
 <h3 id="一-前言"><a href="#一-前言" class="headerlink" title="一. 前言"></a>一. 前言</h3><p>今天再写页面的时候，看到几行文字，感觉这部分的文字在这个部分显得很冗余，而且因为文字长度的不确定性，还容易影响布局。</p>
 <p>然后我查看了下百度新闻的网页，发现他们都是用对文字溢出做了处理，显示的文字内容多少有规定，末尾用省略号代替。</p>
 <blockquote>
-<p><img src="https://raw.githubusercontent.com/lxy17761018921/lxy17761018921.github.io/master/2019/07/08/%E8%A7%A3%E5%86%B3%E5%8D%95%E8%A1%8C%E6%88%96%E8%80%85%E5%A4%9A%E8%A1%8C%E6%96%87%E6%9C%AC%E6%BA%A2%E5%87%BA%E7%9A%84%E6%96%B9%E6%B3%95%E6%80%BB%E7%BB%93/baidu_news.png" alt="baidu_news"></p>
+<p><img src="https://raw.githubusercontent.com/lxy17761018921/All-Img/master/lxy17761018921.github.io-img/%E8%A7%A3%E5%86%B3%E5%8D%95%E8%A1%8C%E6%88%96%E8%80%85%E5%A4%9A%E8%A1%8C%E6%96%87%E6%9C%AC%E6%BA%A2%E5%87%BA%E7%9A%84%E6%96%B9%E6%B3%95%E6%80%BB%E7%BB%93/baidu_news.png" alt="baidu_news"></p>
 </blockquote>
 <p>于是就搜了下‘列表文字太多,溢出使用省略号’的解决方法，本文就此进行总结。</p>
 <br>
@@ -197,7 +197,7 @@
 <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">over-flow</span>: <span class="selector-tag">hidden</span>;</span><br><span class="line"><span class="selector-tag">text-overflow</span>: <span class="selector-tag">ellipsis</span>;</span><br><span class="line"><span class="selector-tag">white-space</span>: <span class="selector-tag">nowrap</span>;</span><br></pre></td></tr></table></figure>
 
 <blockquote>
-<p><img src="https://raw.githubusercontent.com/lxy17761018921/lxy17761018921.github.io/master/2019/07/08/%E8%A7%A3%E5%86%B3%E5%8D%95%E8%A1%8C%E6%88%96%E8%80%85%E5%A4%9A%E8%A1%8C%E6%96%87%E6%9C%AC%E6%BA%A2%E5%87%BA%E7%9A%84%E6%96%B9%E6%B3%95%E6%80%BB%E7%BB%93/%E5%8D%95%E8%A1%8C%E6%96%87%E6%9C%AC%E6%BA%A2%E5%87%BA.png" alt="单行"></p>
+<p><img src="https://raw.githubusercontent.com/lxy17761018921/All-Img/master/lxy17761018921.github.io-img/%E8%A7%A3%E5%86%B3%E5%8D%95%E8%A1%8C%E6%88%96%E8%80%85%E5%A4%9A%E8%A1%8C%E6%96%87%E6%9C%AC%E6%BA%A2%E5%87%BA%E7%9A%84%E6%96%B9%E6%B3%95%E6%80%BB%E7%BB%93/%E5%8D%95%E8%A1%8C%E6%96%87%E6%9C%AC%E6%BA%A2%E5%87%BA.png" alt="单行"></p>
 </blockquote>
 <br>
 
@@ -214,7 +214,7 @@
 
 <p>这是在 firefox 里的结果（不支持）：</p>
 <blockquote>
-<p><img src="https://raw.githubusercontent.com/lxy17761018921/lxy17761018921.github.io/master/2019/07/08/%E8%A7%A3%E5%86%B3%E5%8D%95%E8%A1%8C%E6%88%96%E8%80%85%E5%A4%9A%E8%A1%8C%E6%96%87%E6%9C%AC%E6%BA%A2%E5%87%BA%E7%9A%84%E6%96%B9%E6%B3%95%E6%80%BB%E7%BB%93/%E5%A4%9A%E8%A1%8C%E7%81%AB%E7%8B%90.png" alt="firefox 多行"></p>
+<p><img src="https://github.com/lxy17761018921/All-Img/blob/master/lxy17761018921.github.io-img/%E8%A7%A3%E5%86%B3%E5%8D%95%E8%A1%8C%E6%88%96%E8%80%85%E5%A4%9A%E8%A1%8C%E6%96%87%E6%9C%AC%E6%BA%A2%E5%87%BA%E7%9A%84%E6%96%B9%E6%B3%95%E6%80%BB%E7%BB%93/%E5%A4%9A%E8%A1%8C%E6%96%87%E6%9C%AC%E6%BA%A2%E5%87%BA.png?raw=true" alt="firefox 多行"></p>
 </blockquote>
 <br>
 
@@ -222,11 +222,11 @@
 <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">xx</span><span class="selector-pseudo">::after</span> &#123;</span><br><span class="line">  <span class="attribute">content</span>: <span class="string">"..."</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <blockquote>
-<p><img src="https://raw.githubusercontent.com/lxy17761018921/lxy17761018921.github.io/master/2019/07/08/%E8%A7%A3%E5%86%B3%E5%8D%95%E8%A1%8C%E6%88%96%E8%80%85%E5%A4%9A%E8%A1%8C%E6%96%87%E6%9C%AC%E6%BA%A2%E5%87%BA%E7%9A%84%E6%96%B9%E6%B3%95%E6%80%BB%E7%BB%93/%E5%A4%9A%E8%A1%8C%E6%96%87%E6%9C%AC%E6%BA%A2%E5%87%BA2.png" alt="伪元素 多行"></p>
+<p><img src="https://github.com/lxy17761018921/All-Img/blob/master/lxy17761018921.github.io-img/%E8%A7%A3%E5%86%B3%E5%8D%95%E8%A1%8C%E6%88%96%E8%80%85%E5%A4%9A%E8%A1%8C%E6%96%87%E6%9C%AC%E6%BA%A2%E5%87%BA%E7%9A%84%E6%96%B9%E6%B3%95%E6%80%BB%E7%BB%93/%E5%A4%9A%E8%A1%8C%E7%81%AB%E7%8B%90.png?raw=true" alt="伪元素 多行"></p>
 </blockquote>
 <br>
 
-<h3 id="四-总结"><a href="#四-总结" class="headerlink" title="四. 总结"></a>四. 总结</h3><p>解决文本溢出的方法很多，最好不使用 -webkit-line-clamp 属性 的方式，推荐使用伪元素方法和 js 的方法<br>这是附上我的测试 demo:</p>
+<h3 id="四-总结"><a href="#四-总结" class="headerlink" title="四. 总结"></a>四. 总结</h3><p>解决文本溢出的方法很多，最好不使用 -webkit-line-clamp 属性 的方式，推荐使用伪元素方法和 js 的方法<br>这是附上我的测试 demo:<br><a href="https://lxy17761018921.github.io/Demo-display/lxy17761018921.github.io-demo/%E6%96%87%E5%AD%97%E6%BA%A2%E5%87%BA%E5%A4%84%E7%90%86.html" target="_blank" rel="noopener">https://lxy17761018921.github.io/Demo-display/lxy17761018921.github.io-demo/%E6%96%87%E5%AD%97%E6%BA%A2%E5%87%BA%E5%A4%84%E7%90%86.html</a></p>
 <h3 id="五-参考链接"><a href="#五-参考链接" class="headerlink" title="五. 参考链接"></a>五. 参考链接</h3><p><a href="https://www.zhangxinxu.com/wordpress/2009/09/%E5%85%B3%E4%BA%8E%E6%96%87%E5%AD%97%E5%86%85%E5%AE%B9%E6%BA%A2%E5%87%BA%E7%94%A8%E7%82%B9%E7%82%B9%E7%82%B9-%E7%9C%81%E7%95%A5%E5%8F%B7%E8%A1%A8%E7%A4%BA/comment-page-1/" target="_blank" rel="noopener">https://www.zhangxinxu.com/wordpress/2009/09/%E5%85%B3%E4%BA%8E%E6%96%87%E5%AD%97%E5%86%85%E5%AE%B9%E6%BA%A2%E5%87%BA%E7%94%A8%E7%82%B9%E7%82%B9%E7%82%B9-%E7%9C%81%E7%95%A5%E5%8F%B7%E8%A1%A8%E7%A4%BA/comment-page-1/</a></p>
 
             <div class="clearfix"></div>

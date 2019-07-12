@@ -172,12 +172,17 @@
           2019-07-08
       </time>
     
+    
+    | 
+    <a href='/tags/flex-fit-content-transform/'>flex fit-content transform</a>
+    
+    
 </span>
                 <h1>总结水平居中和垂直居中</h1>
             </div>
         </div>
         <div class="col-md-8 col-md-offset-2">
-      		<p>本文总结：<br>几种水平居中和垂直居中的方法</p>
+      		<p>本文总结：<br>几种水平居中和垂直居中的方法<br>flex 布局 css3 的 width 新出的属性值 fit-content …</p>
 <a id="more"></a>
 
 <h3 id="一-水平居中"><a href="#一-水平居中" class="headerlink" title="一. 水平居中"></a>一. 水平居中</h3><h5 id="1-行内元素水平居中"><a href="#1-行内元素水平居中" class="headerlink" title="1. 行内元素水平居中"></a>1. <strong>行内元素水平居中</strong></h5><p>1.1 <strong>text-align:center</strong></p>
@@ -186,7 +191,9 @@
 
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"box1"</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">p</span> <span class="attr">class</span>=<span class="string">"p1"</span>&gt;</span>行内元素p<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
-<p><img src alt="行内"></p>
+<blockquote>
+<p><img src="https://raw.githubusercontent.com/lxy17761018921/All-Img/master/lxy17761018921.github.io-img/%E6%80%BB%E7%BB%93%E6%B0%B4%E5%B9%B3%E5%B1%85%E4%B8%AD%E5%92%8C%E5%9E%82%E7%9B%B4%E5%B1%85%E4%B8%AD/%E8%A1%8C%E5%86%85%E5%85%83%E7%B4%A0%E5%B1%85%E4%B8%AD.png" alt="行内元素居中"></p>
+</blockquote>
 <br>
 
 <h5 id="2-块级元素水平居中"><a href="#2-块级元素水平居中" class="headerlink" title="2. 块级元素水平居中"></a>2. <strong>块级元素水平居中</strong></h5><p>2.1 <strong>margin:0 auto</strong><br>给要居中的块级元素加 <code>margin:0 auto</code>, 注意：该块元素一定要指定宽度</p>
@@ -194,7 +201,9 @@
 
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"box2"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
-<p><img src alt></p>
+<blockquote>
+<p><img src="https://github.com/lxy17761018921/All-Img/blob/master/lxy17761018921.github.io-img/%E6%80%BB%E7%BB%93%E6%B0%B4%E5%B9%B3%E5%B1%85%E4%B8%AD%E5%92%8C%E5%9E%82%E7%9B%B4%E5%B1%85%E4%B8%AD/%E5%AE%9A%E5%AE%BD%E5%9D%97%E7%BA%A7%E5%85%83%E7%B4%A0%E6%B0%B4%E5%B9%B3%E5%B1%85%E4%B8%AD.png?raw=true" alt="定宽块级元素水平居中"></p>
+</blockquote>
 <br>
 
 <p>2.2 <strong>display:flex</strong><br>使用弹性盒子布局，给父元素设置 <code>display:flex</code> <code>justify-content: center</code>,使子元素居中</p>
@@ -202,7 +211,9 @@
 
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"box3"</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">p</span> <span class="attr">style</span>=<span class="string">"background: darkcyan"</span>&gt;</span>p元素<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">span</span> <span class="attr">style</span>=<span class="string">"background: chocolate"</span>&gt;</span>span元素<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">"width: 100px;height:100px;background:blue"</span>&gt;</span>div元素<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
-<p><img src alt></p>
+<blockquote>
+<p><img src="https://raw.githubusercontent.com/lxy17761018921/All-Img/master/lxy17761018921.github.io-img/%E6%80%BB%E7%BB%93%E6%B0%B4%E5%B9%B3%E5%B1%85%E4%B8%AD%E5%92%8C%E5%9E%82%E7%9B%B4%E5%B1%85%E4%B8%AD/flex.png" alt="flex"></p>
+</blockquote>
 <br>
 
 <p>2.3 <strong>已知宽度，用 positon</strong><br>前提是已知宽度，要居中的元素加 <code>position: absolute</code> <code>left: 50%</code> <code>margin-left: -50px</code></p>
@@ -210,15 +221,19 @@
 
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"box4"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
-<p><img src alt></p>
+<blockquote>
+<p><img src="https://raw.githubusercontent.com/lxy17761018921/All-Img/master/lxy17761018921.github.io-img/%E6%80%BB%E7%BB%93%E6%B0%B4%E5%B9%B3%E5%B1%85%E4%B8%AD%E5%92%8C%E5%9E%82%E7%9B%B4%E5%B1%85%E4%B8%AD/%E5%B7%B2%E7%9F%A5%E5%AE%BD%E5%BA%A6%2Cpositon.png" alt="已知宽度,positon"></p>
+</blockquote>
 <br>
 
-<p>2.4 <strong>未知宽度，用 positon，transfrom 结合</strong><br>对于未知宽度的块元素要实现居中，对该元素添加<code>position: absolute</code> <code>left: 50%</code> <code>transform: translate(-50%, 0)</code></p>
+<p>2.4 <strong>未知宽度，用 positon，transfrom 结合</strong><br>对于未知宽度的块元素要实现居中，对该元素添加<code>position: absolute</code> <code>left: 50%</code> <code>transform: translate(-50%, 0)</code><br>这种方法其实不太推荐，因为 transform 在各个浏览器中的表现行为不一致，有兼容性问题</p>
 <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.box5</span> &#123;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">50px</span>;</span><br><span class="line">  <span class="attribute">height</span>: <span class="number">100px</span>;</span><br><span class="line">  <span class="attribute">background</span>: peru;</span><br><span class="line">  <span class="attribute">position</span>: absolute;</span><br><span class="line">  <span class="attribute">left</span>: <span class="number">50%</span>;</span><br><span class="line">  <span class="attribute">transform</span>: <span class="built_in">translate</span>(-50%, 0);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"box5"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
-<p><img src alt></p>
+<blockquote>
+<p><img src="https://raw.githubusercontent.com/lxy17761018921/All-Img/master/lxy17761018921.github.io-img/%E6%80%BB%E7%BB%93%E6%B0%B4%E5%B9%B3%E5%B1%85%E4%B8%AD%E5%92%8C%E5%9E%82%E7%9B%B4%E5%B1%85%E4%B8%AD/%E6%9C%AA%E7%9F%A5%E5%AE%BD%E5%BA%A6%EF%BC%8C%E7%94%A8%20positon.png" alt="未知宽度，用 positon"></p>
+</blockquote>
 <br>
 
 <p>2.5 <strong>fit-content</strong><br>该属性是 CSS3 中 width 属性新加 的一个属性值，它配合 <code>margin:auto</code> 可以轻松实现居中效果。可以在不设置具体宽度的情况下，直接给要居中的元素设置 <code>width:fit-content</code> <code>margin:auto</code> 达到居中效果</p>
@@ -226,10 +241,53 @@
 
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"box6"</span>&gt;</span>234<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
-<p><img src alt></p>
+<blockquote>
+<p><img src="https://raw.githubusercontent.com/lxy17761018921/All-Img/master/lxy17761018921.github.io-img/%E6%80%BB%E7%BB%93%E6%B0%B4%E5%B9%B3%E5%B1%85%E4%B8%AD%E5%92%8C%E5%9E%82%E7%9B%B4%E5%B1%85%E4%B8%AD/fit-content.png" alt="fit-content"></p>
+</blockquote>
 <br>
 
-<h3 id="二-垂直居中"><a href="#二-垂直居中" class="headerlink" title="二. 垂直居中"></a>二. 垂直居中</h3><h3 id="三-总结"><a href="#三-总结" class="headerlink" title="三. 总结"></a>三. 总结</h3><h3 id="四-参考链接"><a href="#四-参考链接" class="headerlink" title="四. 参考链接"></a>四. 参考链接</h3><p><a href="https://segmentfault.com/a/1190000014116655" target="_blank" rel="noopener">https://segmentfault.com/a/1190000014116655</a><br><a href="https://jingyan.baidu.com/article/86112f1381081127379787bb.html" target="_blank" rel="noopener">https://jingyan.baidu.com/article/86112f1381081127379787bb.html</a></p>
+<h3 id="二-垂直居中"><a href="#二-垂直居中" class="headerlink" title="二. 垂直居中"></a>二. 垂直居中</h3><h5 id="1-文字的居中"><a href="#1-文字的居中" class="headerlink" title="1. 文字的居中"></a>1. <strong>文字的居中</strong></h5><p>1.1 <strong>line-height</strong><br>这个属性主要用在单行文字的垂直居中，只要将行高（<code>line-height</code>）与容器高（<code>height</code>）设为相等即可</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.box7</span> &#123;</span><br><span class="line">  <span class="attribute">height</span>: <span class="number">100px</span>;</span><br><span class="line">  <span class="attribute">line-height</span>: <span class="number">100px</span>;</span><br><span class="line">  <span class="attribute">border</span>: <span class="number">1px</span> solid black;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"box7"</span>&gt;</span>23412341<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p><img src="https://raw.githubusercontent.com/lxy17761018921/All-Img/master/lxy17761018921.github.io-img/%E6%80%BB%E7%BB%93%E6%B0%B4%E5%B9%B3%E5%B1%85%E4%B8%AD%E5%92%8C%E5%9E%82%E7%9B%B4%E5%B1%85%E4%B8%AD/%E5%9E%82%E7%9B%B4-line-height.png" alt="垂直-line-height"></p>
+</blockquote>
+<br>
+
+<h5 id="2-容器的居中"><a href="#2-容器的居中" class="headerlink" title="2. 容器的居中"></a>2. <strong>容器的居中</strong></h5><p>2.1 <strong>position,margin-top,top</strong><br>已知容器高度，利用 position,margin-top,top</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.box8</span> &#123;</span><br><span class="line">  <span class="attribute">height</span>: <span class="number">100px</span>;</span><br><span class="line">  <span class="attribute">border</span>: <span class="number">1px</span> solid black;</span><br><span class="line">  <span class="attribute">position</span>: relative;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.b8</span> &#123;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">50px</span>;</span><br><span class="line">  <span class="attribute">height</span>: <span class="number">50px</span>;</span><br><span class="line">  <span class="attribute">border</span>: <span class="number">1px</span> solid red;</span><br><span class="line">  <span class="attribute">position</span>: absolute;</span><br><span class="line">  <span class="attribute">top</span>: <span class="number">50%</span>;</span><br><span class="line">  <span class="attribute">margin-top</span>: -<span class="number">25px</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"box8"</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"b8"</span>&gt;</span>sfdsfs<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p><img src="https://github.com/lxy17761018921/All-Img/blob/master/lxy17761018921.github.io-img/%E6%80%BB%E7%BB%93%E6%B0%B4%E5%B9%B3%E5%B1%85%E4%B8%AD%E5%92%8C%E5%9E%82%E7%9B%B4%E5%B1%85%E4%B8%AD/%E5%9E%82%E7%9B%B4-position-margintop.png?raw=true" alt="垂直-position-margintop"></p>
+</blockquote>
+<br>
+
+<p>2.2 <strong>position,transform,top</strong><br>未知容器高度，利用 position,transform,top</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.box9</span> &#123;</span><br><span class="line">  <span class="attribute">height</span>: <span class="number">100px</span>;</span><br><span class="line">  <span class="attribute">border</span>: <span class="number">1px</span> solid black;</span><br><span class="line">  <span class="attribute">position</span>: relative;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.b9</span> &#123;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">50px</span>;</span><br><span class="line">  <span class="attribute">height</span>: <span class="number">50px</span>;</span><br><span class="line">  <span class="attribute">border</span>: <span class="number">1px</span> solid blue;</span><br><span class="line">  <span class="attribute">position</span>: absolute;</span><br><span class="line">  <span class="attribute">top</span>: <span class="number">50%</span>;</span><br><span class="line">  <span class="attribute">transform</span>: <span class="built_in">translate</span>(0, -50%);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"box9"</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"b9"</span>&gt;</span>阿斯蒂芬萨芬<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p><img src="https://github.com/lxy17761018921/All-Img/blob/master/lxy17761018921.github.io-img/%E6%80%BB%E7%BB%93%E6%B0%B4%E5%B9%B3%E5%B1%85%E4%B8%AD%E5%92%8C%E5%9E%82%E7%9B%B4%E5%B1%85%E4%B8%AD/%E5%9E%82%E7%9B%B4-position-transform.png?raw=true" alt="垂直-position-transform"></p>
+</blockquote>
+<br>
+
+<p>2.3 <strong>flex</strong><br>利用弹性布局，父元素设置<code>display:flex</code> <code>align-items:center</code></p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.box10</span> &#123;</span><br><span class="line">  <span class="attribute">height</span>: <span class="number">100px</span>;</span><br><span class="line">  <span class="attribute">border</span>: <span class="number">1px</span> solid black;</span><br><span class="line">  <span class="attribute">display</span>: flex;</span><br><span class="line">  <span class="attribute">align-items</span>: center;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"box10"</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">span</span> <span class="attr">style</span>=<span class="string">"background: blue"</span>&gt;</span>sdfsf<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">p</span> <span class="attr">style</span>=<span class="string">"background: brown"</span>&gt;</span>888888<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p><img src="https://github.com/lxy17761018921/All-Img/blob/master/lxy17761018921.github.io-img/%E6%80%BB%E7%BB%93%E6%B0%B4%E5%B9%B3%E5%B1%85%E4%B8%AD%E5%92%8C%E5%9E%82%E7%9B%B4%E5%B1%85%E4%B8%AD/%E5%9E%82%E7%9B%B4-flex.png?raw=true" alt="垂直-flex"></p>
+</blockquote>
+<br>
+
+<h3 id="三-总结"><a href="#三-总结" class="headerlink" title="三. 总结"></a>三. 总结</h3><p>总的来说，设置水平居中和垂直居中的方法太多了，我就列举了我比较常用的几个。但是以后还是首选 flex 布局的方式，感觉超级好用。<br>最后附上测试 demo:<br><a href="https://lxy17761018921.github.io/Demo-display/lxy17761018921.github.io-demo/%E6%B0%B4%E5%B9%B3%E5%B1%85%E4%B8%AD%E5%92%8C%E5%9E%82%E7%9B%B4%E5%B1%85%E4%B8%AD.html" target="_blank" rel="noopener">https://lxy17761018921.github.io/Demo-display/lxy17761018921.github.io-demo/%E6%B0%B4%E5%B9%B3%E5%B1%85%E4%B8%AD%E5%92%8C%E5%9E%82%E7%9B%B4%E5%B1%85%E4%B8%AD.html</a></p>
+<h3 id="四-参考链接"><a href="#四-参考链接" class="headerlink" title="四. 参考链接"></a>四. 参考链接</h3><p><a href="https://segmentfault.com/a/1190000014116655" target="_blank" rel="noopener">https://segmentfault.com/a/1190000014116655</a><br><a href="https://jingyan.baidu.com/article/86112f1381081127379787bb.html" target="_blank" rel="noopener">https://jingyan.baidu.com/article/86112f1381081127379787bb.html</a></p>
 
             <div class="clearfix"></div>
             <hr class="nogutter">
