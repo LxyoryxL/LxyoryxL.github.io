@@ -1,31 +1,36 @@
 <!DOCTYPE html>
 
 
-  <html class="light page-page">
+  <html class="light page-post">
 
 
 <head><meta name="generator" content="Hexo 3.9.0">
   <meta charset="utf-8">
   
-  <title>lxy&#39;s</title>
+  <title>移动端的适配如何做？ | lxy&#39;s</title>
 
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
   
-    <meta name="keywords" content="forsigner,前端,设计,Hexo主题,前端开发,用户体验,设计,frontend,design,nodejs,JavaScript">
+    <meta name="keywords" content="viewport视口 rem,">
   
 
-  <meta name="description" content="Document       .p1 {         /* 单行文本溢出点点点 */         width: 400px;         white-space: nowrap;         text-overflow: ellipsis;         overflow: hidden;      }      /* 多行文本最后点点">
-<meta property="og:type" content="website">
-<meta property="og:title" content="lxy&#39;s">
-<meta property="og:url" content="http://yoursite.com/html/文字溢出处理.html">
+  <meta name="description" content="一.介绍由于在不同尺寸的手机下，如果使用 px 来设置内容的样式，会出现文字过小，或者内容过大无法全部显示在视口等不适配问题。所以做手机端的适配就显得尤为重要。 二. 移动端适配的方法viewport 视口（设置理想视口）大部分人都知道做移动端适配，可以在 &amp;lt;head&amp;gt;&amp;lt;/head&amp;gt; 中添加：&amp;lt;meta name=&amp;quot;viewport&amp;quot; conten">
+<meta name="keywords" content="viewport视口 rem">
+<meta property="og:type" content="article">
+<meta property="og:title" content="移动端的适配如何做？">
+<meta property="og:url" content="http://yoursite.com/2019/07/19/移动端的适配/index.html">
 <meta property="og:site_name" content="lxy&#39;s">
-<meta property="og:description" content="Document       .p1 {         /* 单行文本溢出点点点 */         width: 400px;         white-space: nowrap;         text-overflow: ellipsis;         overflow: hidden;      }      /* 多行文本最后点点">
+<meta property="og:description" content="一.介绍由于在不同尺寸的手机下，如果使用 px 来设置内容的样式，会出现文字过小，或者内容过大无法全部显示在视口等不适配问题。所以做手机端的适配就显得尤为重要。 二. 移动端适配的方法viewport 视口（设置理想视口）大部分人都知道做移动端适配，可以在 &amp;lt;head&amp;gt;&amp;lt;/head&amp;gt; 中添加：&amp;lt;meta name=&amp;quot;viewport&amp;quot; conten">
 <meta property="og:locale" content="chinese">
-<meta property="og:updated_time" content="2019-07-19T12:19:16.826Z">
+<meta property="og:image" content="https://images0.cnblogs.com/blog/130623/201407/300958533834472.png">
+<meta property="og:image" content="https://images0.cnblogs.com/blog/130623/201407/300958506337445.png">
+<meta property="og:image" content="https://images0.cnblogs.com/blog/130623/201407/300958567274384.png">
+<meta property="og:updated_time" content="2019-07-19T13:28:09.425Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="lxy&#39;s">
-<meta name="twitter:description" content="Document       .p1 {         /* 单行文本溢出点点点 */         width: 400px;         white-space: nowrap;         text-overflow: ellipsis;         overflow: hidden;      }      /* 多行文本最后点点">
+<meta name="twitter:title" content="移动端的适配如何做？">
+<meta name="twitter:description" content="一.介绍由于在不同尺寸的手机下，如果使用 px 来设置内容的样式，会出现文字过小，或者内容过大无法全部显示在视口等不适配问题。所以做手机端的适配就显得尤为重要。 二. 移动端适配的方法viewport 视口（设置理想视口）大部分人都知道做移动端适配，可以在 &amp;lt;head&amp;gt;&amp;lt;/head&amp;gt; 中添加：&amp;lt;meta name=&amp;quot;viewport&amp;quot; conten">
+<meta name="twitter:image" content="https://images0.cnblogs.com/blog/130623/201407/300958533834472.png">
 
   
 
@@ -193,12 +198,17 @@ ga('send', 'pageview');
 </div>
 
 
+  <div id="toc" class="toc-article">
+    <strong class="toc-title">文章目录</strong>
+    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#一-介绍"><span class="toc-text">一.介绍</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#二-移动端适配的方法"><span class="toc-text">二. 移动端适配的方法</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#viewport-视口（设置理想视口）"><span class="toc-text">viewport 视口（设置理想视口）</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#三-Rem"><span class="toc-text">三. Rem</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#四-flex-buju"><span class="toc-text">四. flex buju</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#五-vm-vh"><span class="toc-text">五. vm/vh</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#六-参考"><span class="toc-text">六. 参考</span></a></li></ol>
+  </div>
+
 
 
 <div class="content content-post CENTER">
-   <article id="page-" class="article article-type-page" itemprop="blogPost">
+   <article id="post-移动端的适配" class="article article-type-post" itemprop="blogPost">
   <header class="article-header">
-    <h1 class="post-title">(no title)</h1>
+    <h1 class="post-title">移动端的适配如何做？</h1>
 
     <div class="article-meta">
       <span>
@@ -219,7 +229,7 @@ ga('send', 'pageview');
       
         <span>
           <i class="icon-comment"></i>
-          <a href="http://www.forsigner.com/html/文字溢出处理.html#disqus_thread"></a>
+          <a href="http://www.forsigner.com/2019/07/19/移动端的适配/#disqus_thread"></a>
         </span>
       
 
@@ -236,88 +246,30 @@ ga('send', 'pageview');
 
   <div class="article-content">
     
-      <!DOCTYPE html>
+      <h2 id="一-介绍"><a href="#一-介绍" class="headerlink" title="一.介绍"></a>一.介绍</h2><p>由于在不同尺寸的手机下，如果使用 px 来设置内容的样式，会出现文字过小，或者内容过大无法全部显示在视口等不适配问题。所以做手机端的适配就显得尤为重要。</p>
+<h2 id="二-移动端适配的方法"><a href="#二-移动端适配的方法" class="headerlink" title="二. 移动端适配的方法"></a>二. 移动端适配的方法</h2><h4 id="viewport-视口（设置理想视口）"><a href="#viewport-视口（设置理想视口）" class="headerlink" title="viewport 视口（设置理想视口）"></a><strong>viewport 视口（设置理想视口）</strong></h4><p>大部分人都知道做移动端适配，可以在 <code>&lt;head&gt;&lt;/head&gt;</code> 中添加：<br><code>&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,initial-scale=1,user-scalable=0&quot;&gt;</code>，可是你知道其中指定的属性的具体含义吗？比如为什么要设置<code>width=device-width</code>,为什么<code>user-scalable</code>要等于 0？要想理解的话，我就先从 viewport 视口分类开始讲：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">viewport 分为:</span><br><span class="line">    visual viewport 可视视口</span><br><span class="line">    layout viewport 布局视口</span><br><span class="line">    ideal  viewport 理想视口</span><br></pre></td></tr></table></figure>
 
-<head><meta name="generator" content="Hexo 3.9.0">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0,minimal-ui:ios">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-</head>
-<style>
-    .p1 {
-        /* 单行文本溢出点点点 */
-        width: 400px;
-        white-space: nowrap;
-        text-overflow: ellipsis;
-        overflow: hidden;
+<p><strong>visual 视口</strong><br>visual 视口指的是可见视口</p>
+<div align="center">
+  <img src="https://images0.cnblogs.com/blog/130623/201407/300958533834472.png">
+</div>
 
-    }
+<p><strong>layout 视口</strong><br>layout 视口指的是页面实际渲染出来的整个页面，可能会超出可见视口，出现滚动条。</p>
+<div align="center">
+  <img src="https://images0.cnblogs.com/blog/130623/201407/300958506337445.png">
+</div>
 
-    /* 多行文本最后点点点 */
-    .p2 {
-        width: 400px;
-        display: -webkit-box;
-        -webkit-line-clamp: 2;
-        /* 这个属性是一个 不规范的属性 */
-        -webkit-box-orient: vertical;
-        overflow: hidden;
-        /* 仅支持webkit浏览器，比较合适WebKit浏览器或移动端 */
-        /* firefox不支持 */
-    }
+<p><strong>ideal 视口</strong><br>ideal 视口等于移动设备的屏幕宽度，并没有一个固定尺寸，不同设备就不同</p>
+<div align="center">
+  <img src="https://images0.cnblogs.com/blog/130623/201407/300958567274384.png">
+</div>
 
+<p>有了上面的视口概念介绍，我们可以初步分析得到: 因为移动设备的默认的 viewport 是 layout viewport ,那个比屏幕宽的 viewport,我们只要把屏幕宽度设定为 ideal viewport，即可实现移动端适配：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">meta</span></span></span><br><span class="line"><span class="tag">  <span class="attr">name</span>=<span class="string">"viewport"</span></span></span><br><span class="line"><span class="tag">  <span class="attr">content</span>=<span class="string">"width='device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0'"</span></span></span><br><span class="line"><span class="tag">/&gt;</span></span><br></pre></td></tr></table></figure>
 
-
-    /* 伪元素的方式 */
-    .p3 {
-        width: 400px;
-    }
-
-    .p3::after {
-        content: '...'
-            /* 比较靠谱简单的做法 */
-    }
-
-
-    /* 使用插件jQuery.dotdotdot的方式 */
-    .p4 {
-        width: 400px;
-        height: 40px;
-    }
-</style>
-
-<body>
-    <p class="p1">元素可提供相关页面的元信息（meta-information），比如针对搜索引擎和更新频度的描述和关键词。 标签位于文档的头部，不包含任何内容。 标签的</p>
-    <p class="p2">
-        元素可提供相关页面的元信息（meta-information），比如针对搜索引擎和更新频度的描述和关键词。 标签元素可提供相关页面的元信息（meta-information），比如针对搜索引擎和更新频度的描述和关键词。
-        标签元素可提供相关页面的元信息（meta-information），比如针对搜索引擎和更新频度的描述和关键词。
-        标签元素可提供相关页面的元信息（meta-information），比如针对搜索引擎和更新频度的描述和关键词。 标签关键词。 标签
-    </p>
-    <p class="p3">
-        元素可提供相关页面的元信息（meta-information），比如针对搜索引擎和更新频度的描述和关键词。 标签元素可提供相关页面的元信息（meta-information），比如针对搜索引擎和更新频度的描述和关键词。
-        标签元素可提供相关页面的元信息（meta-information），比如针对搜索引擎和更新频度的描述和关键词。
-        标签元素可提供相关页面的元信息（meta-information），比如针对搜索引擎和更新频度的描述和关键词。 标签
-    </p>
-    <div class="p4">
-        元素可提供相关页面的元信息（meta-information），比如针对搜索引擎和更新频度的描述和关键词。 标签元素可提供相关页面的元信息（meta-information），比如针对搜索引擎和更新频度的描述和关键词。
-        标签元素可提供相关页面的元信息（meta-information），比如针对搜索引擎和更新频度的描述和关键词。
-        标签元素可提供相关页面的元信息（meta-information），比如针对搜索引擎和更新频度的描述和关键词。 标签
-    </div>
-    <script>
-        /* 使用插件jQuery.dotdotdot的方式 */
-        // http://dotdotdot.frebsite.nl/
-        $(function () {
-            $(".p4").dotdotdot({
-                wrap: 'letter',
-                ellipsis: "...",
-                /* 添加的文本为省略号 */
-                height: 2,
-                watch: true
-            });
-        })
-    </script>
-</body>
-
+<p>以上 meta 标签的作用其实就是把 视口宽度=设备宽度（<code>width=&#39;device-width</code>），不允许用户缩放（<code>user-scalable=0</code>）</p>
+<h2 id="三-Rem"><a href="#三-Rem" class="headerlink" title="三. Rem"></a>三. Rem</h2><h2 id="四-flex-buju"><a href="#四-flex-buju" class="headerlink" title="四. flex buju"></a>四. flex buju</h2><h2 id="五-vm-vh"><a href="#五-vm-vh" class="headerlink" title="五. vm/vh"></a>五. vm/vh</h2><h2 id="六-参考"><a href="#六-参考" class="headerlink" title="六. 参考"></a>六. 参考</h2><p><a href="https://segmentfault.com/a/1190000008767416" target="_blank" rel="noopener">移动端适配总结</a><br><a href="https://www.cnblogs.com/2050/p/3877280.html" target="_blank" rel="noopener">移动前端开发之 viewport 的深入理解</a></p>
 
     
   </div>
@@ -355,7 +307,7 @@ ga('send', 'pageview');
 
    
   <div class="box-prev-next clearfix">
-    <a class="hide pull-left" href="/">
+    <a class="show pull-left" href="/2019/07/16/空元素是什么？可替换元素又是什么？/">
         <i class="icon icon-angle-left"></i>
     </a>
     <a class="hide pull-right" href="/">
@@ -472,7 +424,7 @@ ga('send', 'pageview');
 
 
   
-      <div class="fexo-comments comments-page">
+      <div class="fexo-comments comments-post">
     
   <section class="disqus-comments">
     <div id="disqus_thread">
@@ -483,7 +435,7 @@ ga('send', 'pageview');
   <script>
     var disqus_shortname = 'lxy';
     
-    var disqus_url = 'http://yoursite.com/html/文字溢出处理.html';
+    var disqus_url = 'http://yoursite.com/2019/07/19/移动端的适配/';
     
     (function(){
       var dsq = document.createElement('script');
