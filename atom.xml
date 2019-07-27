@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>lxy&#39;s</title>
+  
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://yoursite.com/"/>
+  <updated>2019-07-27T07:08:53.712Z</updated>
+  <id>http://yoursite.com/</id>
+  
+  <author>
+    <name>lxy</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Cookie, Session, LocalStorage , SessionStorage</title>
+    <link href="http://yoursite.com/2019/07/27/Cookie-Session-LocalStorage-SessionStorage/"/>
+    <id>http://yoursite.com/2019/07/27/Cookie-Session-LocalStorage-SessionStorage/</id>
+    <published>2019-07-27T07:03:37.000Z</published>
+    <updated>2019-07-27T07:08:53.712Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+      <category term="cookie session LocalStorage SessionStorage" scheme="http://yoursite.com/tags/cookie-session-LocalStorage-SessionStorage/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>踩坑</title>
+    <link href="http://yoursite.com/2019/07/20/%E8%B8%A9%E5%9D%91%E9%9B%86%E5%90%88/"/>
+    <id>http://yoursite.com/2019/07/20/踩坑集合/</id>
+    <published>2019-07-20T08:04:53.000Z</published>
+    <updated>2019-07-27T07:24:23.618Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;&lt;strong&gt;1.Vue 报错如下&lt;/strong&gt;&lt;/p&gt;
+&lt;img
+        
+      
+    
+    </summary>
+    
+      <category term="踩坑集合" scheme="http://yoursite.com/categories/%E8%B8%A9%E5%9D%91%E9%9B%86%E5%90%88/"/>
+    
+    
+      <category term="踩坑 Vue" scheme="http://yoursite.com/tags/%E8%B8%A9%E5%9D%91-Vue/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>移动端的适配如何做？</title>
+    <link href="http://yoursite.com/2019/07/19/%E7%A7%BB%E5%8A%A8%E7%AB%AF%E7%9A%84%E9%80%82%E9%85%8D/"/>
+    <id>http://yoursite.com/2019/07/19/移动端的适配/</id>
+    <published>2019-07-19T12:04:53.000Z</published>
+    <updated>2019-07-27T07:24:55.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;一-介绍&quot;&gt;&lt;a href=&quot;#一-介绍&quot; class=&quot;headerlink&quot; title=&quot;一.介绍&quot;&gt;&lt;/a&gt;一.介绍&lt;/h2&gt;&lt;p&gt;由于在不同尺寸的手机下，如果使用 px
+        
+      
+    
+    </summary>
+    
+      <category term="移动端适配" scheme="http://yoursite.com/categories/%E7%A7%BB%E5%8A%A8%E7%AB%AF%E9%80%82%E9%85%8D/"/>
+    
+    
+      <category term="viewport视口 rem" scheme="http://yoursite.com/tags/viewport%E8%A7%86%E5%8F%A3-rem/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>空元素是什么？可替换元素又是什么？</title>
+    <link href="http://yoursite.com/2019/07/16/%E7%A9%BA%E5%85%83%E7%B4%A0%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%9F%E5%8F%AF%E6%9B%BF%E6%8D%A2%E5%85%83%E7%B4%A0%E5%8F%88%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%9F/"/>
+    <id>http://yoursite.com/2019/07/16/空元素是什么？可替换元素又是什么？/</id>
+    <published>2019-07-16T11:04:53.000Z</published>
+    <updated>2019-07-27T07:24:06.673Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;一-空元素&quot;&gt;&lt;a href=&quot;#一-空元素&quot; class=&quot;headerlink&quot; title=&quot;一. 空元素&quot;&gt;&lt;/a&gt;一. 空元素&lt;/h2&gt;&lt;h3 id=&quot;空元素的含义&quot;&gt;&lt;a href=&quot;#空元素的含义&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="元素标签" scheme="http://yoursite.com/categories/%E5%85%83%E7%B4%A0%E6%A0%87%E7%AD%BE/"/>
+    
+    
+      <category term="空元素  可替换元素  html  标签" scheme="http://yoursite.com/tags/%E7%A9%BA%E5%85%83%E7%B4%A0-%E5%8F%AF%E6%9B%BF%E6%8D%A2%E5%85%83%E7%B4%A0-html-%E6%A0%87%E7%AD%BE/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>解决单行或者多行文本溢出的方法总结</title>
+    <link href="http://yoursite.com/2019/07/08/%E8%A7%A3%E5%86%B3%E5%8D%95%E8%A1%8C%E6%88%96%E8%80%85%E5%A4%9A%E8%A1%8C%E6%96%87%E6%9C%AC%E6%BA%A2%E5%87%BA%E7%9A%84%E6%96%B9%E6%B3%95%E6%80%BB%E7%BB%93/"/>
+    <id>http://yoursite.com/2019/07/08/解决单行或者多行文本溢出的方法总结/</id>
+    <published>2019-07-08T08:04:53.000Z</published>
+    <updated>2019-07-27T07:24:39.640Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;本文总结了：&lt;br&gt;‘列表文字太多,溢出使用省略号’ 的解决方法&lt;br&gt;包括单行文字溢出，多行文本溢出，主要使用 css 来做&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="css" scheme="http://yoursite.com/categories/css/"/>
+    
+    
+      <category term="单行文本溢出 多行文本溢出 css" scheme="http://yoursite.com/tags/%E5%8D%95%E8%A1%8C%E6%96%87%E6%9C%AC%E6%BA%A2%E5%87%BA-%E5%A4%9A%E8%A1%8C%E6%96%87%E6%9C%AC%E6%BA%A2%E5%87%BA-css/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>总结水平居中和垂直居中</title>
+    <link href="http://yoursite.com/2019/07/08/%E6%80%BB%E7%BB%93%E6%B0%B4%E5%B9%B3%E5%B1%85%E4%B8%AD%E5%92%8C%E5%9E%82%E7%9B%B4%E5%B1%85%E4%B8%AD/"/>
+    <id>http://yoursite.com/2019/07/08/总结水平居中和垂直居中/</id>
+    <published>2019-07-08T08:03:37.000Z</published>
+    <updated>2019-07-27T07:25:02.530Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;本文总结：&lt;br&gt;几种水平居中和垂直居中的方法&lt;br&gt;flex 布局 css3 的 width 新出的属性值 fit-content …&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="css" scheme="http://yoursite.com/categories/css/"/>
+    
+    
+      <category term="flex fit-content transform" scheme="http://yoursite.com/tags/flex-fit-content-transform/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>使用Git + Github Pages + Hexo免费搭建自己的博客（简明教程）</title>
+    <link href="http://yoursite.com/2019/07/07/%E5%A6%82%E4%BD%95%E6%90%AD%E5%BB%BA%E4%B8%80%E4%B8%AA%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2%EF%BC%88hexo-githubpages%EF%BC%89/"/>
+    <id>http://yoursite.com/2019/07/07/如何搭建一个自己的博客（hexo-githubpages）/</id>
+    <published>2019-07-07T13:20:34.000Z</published>
+    <updated>2019-07-27T07:25:38.286Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;本文介绍：&lt;br&gt;使用 Git + Github Pages + Hexo 搭建免费博客&lt;br&gt;部署到 github 上&lt;br&gt;简明的操作步骤&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="搭建教程" scheme="http://yoursite.com/categories/%E6%90%AD%E5%BB%BA%E6%95%99%E7%A8%8B/"/>
+    
+    
+      <category term="GithubPages Hexo Git 个人博客" scheme="http://yoursite.com/tags/GithubPages-Hexo-Git-%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Scss 的常用语法（变量 嵌套规则  混合 父选择器&amp;）</title>
+    <link href="http://yoursite.com/2019/07/06/Scss%E7%9A%84%E5%B8%B8%E7%94%A8%E8%AF%AD%E6%B3%95/"/>
+    <id>http://yoursite.com/2019/07/06/Scss的常用语法/</id>
+    <published>2019-07-06T13:20:34.000Z</published>
+    <updated>2019-07-27T07:25:21.149Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;本文总结：&lt;br&gt;Scss 的常用语法，包括变量 嵌套规则 父选择器&amp;amp; 混合&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="语法" scheme="http://yoursite.com/categories/%E8%AF%AD%E6%B3%95/"/>
+    
+    
+      <category term="Scss语法 变量 嵌套规则 父选择器&amp; 混合" scheme="http://yoursite.com/tags/Scss%E8%AF%AD%E6%B3%95-%E5%8F%98%E9%87%8F-%E5%B5%8C%E5%A5%97%E8%A7%84%E5%88%99-%E7%88%B6%E9%80%89%E6%8B%A9%E5%99%A8-%E6%B7%B7%E5%90%88/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Markdown 常用语法</title>
+    <link href="http://yoursite.com/2019/07/04/Markdown-%E5%B8%B8%E7%94%A8%E8%AF%AD%E6%B3%95/"/>
+    <id>http://yoursite.com/2019/07/04/Markdown-常用语法/</id>
+    <published>2019-07-04T13:20:34.000Z</published>
+    <updated>2019-07-27T07:25:15.572Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;本文总结:&lt;br&gt;Markdown 常用语法，包括 Markdown 标题 列表 区块引用 链接 字体 代码框&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="语法" scheme="http://yoursite.com/categories/%E8%AF%AD%E6%B3%95/"/>
+    
+    
+      <category term="Markdown 标题 列表 区块引用 链接 字体 代码框" scheme="http://yoursite.com/tags/Markdown-%E6%A0%87%E9%A2%98-%E5%88%97%E8%A1%A8-%E5%8C%BA%E5%9D%97%E5%BC%95%E7%94%A8-%E9%93%BE%E6%8E%A5-%E5%AD%97%E4%BD%93-%E4%BB%A3%E7%A0%81%E6%A1%86/"/>
+    
+  </entry>
+  
+</feed>
