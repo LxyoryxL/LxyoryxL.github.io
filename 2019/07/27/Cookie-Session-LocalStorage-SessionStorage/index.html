@@ -606,14 +606,12 @@
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            分析栈的特性：先进后出
+                            如何使用两个栈来实现一个队列，完成队列的 Push 和 Pop 操作呢？
+分析栈的特性：先进后出
 队列的特性： 先进先出
 首先用一个数组来表示两个栈，stack1=[], stack2=[]
 
-    
-
-
-我们要完成 push 操作只需要向 stack1 的栈顶 push 元素，而要实现队列的先进后出，就要借助
+我们要完成 push 操作只需要向 stack
                         
                     </div>
                     <div class="publish-info">
@@ -797,42 +795,47 @@ vue-cli 脚手架关闭 eslint 的步骤：
             }
         });
 
-        
-        /* 修复文章卡片 div 的宽度. */
-        let fixPostCardWidth = function (srcId, targetId) {
-            let srcDiv = $('#' + srcId);
-            if (srcDiv.length === 0) {
-                return;
-            }
+        <
+        %
+        if (theme.toc.enable && theme.toc.showToggleBtn) {
+            %
+            >
+            /* 修复文章卡片 div 的宽度. */
+            let fixPostCardWidth = function (srcId, targetId) {
+                let srcDiv = $('#' + srcId);
+                if (srcDiv.length === 0) {
+                    return;
+                }
 
-            let w = srcDiv.width();
-            if (w >= 450) {
-                w = w + 21;
-            } else if (w >= 350 && w < 450) {
-                w = w + 18;
-            } else if (w >= 300 && w < 350) {
-                w = w + 16;
-            } else {
-                w = w + 14;
-            }
-            $('#' + targetId).width(w);
-        };
+                let w = srcDiv.width();
+                if (w >= 450) {
+                    w = w + 21;
+                } else if (w >= 350 && w < 450) {
+                    w = w + 18;
+                } else if (w >= 300 && w < 350) {
+                    w = w + 16;
+                } else {
+                    w = w + 14;
+                }
+                $('#' + targetId).width(w);
+            };
 
-        // 切换TOC目录展开收缩的相关操作.
-        const expandedClass = 'expanded';
-        let $tocAside = $('#toc-aside');
-        let $mainContent = $('#main-content');
-        $('#floating-toc-btn .btn-floating').click(function () {
-            if ($tocAside.hasClass(expandedClass)) {
-                $tocAside.removeClass(expandedClass).slideUp(500);
-                $mainContent.removeClass('l9');
-            } else {
-                $tocAside.addClass(expandedClass).slideDown(500);
-                $mainContent.addClass('l9');
-            }
-            fixPostCardWidth('artDetail', 'prenext-posts');
-        });
-        
+            // 切换TOC目录展开收缩的相关操作.
+            const expandedClass = 'expanded';
+            let $tocAside = $('#toc-aside');
+            let $mainContent = $('#main-content');
+            $('#floating-toc-btn .btn-floating').click(function () {
+                if ($tocAside.hasClass(expandedClass)) {
+                    $tocAside.removeClass(expandedClass).slideUp(500);
+                    $mainContent.removeClass('l9');
+                } else {
+                    $tocAside.addClass(expandedClass).slideDown(500);
+                    $mainContent.addClass('l9');
+                }
+                fixPostCardWidth('artDetail', 'prenext-posts');
+            }); <
+            %
+        } % >
     });
 </script>
     
