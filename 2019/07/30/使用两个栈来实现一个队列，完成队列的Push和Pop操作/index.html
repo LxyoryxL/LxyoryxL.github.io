@@ -4,8 +4,15 @@
 
 <head><meta name="generator" content="Hexo 3.9.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="Cookie, Session, LocalStorage , SessionStorage, lxy&#39;s">
-    <meta name="description" content="Cookie, Session, LocalStorage , SessionStorage | lxy&#39;s">
+    <meta name="keywords" content="使用两个栈来实现一个队列，完成队列的Push和Pop操作, lxy&#39;s">
+    <meta name="description" content="分析栈的特性：先进后出
+队列的特性： 先进先出
+首先用一个数组来表示两个栈，stack1=[], stack2=[]
+
+    
+
+
+我们要完成 push 操作只需要向 stack1 的栈顶 push 元素，而要实现队列的先进后出，就要借助">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -13,7 +20,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>Cookie, Session, LocalStorage , SessionStorage | lxy&#39;s</title>
+    <title>使用两个栈来实现一个队列，完成队列的Push和Pop操作 | lxy&#39;s</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -242,13 +249,13 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/17.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/18.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        Cookie, Session, LocalStorage , SessionStorage
+                        使用两个栈来实现一个队列，完成队列的Push和Pop操作
                     </div>
                 </div>
             </div>
@@ -359,8 +366,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/cookie-session-LocalStorage-SessionStorage/" target="_blank">
-                                <span class="chip bg-color">cookie session LocalStorage SessionStorage</span>
+                            <a href="/tags/数据结构/" target="_blank">
+                                <span class="chip bg-color">数据结构</span>
                             </a>
                         
                     </div>
@@ -368,13 +375,22 @@
                 </div>
                 <div class="col s5 right-align">
                     
+                    <div class="post-cate">
+                        <i class="fa fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/数据结构/" class="post-category" target="_blank">
+                                数据结构
+                            </a>
+                        
+                    </div>
+                    
                 </div>
             </div>
 
             <div class="post-info">
                 <div class="post-date info-break-policy">
                     <i class="fa fa-calendar-minus-o fa-fw"></i>Publish Date:&nbsp;&nbsp;
-                    2019-07-27
+                    2019-07-30
                 </div>
 
                 
@@ -390,7 +406,38 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                
+                <h2 id="分析"><a href="#分析" class="headerlink" title="分析"></a>分析</h2><p>栈的特性：先进后出<br><img src="https://github.com/LxyoryxL/All-Img/blob/master/lxy17761018921.github.io-img/%E4%BD%BF%E7%94%A8%E4%B8%A4%E4%B8%AA%E6%A0%88%E6%9D%A5%E5%AE%9E%E7%8E%B0%E4%B8%80%E4%B8%AA%E9%98%9F%E5%88%97/%E6%A0%88.png?raw=true" alt></p>
+<p>队列的特性： 先进先出<br><img src="https://raw.githubusercontent.com/LxyoryxL/All-Img/master/lxy17761018921.github.io-img/%E4%BD%BF%E7%94%A8%E4%B8%A4%E4%B8%AA%E6%A0%88%E6%9D%A5%E5%AE%9E%E7%8E%B0%E4%B8%80%E4%B8%AA%E9%98%9F%E5%88%97/%E9%98%9F%E5%88%97.png" alt></p>
+<p>首先用一个数组来表示两个栈，stack1=[], stack2=[]</p>
+<div>
+    <img src="https://raw.githubusercontent.com/LxyoryxL/All-Img/master/lxy17761018921.github.io-img/%E4%BD%BF%E7%94%A8%E4%B8%A4%E4%B8%AA%E6%A0%88%E6%9D%A5%E5%AE%9E%E7%8E%B0%E4%B8%80%E4%B8%AA%E9%98%9F%E5%88%97/st1.png"><img src="https://raw.githubusercontent.com/LxyoryxL/All-Img/master/lxy17761018921.github.io-img/%E4%BD%BF%E7%94%A8%E4%B8%A4%E4%B8%AA%E6%A0%88%E6%9D%A5%E5%AE%9E%E7%8E%B0%E4%B8%80%E4%B8%AA%E9%98%9F%E5%88%97/st2.png">
+</div>
+
+<p>我们要完成 push 操作只需要向 stack1 的栈顶 push 元素，而要实现队列的先进后出，就要借助 stack2,就像汉诺塔一样，从 stack1 栈顶 pop 出来的元素,一个一个 push 进 stack2,这就实现了一个翻转。原来在栈底的‘1’，跑到了栈顶，于是就可以把先进入 stack1 的‘1’，先从 stack2 中 pop 出去。<br>下图是把栈 1 中的元素依次插入到栈 2 中，然后依次弹出栈：<br><img src="https://github.com/LxyoryxL/All-Img/blob/master/lxy17761018921.github.io-img/%E4%BD%BF%E7%94%A8%E4%B8%A4%E4%B8%AA%E6%A0%88%E6%9D%A5%E5%AE%9E%E7%8E%B0%E4%B8%80%E4%B8%AA%E9%98%9F%E5%88%97/5.png?raw=true" alt></p>
+<h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">function</span> <span class="token function">push</span><span class="token punctuation">(</span>node<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  stack1<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span>node<span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">function</span> <span class="token function">pop</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>stack2<span class="token punctuation">.</span>length <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>stack1<span class="token punctuation">.</span>length <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">return</span> <span class="token keyword">null</span>
+    <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+      <span class="token keyword">var</span> len <span class="token operator">=</span> stack1<span class="token punctuation">.</span>length
+      <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">var</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> len<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        stack2<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span>stack1<span class="token punctuation">.</span><span class="token function">pop</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+      <span class="token punctuation">}</span>
+      <span class="token keyword">return</span> stack2<span class="token punctuation">.</span><span class="token function">pop</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> stack2<span class="token punctuation">.</span><span class="token function">pop</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">var</span> stack1 <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+  stack2 <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span></code></pre>
+<h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><p><a href="https://blog.csdn.net/dangzhangjing97/article/details/81477192" target="_blank" rel="noopener">面试题：使用两个栈来实现一个队列</a></p>
+
             </div>
             <hr/>
 
@@ -548,9 +595,9 @@
             <br/>
             <span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text"
                   property="dct:title" rel="dct:type">
-                    《Cookie, Session, LocalStorage , SessionStorage》
+                    《使用两个栈来实现一个队列，完成队列的Push和Pop操作》
                 </span> by
-            <a xmlns:cc="http://creativecommons.org/ns#" href="/2019/07/27/Cookie-Session-LocalStorage-SessionStorage/" property="cc:attributionName"
+            <a xmlns:cc="http://creativecommons.org/ns#" href="/2019/07/30/使用两个栈来实现一个队列，完成队列的Push和Pop操作/" property="cc:attributionName"
                rel="cc:attributionURL">
                 lxy
             </a> is licensed under a
@@ -590,9 +637,10 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fa fa-chevron-left"></i>&nbsp;Previous</div>
+                <i class="fa fa-dot-circle-o"></i>&nbsp;Current
+            </div>
             <div class="card">
                 <a href="/2019/07/30/使用两个栈来实现一个队列，完成队列的Push和Pop操作/">
                     <div class="card-image">
@@ -617,9 +665,9 @@
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="fa fa-clock-o fa-fw icon-date"></i>2019-07-30
-                        </span>
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-07-30
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
@@ -632,6 +680,7 @@
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -650,39 +699,29 @@
                 Next&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2019/07/20/踩坑集合/">
+                <a href="/2019/07/27/Cookie-Session-LocalStorage-SessionStorage/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="踩坑">
+                        <img src="/medias/featureimages/17.jpg" class="responsive-img" alt="Cookie, Session, LocalStorage , SessionStorage">
                         
-                        <span class="card-title">踩坑</span>
+                        <span class="card-title">Cookie, Session, LocalStorage , SessionStorage</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            1.Vue 报错如下
-
-
-提示应该是 开启了 eslint 编码规范检查,于是准备关闭 eslint 来解决
-vue-cli 脚手架关闭 eslint 的步骤：
-
-找到bulid/webpack.base.conf.js文件，config/
+                            
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-07-20
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-07-27
                             </span>
                         <span class="publish-author">
                             
-                            <i class="fa fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/踩坑集合/" class="post-category" target="_blank">
-                                    踩坑集合
-                                </a>
-                            
+                            <i class="fa fa-user fa-fw"></i>
+                            lxy
                             
                         </span>
                     </div>
@@ -690,8 +729,8 @@ vue-cli 脚手架关闭 eslint 的步骤：
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/踩坑-Vue/" target="_blank">
-                        <span class="chip bg-color">踩坑 Vue</span>
+                    <a href="/tags/cookie-session-LocalStorage-SessionStorage/" target="_blank">
+                        <span class="chip bg-color">cookie session LocalStorage SessionStorage</span>
                     </a>
                     
                 </div>
