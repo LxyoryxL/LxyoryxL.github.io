@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-07-30T05:30:35.547Z</updated>
+  <updated>2019-08-02T01:24:46.316Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,58 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>JS中的继承</title>
+    <link href="http://yoursite.com/2019/08/02/Js%E4%B8%AD%E7%9A%84%E7%BB%A7%E6%89%BF/"/>
+    <id>http://yoursite.com/2019/08/02/Js中的继承/</id>
+    <published>2019-08-02T01:04:53.000Z</published>
+    <updated>2019-08-02T01:24:46.316Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;Class-继承&quot;&gt;&lt;a href=&quot;#Class-继承&quot; class=&quot;headerlink&quot; title=&quot;Class 继承&quot;&gt;&lt;/a&gt;Class 继承&lt;/h2&gt;&lt;pre class=&quot; language-javascript&quot;&gt;&lt;code
+        
+      
+    
+    </summary>
+    
+      <category term="ES6" scheme="http://yoursite.com/categories/ES6/"/>
+    
+    
+      <category term="class ES6" scheme="http://yoursite.com/tags/class-ES6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Canvas 的使用</title>
+    <link href="http://yoursite.com/2019/08/01/Canvas%E7%9A%84%E4%BD%BF%E7%94%A8/"/>
+    <id>http://yoursite.com/2019/08/01/Canvas的使用/</id>
+    <published>2019-08-01T08:04:53.000Z</published>
+    <updated>2019-08-02T01:14:26.687Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;&lt;code&gt;&amp;lt;canvas&amp;gt;&amp;lt;/canvas&amp;gt;&lt;/code&gt; 是 H5 新增的标签，主要用于绘制图像，但它本身不具有绘制能力，简单来说 canvas 通过 js 来绘制 2D 图形。&lt;br&gt;canvas
+        
+      
+    
+    </summary>
+    
+      <category term="Html5" scheme="http://yoursite.com/categories/Html5/"/>
+    
+    
+      <category term="Canvas H5" scheme="http://yoursite.com/tags/Canvas-H5/"/>
+    
+  </entry>
   
   <entry>
     <title>使用两个栈来实现一个队列，完成队列的Push和Pop操作</title>
@@ -207,7 +259,7 @@
     <link href="http://yoursite.com/2019/07/06/%E9%9D%A2%E8%AF%95/"/>
     <id>http://yoursite.com/2019/07/06/面试/</id>
     <published>2019-07-06T13:20:34.000Z</published>
-    <updated>2019-07-31T01:43:24.168Z</updated>
+    <updated>2019-08-02T01:25:33.421Z</updated>
     
     <summary type="html">
     

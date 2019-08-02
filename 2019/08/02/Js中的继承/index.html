@@ -4,10 +4,17 @@
 
 <head><meta name="generator" content="Hexo 3.9.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="面试集锦, lxy&#39;s">
-    <meta name="description" content="以下是我整理的面试题，按技能点区分
-HTML
-（必考） 你是如何理解 HTML 语义化的？概念：用有意义的标签来编码历史：tabel 布局—-div+css 布局—-h1 p article 专业的语义化标签好处：便于阅读维护 利于 SEO">
+    <meta name="keywords" content="JS中的继承, lxy&#39;s">
+    <meta name="description" content="Class 继承class Student {
+  constructor(name) {
+    this.name = name
+  }
+
+  hello() {
+    alert(&#34;Hello&#34;)
+  }
+}
+写一个 class 继">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -15,7 +22,7 @@ HTML
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>面试集锦 | lxy&#39;s</title>
+    <title>JS中的继承 | lxy&#39;s</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -244,13 +251,13 @@ HTML
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/11.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/8.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        面试集锦
+                        JS中的继承
                     </div>
                 </div>
             </div>
@@ -361,8 +368,8 @@ HTML
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/面试/" target="_blank">
-                                <span class="chip bg-color">面试</span>
+                            <a href="/tags/class-ES6/" target="_blank">
+                                <span class="chip bg-color">class ES6</span>
                             </a>
                         
                     </div>
@@ -373,8 +380,8 @@ HTML
                     <div class="post-cate">
                         <i class="fa fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/面试/" class="post-category" target="_blank">
-                                面试
+                            <a href="/categories/ES6/" class="post-category" target="_blank">
+                                ES6
                             </a>
                         
                     </div>
@@ -385,7 +392,7 @@ HTML
             <div class="post-info">
                 <div class="post-date info-break-policy">
                     <i class="fa fa-calendar-minus-o fa-fw"></i>Publish Date:&nbsp;&nbsp;
-                    2019-07-06
+                    2019-08-02
                 </div>
 
                 
@@ -401,84 +408,48 @@ HTML
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>以下是我整理的面试题，按技能点区分</p>
-<h4 id="HTML"><a href="#HTML" class="headerlink" title="HTML"></a>HTML</h4><ol>
-<li><p>（必考） 你是如何理解 HTML 语义化的？<br>概念：用有意义的标签来编码<br>历史：tabel 布局—-div+css 布局—-h1 p article 专业的语义化标签<br>好处：便于阅读维护 利于 SEO 利于其他设备的解析（盲人阅读器）</p>
-</li>
-<li><p>meta viewport 是做什么用的，怎么写？<br>做移动端适配用的，使用它来自适应设备屏幕宽度</p>
-<mata name="viewport" content="width=device-width,user-scalabel=no">
-width=device-width 宽度设置为理想视口宽度
-user-scalabel=no 不允许用户去放大缩小
-</mata></li>
-<li><p>你用过哪些 HTML 5 新增的标签？<br><code>&lt;audio&gt;&lt;/audio&gt;</code> 音频<br><code>&lt;video&gt;&lt;/video&gt;</code> 视频<br><code>&lt;canvas&gt;&lt;/canvas&gt;</code><br><code>&lt;header&gt;&lt;/header&gt;</code><br><code>&lt;footer&gt;&lt;/footer&gt;</code><br><code>&lt;nav&gt;&lt;/nav&gt;</code><br><code>&lt;section&gt;&lt;/section&gt;</code> 定义文章中的区段<br><code>&lt;article&gt;&lt;/article&gt;</code> 论坛，评论等<br><code>&lt;main&gt;&lt;/main&gt;</code> 定义文档主要内容<br><code>&lt;aside&gt;&lt;/aside&gt;</code> 内容可以用作文章的侧边栏</p>
-</li>
-<li><p>canvas 元素是干什么的？简单使用？<br>Canvas 元素用于在网页上绘制图形<br>fillRect()<br>clearRect()<br>scale() 缩放当前绘图至更大或更小<br>rotate() 旋转当前绘图<br>translate() 重新映射画布上的 (0,0) 位置<br>transform() 替换绘图的当前转换矩阵<br>setTransform()<br>首先添加一个 canvas 元素：<br>&lt;canvas id=”canvas&gt;<br>然后在 js 中获取这个元素：<br>var canvas=document.getElementById(‘canvas’)<br>var ctx=getContext(‘2d’)<br>【常用 API】 1. fillStyle 设置图形填充颜色<br>ctx.fillStyle</p>
-</li>
-<li><p>audio 元素是干什么的？<br>插入音频<br>autoplay<br>controls 显示控件<br>loop</p>
-</li>
-<li><p>video 元素的属性？<br>插入视频<br>muted 规定视频的音频输出应该被静音<br>autoplay<br>loop</p>
-</li>
-<li><p>css3 里的动画是怎样写的？<br>展现动画效果<br>属性有：animation-name animation-duration</p>
-<pre class=" language-css"><code class="language-css"><span class="token selector"><span class="token class">.demo</span></span><span class="token punctuation">{</span>
-<span class="token property">width</span><span class="token punctuation">:</span><span class="token number">100</span>px
-<span class="token property">animation</span><span class="token punctuation">:</span> name <span class="token number">2</span> infinite
-<span class="token punctuation">}</span>
+                <h2 id="Class-继承"><a href="#Class-继承" class="headerlink" title="Class 继承"></a>Class 继承</h2><pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">class</span> <span class="token class-name">Student</span> <span class="token punctuation">{</span>
+  <span class="token function">constructor</span><span class="token punctuation">(</span>name<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>name <span class="token operator">=</span> name
+  <span class="token punctuation">}</span>
 
-<span class="token atrule"><span class="token rule">@keyframe</span> name</span><span class="token punctuation">{</span>
-<span class="token selector">from</span><span class="token punctuation">{</span><span class="token property">width</span><span class="token punctuation">:</span><span class="token number">100</span>px<span class="token punctuation">}</span>
-<span class="token selector">to</span><span class="token punctuation">{</span><span class="token property">width</span><span class="token punctuation">:</span><span class="token number">200</span>px<span class="token punctuation">}</span>
-<span class="token punctuation">}</span></code></pre>
-</li>
-<li><p>css3 里的过渡是怎样写的？<br>属性有:transition-property transition-duration</p>
-<pre class=" language-css"><code class="language-css"><span class="token selector"><span class="token class">.demo</span> </span><span class="token punctuation">{</span>
-  <span class="token property">width</span><span class="token punctuation">:</span> <span class="token number">200</span>px<span class="token punctuation">;</span>
-  <span class="token property">transition</span><span class="token punctuation">:</span> width <span class="token number">3</span>s<span class="token punctuation">;</span>
-<span class="token punctuation">}</span>
-<span class="token selector"><span class="token class">.demo</span><span class="token pseudo-class">:hover</span> </span><span class="token punctuation">{</span>
-  <span class="token property">width</span><span class="token punctuation">:</span> <span class="token number">300</span>px<span class="token punctuation">;</span>
-<span class="token punctuation">}</span></code></pre>
-</li>
-<li><p>css3 中的媒体查询？<br>根据不同的媒体类型来定义不同的样式</p>
-<pre class=" language-css"><code class="language-css"><span class="token atrule"><span class="token rule">@media</span> screen and <span class="token punctuation">(</span><span class="token property">max-width</span><span class="token punctuation">:</span> 300px<span class="token punctuation">)</span></span> <span class="token punctuation">{</span>
-  <span class="token selector">body </span><span class="token punctuation">{</span>
-    <span class="token property">background</span><span class="token punctuation">:</span> red<span class="token punctuation">;</span>
+  <span class="token function">hello</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token function">alert</span><span class="token punctuation">(</span><span class="token string">"Hello"</span><span class="token punctuation">)</span>
   <span class="token punctuation">}</span>
 <span class="token punctuation">}</span></code></pre>
-</li>
-<li><p>vue-router 是什么？<br>vue-router 就是路由，地址栏输什么，就显示什么页面，就是页面跳转。它还可以实现页面间的传参</p>
-</li>
-<li><p>vuex 是什么？<br>状态管理工具，就是集中管理所有组件需要共用的属性</p>
-</li>
-<li><p>axios 是什么，有哪些常用方法？<br>是一个基于 Promise 的一个库，发送请求时用<br>方法：<br>axios.get<br>axios.post<br>axios.put<br>axios.delete</p>
-</li>
-<li><p>git 常用命令？代码仓库协同工作流程？<br>git init 初始化仓库，变成我们可以管理的仓库<br>git add 文件添加到暂存区<br>git commit -m ‘说明’ 暂存区文件提交到分支（默认 master）<br>git status 查看工作区和暂存区状态<br>git push 提交到远程仓库<br>git clone 克隆远程仓库<br>git checkout 切换分支</p>
-<p>工作流程：<br>fork 别人的仓库，相当于建立了一个分支<br>然后开发者 B 在 clone 自己的 Github 上的仓库到本地<br>fetch 从远程仓库中抓取本地仓库中的没有的数据<br>在 Github 上 Pull request 一下，就是给主开发者 A 发送一个请求，请求合并项目<br>merge 合并一下分支</p>
-</li>
-<li><p>axios 的配置，axios 跨域的一些问题如何解决？</p>
-</li>
-</ol>
-<h4 id="css"><a href="#css" class="headerlink" title="css"></a>css</h4><ol>
-<li><p>两种盒模型<br>可用 css3 的 box-sizing 属性切换盒子模型:box-sizing:content-box/border-box<br>标准盒子模型：width=content<br>IE 盒子模型: width=content+padding+border</p>
-</li>
-<li><p>CSS 选择器优先级<br>!important &gt; 行内样式&gt;ID 选择器 &gt; 类选择器=伪类=属性 &gt; 标签 &gt; 通配符 &gt; 继承 &gt; 浏览器默认属性</p>
-</li>
-</ol>
-<h4 id="js"><a href="#js" class="headerlink" title="js"></a>js</h4><ol>
-<li><p>写一个 class，写一个构造函数 ，class 继承 的好处？</p>
-</li>
-<li><p>ES6 新特性</p>
-</li>
-<li><p>let 和 var 区别，具体用 var 会出现什么错误</p>
-</li>
-<li><p>手写一个 Promise</p>
-</li>
-<li><p>webpack 配置</p>
-</li>
-</ol>
-<h4 id="Dom"><a href="#Dom" class="headerlink" title="Dom"></a>Dom</h4><h4 id="Http"><a href="#Http" class="headerlink" title="Http"></a>Http</h4><ol>
-<li>从输入 url 到页面加载完成经历了那些过程？</li>
-</ol>
-<h4 id="Vue"><a href="#Vue" class="headerlink" title="Vue"></a>Vue</h4><pre><code></code></pre>
+<p>写一个 class 继承一个 class:</p>
+<pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">class</span> <span class="token class-name">My</span> <span class="token keyword">extends</span> <span class="token class-name">Student</span> <span class="token punctuation">{</span>
+  <span class="token function">constructor</span><span class="token punctuation">(</span>name<span class="token punctuation">,</span> grade<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">super</span><span class="token punctuation">(</span>name<span class="token punctuation">)</span> <span class="token comment" spellcheck="true">//用 super 继承父类的构造方法</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>grade <span class="token operator">=</span> grade
+  <span class="token punctuation">}</span>
+
+  <span class="token function">hello</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token function">alert</span><span class="token punctuation">(</span><span class="token string">"hello"</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span></code></pre>
+<h2 id="原型继承"><a href="#原型继承" class="headerlink" title="原型继承"></a>原型继承</h2><p>写一个 构造函数：</p>
+<pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">function</span> <span class="token function">Student</span><span class="token punctuation">(</span>name<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">this</span><span class="token punctuation">.</span>name <span class="token operator">=</span> name
+<span class="token punctuation">}</span>
+Student<span class="token punctuation">.</span>prototype<span class="token punctuation">.</span>hello <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token function">alert</span><span class="token punctuation">(</span><span class="token string">"hello"</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span></code></pre>
+<p>写一个 PrimaryStudent 方法, 它可以调用 Student 的方法，但是这并没有实现真正的继承，必须想办法把原型链修改为：<br><code>new PrimaryStudent() ----&gt; PrimaryStudent.prototype ----&gt; Student.prototype ----&gt; Object.prototype ----&gt; null</code><br>下面再封装一个 inherits 方法实现继承:</p>
+<pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">function</span> <span class="token function">PrimaryStudent</span><span class="token punctuation">(</span>prop<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  Student<span class="token punctuation">.</span><span class="token function">call</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">,</span> prop<span class="token punctuation">)</span>
+  <span class="token keyword">this</span><span class="token punctuation">.</span>grad <span class="token operator">=</span> prop<span class="token punctuation">.</span>grad
+<span class="token punctuation">}</span>
+<span class="token keyword">function</span> <span class="token function">inherits</span><span class="token punctuation">(</span>Child<span class="token punctuation">,</span> Parent<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">var</span> F <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+  F<span class="token punctuation">.</span>prototype <span class="token operator">=</span> Parents<span class="token punctuation">.</span>prototype
+  Child<span class="token punctuation">.</span>prototype <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">F</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  Child<span class="token punctuation">.</span>prototype<span class="token punctuation">.</span>constractor <span class="token operator">=</span> Child
+<span class="token punctuation">}</span></code></pre>
+<p>用 Class 继承 相比原来的 原型继承 极大的简化了代码</p>
+<h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><p><a href="https://www.liaoxuefeng.com/wiki/1022910821149312/1072866346339712
+" target="_blank" rel="noopener">廖雪峰的 class 继承 原型继承</a></p>
+
             </div>
             <hr/>
 
@@ -636,9 +607,9 @@ user-scalabel=no 不允许用户去放大缩小
             <br/>
             <span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text"
                   property="dct:title" rel="dct:type">
-                    《面试集锦》
+                    《JS中的继承》
                 </span> by
-            <a xmlns:cc="http://creativecommons.org/ns#" href="/2019/07/06/面试/" property="cc:attributionName"
+            <a xmlns:cc="http://creativecommons.org/ns#" href="/2019/08/02/Js中的继承/" property="cc:attributionName"
                rel="cc:attributionURL">
                 lxy
             </a> is licensed under a
@@ -678,54 +649,57 @@ user-scalabel=no 不允许用户去放大缩小
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fa fa-chevron-left"></i>&nbsp;Previous</div>
+                <i class="fa fa-dot-circle-o"></i>&nbsp;Current
+            </div>
             <div class="card">
-                <a href="/2019/07/06/Scss的常用语法/">
+                <a href="/2019/08/02/Js中的继承/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/23.jpg" class="responsive-img" alt="Scss 的常用语法（变量 嵌套规则  混合 父选择器&）">
+                        <img src="/medias/featureimages/8.jpg" class="responsive-img" alt="JS中的继承">
                         
-                        <span class="card-title">Scss 的常用语法（变量 嵌套规则  混合 父选择器&）</span>
+                        <span class="card-title">JS中的继承</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            本文总结：Scss 的常用语法，包括变量 嵌套规则 父选择器&amp; 混合
+                            Class 继承class Student {
+  constructor(name) {
+    this.name = name
+  }
 
-
-一. 变量声明$write=23;
-二. 嵌套规则例子：
-#content article h1 {
-  color: #333;
+  hello() {
+    alert("Hello")
+  }
 }
-#content ar
+写一个 class 继
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="fa fa-clock-o fa-fw icon-date"></i>2019-07-06
-                        </span>
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-08-02
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/语法/" class="post-category" target="_blank">
-                                    语法
+                            <a href="/categories/ES6/" class="post-category" target="_blank">
+                                    ES6
                                 </a>
                             
                             
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/Scss语法-变量-嵌套规则-父选择器-混合/" target="_blank">
-                        <span class="chip bg-color">Scss语法 变量 嵌套规则 父选择器&amp; 混合</span>
+                    <a href="/tags/class-ES6/" target="_blank">
+                        <span class="chip bg-color">class ES6</span>
                     </a>
                     
                 </div>
@@ -739,39 +713,31 @@ user-scalabel=no 不允许用户去放大缩小
                 Next&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2019/07/04/Markdown-常用语法/">
+                <a href="/2019/08/01/Canvas的使用/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/23.jpg" class="responsive-img" alt="Markdown 常用语法">
+                        <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="Canvas 的使用">
                         
-                        <span class="card-title">Markdown 常用语法</span>
+                        <span class="card-title">Canvas 的使用</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            本文总结:Markdown 常用语法，包括 Markdown 标题 列表 区块引用 链接 字体 代码框
-
-
-一. 标题写法# 一级标题
-## 二级标题
-### 三级标题
-#### 四级标题
-一级标题二级标题三级标题四级标题
-注意，#号后面有
+                            &lt;canvas&gt;&lt;/canvas&gt; 是 H5 新增的标签，主要用于绘制图像，但它本身不具有绘制能力，简单来说 canvas 通过 js 来绘制 2D 图形。canvas 可以看成一块画布，使用getContext()
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-07-04
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-08-01
                             </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/语法/" class="post-category" target="_blank">
-                                    语法
+                            <a href="/categories/Html5/" class="post-category" target="_blank">
+                                    Html5
                                 </a>
                             
                             
@@ -781,8 +747,8 @@ user-scalabel=no 不允许用户去放大缩小
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/Markdown-标题-列表-区块引用-链接-字体-代码框/" target="_blank">
-                        <span class="chip bg-color">Markdown 标题 列表 区块引用 链接 字体 代码框</span>
+                    <a href="/tags/Canvas-H5/" target="_blank">
+                        <span class="chip bg-color">Canvas H5</span>
                     </a>
                     
                 </div>
