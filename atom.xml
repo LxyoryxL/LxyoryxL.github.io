@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-08-02T01:24:46.316Z</updated>
+  <updated>2019-08-06T18:39:50.859Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,11 +17,37 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>ES6 新特性</title>
+    <link href="http://yoursite.com/2019/08/03/ES6%E7%9A%84%E6%96%B0%E7%89%B9%E6%80%A7/"/>
+    <id>http://yoursite.com/2019/08/03/ES6的新特性/</id>
+    <published>2019-08-03T01:04:53.000Z</published>
+    <updated>2019-08-06T18:39:50.859Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;let-var-const&quot;&gt;&lt;a href=&quot;#let-var-const&quot; class=&quot;headerlink&quot; title=&quot;let var const&quot;&gt;&lt;/a&gt;let var const&lt;/h2&gt;&lt;p&gt;对于 let var const
+        
+      
+    
+    </summary>
+    
+      <category term="ES6" scheme="http://yoursite.com/categories/ES6/"/>
+    
+    
+      <category term="ES6" scheme="http://yoursite.com/tags/ES6/"/>
+    
+  </entry>
+  
+  <entry>
     <title>JS中的继承</title>
     <link href="http://yoursite.com/2019/08/02/Js%E4%B8%AD%E7%9A%84%E7%BB%A7%E6%89%BF/"/>
     <id>http://yoursite.com/2019/08/02/Js中的继承/</id>
     <published>2019-08-02T01:04:53.000Z</published>
-    <updated>2019-08-02T01:24:46.316Z</updated>
+    <updated>2019-08-06T07:14:03.044Z</updated>
     
     <summary type="html">
     
@@ -47,7 +73,7 @@
     <link href="http://yoursite.com/2019/08/01/Canvas%E7%9A%84%E4%BD%BF%E7%94%A8/"/>
     <id>http://yoursite.com/2019/08/01/Canvas的使用/</id>
     <published>2019-08-01T08:04:53.000Z</published>
-    <updated>2019-08-02T01:14:26.687Z</updated>
+    <updated>2019-08-02T01:38:12.482Z</updated>
     
     <summary type="html">
     
@@ -55,7 +81,7 @@
       
         
         
-          &lt;p&gt;&lt;code&gt;&amp;lt;canvas&amp;gt;&amp;lt;/canvas&amp;gt;&lt;/code&gt; 是 H5 新增的标签，主要用于绘制图像，但它本身不具有绘制能力，简单来说 canvas 通过 js 来绘制 2D 图形。&lt;br&gt;canvas
+          &lt;p&gt;Canvas 元素用于在网页上绘制图形….&lt;br&gt;&lt;code&gt;&amp;lt;canvas&amp;gt;&amp;lt;/canvas&amp;gt;&lt;/code&gt; 是 H5 新增的标签，主要用于绘制图像，但它本身不具有绘制能力，简单来说 canvas 通过 js 来绘制 2D
         
       
     
@@ -100,7 +126,7 @@
     <link href="http://yoursite.com/2019/07/20/%E8%B8%A9%E5%9D%91%E9%9B%86%E5%90%88/"/>
     <id>http://yoursite.com/2019/07/20/踩坑集合/</id>
     <published>2019-07-20T08:04:53.000Z</published>
-    <updated>2019-07-27T07:24:23.618Z</updated>
+    <updated>2019-08-04T03:57:35.312Z</updated>
     
     <summary type="html">
     
@@ -108,7 +134,7 @@
       
         
         
-          &lt;p&gt;&lt;strong&gt;1.Vue 报错如下&lt;/strong&gt;&lt;/p&gt;
+          &lt;p&gt;&lt;strong&gt;1. Vue 报错如下&lt;/strong&gt;&lt;/p&gt;
 &lt;img
         
       
@@ -123,11 +149,29 @@
   </entry>
   
   <entry>
+    <title>常见的Http状态码</title>
+    <link href="http://yoursite.com/2019/07/20/%E5%B8%B8%E8%A7%81%E7%9A%84Http%E7%8A%B6%E6%80%81%E7%A0%81/"/>
+    <id>http://yoursite.com/2019/07/20/常见的Http状态码/</id>
+    <published>2019-07-20T08:04:53.000Z</published>
+    <updated>2019-08-02T09:33:31.966Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+      <category term="计算机网络" scheme="http://yoursite.com/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
+    
+    
+      <category term="Http" scheme="http://yoursite.com/tags/Http/"/>
+    
+  </entry>
+  
+  <entry>
     <title>移动端的适配如何做？</title>
     <link href="http://yoursite.com/2019/07/19/%E7%A7%BB%E5%8A%A8%E7%AB%AF%E7%9A%84%E9%80%82%E9%85%8D/"/>
     <id>http://yoursite.com/2019/07/19/移动端的适配/</id>
     <published>2019-07-19T12:04:53.000Z</published>
-    <updated>2019-07-27T07:24:55.000Z</updated>
+    <updated>2019-08-02T09:33:29.483Z</updated>
     
     <summary type="html">
     
@@ -135,7 +179,9 @@
       
         
         
-          &lt;h2 id=&quot;一-介绍&quot;&gt;&lt;a href=&quot;#一-介绍&quot; class=&quot;headerlink&quot; title=&quot;一.介绍&quot;&gt;&lt;/a&gt;一.介绍&lt;/h2&gt;&lt;p&gt;由于在不同尺寸的手机下，如果使用 px
+          &lt;h2 id=&quot;一-介绍&quot;&gt;&lt;a href=&quot;#一-介绍&quot; class=&quot;headerlink&quot; title=&quot;一.介绍&quot;&gt;&lt;/a&gt;一.介绍&lt;/h2&gt;&lt;p&gt;要做移动端的适配主要是解决两个问题：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;视口大小&lt;br&gt;在不同尺寸的手机下，如果使用 px
         
       
     
@@ -175,6 +221,58 @@
   </entry>
   
   <entry>
+    <title>git 配置和使用</title>
+    <link href="http://yoursite.com/2019/07/16/git-%E9%85%8D%E7%BD%AE%E5%92%8C%E8%AF%AD%E6%B3%95/"/>
+    <id>http://yoursite.com/2019/07/16/git-配置和语法/</id>
+    <published>2019-07-16T11:04:53.000Z</published>
+    <updated>2019-08-08T05:45:05.383Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;git-的-6-行配置&quot;&gt;&lt;a href=&quot;#git-的-6-行配置&quot; class=&quot;headerlink&quot; title=&quot;git 的 6 行配置&quot;&gt;&lt;/a&gt;git 的 6 行配置&lt;/h2&gt;&lt;pre&gt;&lt;code&gt;git config --global
+        
+      
+    
+    </summary>
+    
+      <category term="工具" scheme="http://yoursite.com/categories/%E5%B7%A5%E5%85%B7/"/>
+    
+    
+      <category term="git" scheme="http://yoursite.com/tags/git/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>前端软件安装&amp;相关命令行</title>
+    <link href="http://yoursite.com/2019/07/16/%E5%89%8D%E7%AB%AF%E8%BD%AF%E4%BB%B6%E5%AE%89%E8%A3%85-%E7%9B%B8%E5%85%B3%E5%91%BD%E4%BB%A4%E8%A1%8C/"/>
+    <id>http://yoursite.com/2019/07/16/前端软件安装-相关命令行/</id>
+    <published>2019-07-16T11:04:53.000Z</published>
+    <updated>2019-08-08T05:55:39.206Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;软件安装配置相关笔记&quot;&gt;&lt;a href=&quot;#软件安装配置相关笔记&quot; class=&quot;headerlink&quot; title=&quot;软件安装配置相关笔记&quot;&gt;&lt;/a&gt;软件安装配置相关笔记&lt;/h2&gt;&lt;p&gt;mac 多一个 cmd 键&lt;br&gt;学习盲打工作效率高&lt;br&gt;卸载
+        
+      
+    
+    </summary>
+    
+      <category term="命令行" scheme="http://yoursite.com/categories/%E5%91%BD%E4%BB%A4%E8%A1%8C/"/>
+    
+    
+      <category term="软件安装" scheme="http://yoursite.com/tags/%E8%BD%AF%E4%BB%B6%E5%AE%89%E8%A3%85/"/>
+    
+  </entry>
+  
+  <entry>
     <title>解决单行或者多行文本溢出的方法总结</title>
     <link href="http://yoursite.com/2019/07/08/%E8%A7%A3%E5%86%B3%E5%8D%95%E8%A1%8C%E6%88%96%E8%80%85%E5%A4%9A%E8%A1%8C%E6%96%87%E6%9C%AC%E6%BA%A2%E5%87%BA%E7%9A%84%E6%96%B9%E6%B3%95%E6%80%BB%E7%BB%93/"/>
     <id>http://yoursite.com/2019/07/08/解决单行或者多行文本溢出的方法总结/</id>
@@ -199,7 +297,7 @@
     <link href="http://yoursite.com/2019/07/08/%E6%80%BB%E7%BB%93%E6%B0%B4%E5%B9%B3%E5%B1%85%E4%B8%AD%E5%92%8C%E5%9E%82%E7%9B%B4%E5%B1%85%E4%B8%AD/"/>
     <id>http://yoursite.com/2019/07/08/总结水平居中和垂直居中/</id>
     <published>2019-07-08T08:03:37.000Z</published>
-    <updated>2019-07-27T07:25:02.530Z</updated>
+    <updated>2019-08-02T08:38:44.182Z</updated>
     
     <summary type="html">
     
@@ -239,11 +337,14 @@
     <link href="http://yoursite.com/2019/07/06/Scss%E7%9A%84%E5%B8%B8%E7%94%A8%E8%AF%AD%E6%B3%95/"/>
     <id>http://yoursite.com/2019/07/06/Scss的常用语法/</id>
     <published>2019-07-06T13:20:34.000Z</published>
-    <updated>2019-07-27T07:25:21.149Z</updated>
+    <updated>2019-08-08T05:50:54.143Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;本文总结：&lt;br&gt;Scss 的常用语法，包括变量 嵌套规则 父选择器&amp;amp; 混合&lt;/p&gt;
+      &lt;p&gt;sass 基本不含括号，以缩进代表意义。&lt;br&gt;scss 是 sass 的加强版，相比于 sass 加上了括号，分号，冒号，使得前端工程师能看懂&lt;/p&gt;
+&lt;p&gt;sass 的官方解释器是开源的且用 Ruby 语言写成的，下面的图是语言的发展过程：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://github.com/LxyoryxL/All-Img/blob/master/lxy17761018921.github.io-img/Scss%E7%9A%84%E5%B8%B8%E7%94%A8%E8%AF%AD%E6%B3%95/scss%E5%8E%86%E5%8F%B2.png?raw=true&quot; alt=&quot;scss历史&quot;&gt;&lt;/p&gt;
+&lt;p&gt;本文总结：&lt;br&gt;Scss 的常用语法，包括变量 嵌套规则 父选择器&amp;amp; 混合&lt;/p&gt;
     
     </summary>
     
@@ -259,7 +360,7 @@
     <link href="http://yoursite.com/2019/07/06/%E9%9D%A2%E8%AF%95/"/>
     <id>http://yoursite.com/2019/07/06/面试/</id>
     <published>2019-07-06T13:20:34.000Z</published>
-    <updated>2019-08-02T01:25:33.421Z</updated>
+    <updated>2019-08-03T01:26:36.313Z</updated>
     
     <summary type="html">
     

@@ -5,13 +5,14 @@
 <head><meta name="generator" content="Hexo 3.9.0">
     <meta charset="utf-8">
     <meta name="keywords" content="踩坑, lxy&#39;s">
-    <meta name="description" content="1.Vue 报错如下
+    <meta name="description" content="1. Vue 报错如下
 
 
+解决办法
 提示应该是 开启了 eslint 编码规范检查,于是准备关闭 eslint 来解决
 vue-cli 脚手架关闭 eslint 的步骤：
 
-找到bulid/webpack.base.conf.js文件，config/">
+找到bulid/webpack.base.conf.js文件，c">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -405,9 +406,10 @@ vue-cli 脚手架关闭 eslint 的步骤：
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p><strong>1.Vue 报错如下</strong></p>
+                <p><strong>1. Vue 报错如下</strong></p>
 <img src="https://github.com/LxyoryxL/All-Img/blob/master/lxy17761018921.github.io-img/%E8%B8%A9%E5%9D%91/1.png?raw=true">
 
+<p><strong>解决办法</strong></p>
 <p>提示应该是 开启了 eslint 编码规范检查,于是准备关闭 eslint 来解决</p>
 <p><strong>vue-cli 脚手架关闭 eslint 的步骤：</strong></p>
 <ol>
@@ -421,9 +423,29 @@ vue-cli 脚手架关闭 eslint 的步骤：
 </li>
 <li><p>config/index.js 里配置 useEslint: false</p>
 <img src="https://github.com/LxyoryxL/All-Img/blob/master/lxy17761018921.github.io-img/%E8%B8%A9%E5%9D%91/1-3.png?raw=true">
+
 </li>
 </ul>
-
+<p><strong>2. Vue 报错如下</strong></p>
+<blockquote>
+<p>You are using the runtime-only build of Vue where the template compiler is not available. Either pre</p>
+</blockquote>
+<p>vue 有两种形式的代码 compiler（模板）模式和 runtime 模式（运行时），vue 模块的 package.json 的 main 字段默认为 runtime 模式,这是 vue 升级到 2.0 之后就有的特点</p>
+<p>而我的 main.js 文件中，初始化 vue 却是这么写的，这种形式为 compiler 模式的，所以就会出现上面的错误信息</p>
+<pre><code>// compiler
+new Vue({
+  el: &#39;#app&#39;,
+  router: router,
+  store: store,
+  template: &#39;&lt;App/&gt;&#39;,
+  components: { App }
+})</code></pre><p><strong>解决办法</strong><br>把 main.js 中的初始化 vue 处改为 runtime 模式：</p>
+<pre><code>//runtime
+new Vue({
+  router,
+  store,
+  render: h =&gt; h(App)
+}).$mount(&quot;#app&quot;)</code></pre>
             </div>
             <hr/>
 
@@ -681,32 +703,31 @@ vue-cli 脚手架关闭 eslint 的步骤：
                 Next&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2019/07/19/移动端的适配/">
+                <a href="/2019/07/20/常见的Http状态码/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/13.jpg" class="responsive-img" alt="移动端的适配如何做？">
+                        <img src="/medias/featureimages/21.jpg" class="responsive-img" alt="常见的Http状态码">
                         
-                        <span class="card-title">移动端的适配如何做？</span>
+                        <span class="card-title">常见的Http状态码</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            一.介绍由于在不同尺寸的手机下，如果使用 px 来设置内容的样式，会出现文字过小，或者内容过大无法全部显示在视口等不适配问题。所以做手机端的适配就显得尤为重要。下面介绍几种移动端适配的方法：
-二. viewportviewport 视口（设
+                            
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-07-19
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-07-20
                             </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/移动端适配/" class="post-category" target="_blank">
-                                    移动端适配
+                            <a href="/categories/计算机网络/" class="post-category" target="_blank">
+                                    计算机网络
                                 </a>
                             
                             
@@ -716,8 +737,8 @@ vue-cli 脚手架关闭 eslint 的步骤：
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/viewport视口-rem/" target="_blank">
-                        <span class="chip bg-color">viewport视口 rem</span>
+                    <a href="/tags/Http/" target="_blank">
+                        <span class="chip bg-color">Http</span>
                     </a>
                     
                 </div>

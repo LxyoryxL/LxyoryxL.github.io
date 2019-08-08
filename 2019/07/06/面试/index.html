@@ -405,20 +405,72 @@ HTML
 <h4 id="HTML"><a href="#HTML" class="headerlink" title="HTML"></a>HTML</h4><ol>
 <li><p>（必考） 你是如何理解 HTML 语义化的？<br>概念：用有意义的标签来编码<br>历史：tabel 布局—-div+css 布局—-h1 p article 专业的语义化标签<br>好处：便于阅读维护 利于 SEO 利于其他设备的解析（盲人阅读器）</p>
 </li>
+<li><p><code>&lt;strong&gt;</code> 和 <code>&lt;b&gt;</code> 和 <code>&lt;em&gt;</code> 和 <code>&lt;i&gt;</code> 的区别？<br><code>&lt;strong&gt;</code> <code>&lt;b&gt;</code> 都是字体加粗，但是前者表示强调重点内容，后者没有实际含义<br><code>&lt;em&gt;</code> <code>&lt;i&gt;</code> 都是字体变斜体，但是前者表示强调，引用等，后者没有实际含义<br>我们尽量使用<code>&lt;strong&gt;</code> <code>&lt;em&gt;</code> 这两个有语义化的标签</p>
+</li>
+<li><p>块级元素和行内元素区别？<br>块级元素：</p>
+<ol>
+<li>独占一行 2. 可设置宽高</li>
+</ol>
+<p>行内元素：</p>
+<ol>
+<li>不独占一行 2. 宽高由内容物决定</li>
+</ol>
+</li>
+<li><p>doctype 是什么？它的作用？<br>声明文档类型，作用是：告诉浏览器以何种文档类型规范来解析文档</p>
+</li>
 <li><p>meta viewport 是做什么用的，怎么写？<br>做移动端适配用的，使用它来自适应设备屏幕宽度</p>
-<mata name="viewport" content="width=device-width,user-scalabel=no">
-width=device-width 宽度设置为理想视口宽度
-user-scalabel=no 不允许用户去放大缩小
-</mata></li>
-<li><p>你用过哪些 HTML 5 新增的标签？<br><code>&lt;audio&gt;&lt;/audio&gt;</code> 音频<br><code>&lt;video&gt;&lt;/video&gt;</code> 视频<br><code>&lt;canvas&gt;&lt;/canvas&gt;</code><br><code>&lt;header&gt;&lt;/header&gt;</code><br><code>&lt;footer&gt;&lt;/footer&gt;</code><br><code>&lt;nav&gt;&lt;/nav&gt;</code><br><code>&lt;section&gt;&lt;/section&gt;</code> 定义文章中的区段<br><code>&lt;article&gt;&lt;/article&gt;</code> 论坛，评论等<br><code>&lt;main&gt;&lt;/main&gt;</code> 定义文档主要内容<br><code>&lt;aside&gt;&lt;/aside&gt;</code> 内容可以用作文章的侧边栏</p>
 </li>
-<li><p>canvas 元素是干什么的？简单使用？<br>Canvas 元素用于在网页上绘制图形<br>fillRect()<br>clearRect()<br>scale() 缩放当前绘图至更大或更小<br>rotate() 旋转当前绘图<br>translate() 重新映射画布上的 (0,0) 位置<br>transform() 替换绘图的当前转换矩阵<br>setTransform()<br>首先添加一个 canvas 元素：<br>&lt;canvas id=”canvas&gt;<br>然后在 js 中获取这个元素：<br>var canvas=document.getElementById(‘canvas’)<br>var ctx=getContext(‘2d’)<br>【常用 API】 1. fillStyle 设置图形填充颜色<br>ctx.fillStyle</p>
+</ol>
+<pre class=" language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>viewport<span class="token punctuation">"</span></span> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>width<span class="token punctuation">=</span>device-width,user-scalabel<span class="token punctuation">=</span>no<span class="token punctuation">"</span></span> <span class="token punctuation">/></span></span></code></pre>
+<ul>
+<li>width=device-width 宽度设置为理想视口宽度</li>
+<li>user-scalabel=no 不允许用户去放大缩小</li>
+</ul>
+<ol start="6">
+<li>你用过哪些 HTML 5 新增的标签？</li>
+</ol>
+<ul>
+<li><code>&lt;audio&gt;&lt;/audio&gt;</code> 音频</li>
+<li><code>&lt;video&gt;&lt;/video&gt;</code> 视频</li>
+<li><code>&lt;canvas&gt;&lt;/canvas&gt;</code></li>
+<li><code>&lt;header&gt;&lt;/header&gt;</code></li>
+<li><code>&lt;footer&gt;&lt;/footer&gt;</code></li>
+<li><code>&lt;nav&gt;&lt;/nav&gt;</code></li>
+<li><code>&lt;section&gt;&lt;/section&gt;</code> 定义文章中的区段</li>
+<li><code>&lt;article&gt;&lt;/article&gt;</code> 论坛，评论等</li>
+<li><code>&lt;main&gt;&lt;/main&gt;</code> 定义文档主要内容</li>
+<li><code>&lt;aside&gt;&lt;/aside&gt;</code> 内容可以用作文章的侧边栏</li>
+</ul>
+<ol start="7">
+<li><p>canvas 元素是干什么的？简单使用？<br>Canvas 元素用于在网页上绘制图形<br><a href="https://lxyoryxl.github.io/2019/08/01/Canvas%E7%9A%84%E4%BD%BF%E7%94%A8/" target="_blank" rel="noopener">Canvas 的使用</a></p>
 </li>
-<li><p>audio 元素是干什么的？<br>插入音频<br>autoplay<br>controls 显示控件<br>loop</p>
+<li><p>audio 元素是干什么的？<br>插入音频</p>
 </li>
-<li><p>video 元素的属性？<br>插入视频<br>muted 规定视频的音频输出应该被静音<br>autoplay<br>loop</p>
+</ol>
+<ul>
+<li>autoplay</li>
+<li>controls 显示控件</li>
+<li>loop</li>
+</ul>
+<ol start="9">
+<li>video 元素的属性？<br>插入视频</li>
+</ol>
+<ul>
+<li>muted 规定视频的音频输出应该被静音</li>
+<li>autoplay</li>
+<li>loop</li>
+</ul>
+<h4 id="css"><a href="#css" class="headerlink" title="css"></a>css</h4><ol>
+<li>两种盒模型</li>
+</ol>
+<ul>
+<li>标准盒子模型：width=content</li>
+<li>IE 盒子模型: width=content+padding+border<br>可用 css3 的 box-sizing 属性切换盒子模型:box-sizing:content-box/border-box</li>
+</ul>
+<ol start="2">
+<li><p>CSS 选择器优先级<br>!important &gt; 行内样式&gt;ID 选择器 &gt; 类选择器=伪类=属性 &gt; 标签 &gt; 通配符 &gt; 继承 &gt; 浏览器默认属性</p>
 </li>
-<li><p>css3 里的动画是怎样写的？<br>展现动画效果<br>属性有：animation-name animation-duration</p>
+<li><p>css3 里的动画是怎样写的？<br>展现动画效果<br>属性有：<code>animation-name</code> <code>animation-duration</code> <code>animation</code></p>
 <pre class=" language-css"><code class="language-css"><span class="token selector"><span class="token class">.demo</span></span><span class="token punctuation">{</span>
 <span class="token property">width</span><span class="token punctuation">:</span><span class="token number">100</span>px
 <span class="token property">animation</span><span class="token punctuation">:</span> name <span class="token number">2</span> infinite
@@ -429,7 +481,7 @@ user-scalabel=no 不允许用户去放大缩小
 <span class="token selector">to</span><span class="token punctuation">{</span><span class="token property">width</span><span class="token punctuation">:</span><span class="token number">200</span>px<span class="token punctuation">}</span>
 <span class="token punctuation">}</span></code></pre>
 </li>
-<li><p>css3 里的过渡是怎样写的？<br>属性有:transition-property transition-duration</p>
+<li><p>css3 里的过渡是怎样写的？<br>属性有:<code>transition-property</code> <code>transition-duration</code> <code>transition</code></p>
 <pre class=" language-css"><code class="language-css"><span class="token selector"><span class="token class">.demo</span> </span><span class="token punctuation">{</span>
   <span class="token property">width</span><span class="token punctuation">:</span> <span class="token number">200</span>px<span class="token punctuation">;</span>
   <span class="token property">transition</span><span class="token punctuation">:</span> width <span class="token number">3</span>s<span class="token punctuation">;</span>
@@ -441,44 +493,77 @@ user-scalabel=no 不允许用户去放大缩小
 <li><p>css3 中的媒体查询？<br>根据不同的媒体类型来定义不同的样式</p>
 <pre class=" language-css"><code class="language-css"><span class="token atrule"><span class="token rule">@media</span> screen and <span class="token punctuation">(</span><span class="token property">max-width</span><span class="token punctuation">:</span> 300px<span class="token punctuation">)</span></span> <span class="token punctuation">{</span>
   <span class="token selector">body </span><span class="token punctuation">{</span>
-    <span class="token property">background</span><span class="token punctuation">:</span> red<span class="token punctuation">;</span>
+    <span class="token property">width</span><span class="token punctuation">:</span> <span class="token number">200</span>px<span class="token punctuation">;</span>
   <span class="token punctuation">}</span>
 <span class="token punctuation">}</span></code></pre>
 </li>
+<li><p>flex 布局？</p>
+</li>
+<li><p>移动端的适配？<br><a href="https://lxyoryxl.github.io/2019/07/19/%E7%A7%BB%E5%8A%A8%E7%AB%AF%E7%9A%84%E9%80%82%E9%85%8D/" target="_blank" rel="noopener">移动端的适配</a></p>
+</li>
+</ol>
+<h4 id="js"><a href="#js" class="headerlink" title="js"></a>js</h4><ol>
+<li><p>写一个 class，写一个构造函数 ，class 继承 的好处？<br><a href="https://lxyoryxl.github.io/2019/08/02/Js%E4%B8%AD%E7%9A%84%E7%BB%A7%E6%89%BF/" target="_blank" rel="noopener">Js 的继承</a><br>class 写继承 大大简化了代码</p>
+</li>
+<li><p>ES6 新特性</p>
+</li>
+<li><p>let 和 var 和 const 区别，具体用 var 会出现什么错误</p>
+<ol>
+<li>（块级作用域） let 可以声明块级作用域的变量，而 var 不行</li>
+<li>（变量提升） let 不存在变量提升，只允许在 let 声明之后才能使用变量，而 var 存在变量提升</li>
+<li>（变量重复声明）let 不能重复声明一个变量，var 可以</li>
+<li>const 声明的是常量，不能修改，也就是不能修改指向那个值的地址</li>
+</ol>
+</li>
+</ol>
+<pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">var</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> <span class="token number">10</span><span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token function">setTimeOut</span><span class="token punctuation">(</span>i <span class="token operator">=</span><span class="token operator">></span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token number">1000</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span></code></pre>
+<ol start="4">
+<li><p>手写一个 Promise</p>
+</li>
+<li><p>webpack 配置</p>
+</li>
+<li><p>常见的跨域方式</p>
+</li>
+</ol>
+<h4 id="Dom"><a href="#Dom" class="headerlink" title="Dom"></a>Dom</h4><h4 id="Http"><a href="#Http" class="headerlink" title="Http"></a>Http</h4><ol>
+<li><p>从输入 url 到页面加载完成经历了那些过程？</p>
+</li>
+<li><p>常见的 Http 状态码？<br><a href>常见的 Http 状态码</a></p>
+</li>
+</ol>
+<h4 id="Vue"><a href="#Vue" class="headerlink" title="Vue"></a>Vue</h4><ol>
 <li><p>vue-router 是什么？<br>vue-router 就是路由，地址栏输什么，就显示什么页面，就是页面跳转。它还可以实现页面间的传参</p>
 </li>
 <li><p>vuex 是什么？<br>状态管理工具，就是集中管理所有组件需要共用的属性</p>
 </li>
-<li><p>axios 是什么，有哪些常用方法？<br>是一个基于 Promise 的一个库，发送请求时用<br>方法：<br>axios.get<br>axios.post<br>axios.put<br>axios.delete</p>
+<li><p>axios 是什么，有哪些常用方法？<br>是一个基于 Promise 的一个库，发送请求时用<br>方法：</p>
+<ul>
+<li>axios.get</li>
+<li>axios.post</li>
+<li>axios.put</li>
+<li>axios.delete</li>
+</ul>
 </li>
-<li><p>git 常用命令？代码仓库协同工作流程？<br>git init 初始化仓库，变成我们可以管理的仓库<br>git add 文件添加到暂存区<br>git commit -m ‘说明’ 暂存区文件提交到分支（默认 master）<br>git status 查看工作区和暂存区状态<br>git push 提交到远程仓库<br>git clone 克隆远程仓库<br>git checkout 切换分支</p>
+<li><p>git 常用命令？代码仓库协同工作流程？</p>
+<ul>
+<li>git init 初始化仓库，变成我们可以管理的仓库</li>
+<li>git add 文件添加到暂存区</li>
+<li>git commit -m ‘说明’ 暂存区文件提交到分支（默认 master）</li>
+<li>git status 查看工作区和暂存区状态</li>
+<li>git push 提交到远程仓库</li>
+<li>git clone 克隆远程仓库</li>
+<li>git checkout 切换分支</li>
+</ul>
 <p>工作流程：<br>fork 别人的仓库，相当于建立了一个分支<br>然后开发者 B 在 clone 自己的 Github 上的仓库到本地<br>fetch 从远程仓库中抓取本地仓库中的没有的数据<br>在 Github 上 Pull request 一下，就是给主开发者 A 发送一个请求，请求合并项目<br>merge 合并一下分支</p>
 </li>
 <li><p>axios 的配置，axios 跨域的一些问题如何解决？</p>
 </li>
 </ol>
-<h4 id="css"><a href="#css" class="headerlink" title="css"></a>css</h4><ol>
-<li><p>两种盒模型<br>可用 css3 的 box-sizing 属性切换盒子模型:box-sizing:content-box/border-box<br>标准盒子模型：width=content<br>IE 盒子模型: width=content+padding+border</p>
-</li>
-<li><p>CSS 选择器优先级<br>!important &gt; 行内样式&gt;ID 选择器 &gt; 类选择器=伪类=属性 &gt; 标签 &gt; 通配符 &gt; 继承 &gt; 浏览器默认属性</p>
-</li>
-</ol>
-<h4 id="js"><a href="#js" class="headerlink" title="js"></a>js</h4><ol>
-<li><p>写一个 class，写一个构造函数 ，class 继承 的好处？</p>
-</li>
-<li><p>ES6 新特性</p>
-</li>
-<li><p>let 和 var 区别，具体用 var 会出现什么错误</p>
-</li>
-<li><p>手写一个 Promise</p>
-</li>
-<li><p>webpack 配置</p>
-</li>
-</ol>
-<h4 id="Dom"><a href="#Dom" class="headerlink" title="Dom"></a>Dom</h4><h4 id="Http"><a href="#Http" class="headerlink" title="Http"></a>Http</h4><ol>
-<li>从输入 url 到页面加载完成经历了那些过程？</li>
-</ol>
-<h4 id="Vue"><a href="#Vue" class="headerlink" title="Vue"></a>Vue</h4><pre><code></code></pre>
+
             </div>
             <hr/>
 
@@ -694,15 +779,10 @@ user-scalabel=no 不允许用户去放大缩小
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            本文总结：Scss 的常用语法，包括变量 嵌套规则 父选择器&amp; 混合
+                            sass 基本不含括号，以缩进代表意义。scss 是 sass 的加强版，相比于 sass 加上了括号，分号，冒号，使得前端工程师能看懂
+sass 的官方解释器是开源的且用 Ruby 语言写成的，下面的图是语言的发展过程：
 
-
-一. 变量声明$write=23;
-二. 嵌套规则例子：
-#content article h1 {
-  color: #333;
-}
-#content ar
+本文总结：Sc
                         
                     </div>
                     <div class="publish-info">

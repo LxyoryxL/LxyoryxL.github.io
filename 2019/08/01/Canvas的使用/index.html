@@ -5,7 +5,7 @@
 <head><meta name="generator" content="Hexo 3.9.0">
     <meta charset="utf-8">
     <meta name="keywords" content="Canvas 的使用, lxy&#39;s">
-    <meta name="description" content="&amp;lt;canvas&amp;gt;&amp;lt;/canvas&amp;gt; 是 H5 新增的标签，主要用于绘制图像，但它本身不具有绘制能力，简单来说 canvas 通过 js 来绘制 2D 图形。canvas 可以看成一块画布，使用getContext()">
+    <meta name="description" content="Canvas 元素用于在网页上绘制图形….&amp;lt;canvas&amp;gt;&amp;lt;/canvas&amp;gt; 是 H5 新增的标签，主要用于绘制图像，但它本身不具有绘制能力，简单来说 canvas 通过 js 来绘制 2D 图形。canvas 可以">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -399,7 +399,7 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p><code>&lt;canvas&gt;&lt;/canvas&gt;</code> 是 H5 新增的标签，主要用于绘制图像，但它本身不具有绘制能力，简单来说 canvas 通过 js 来绘制 2D 图形。<br>canvas 可以看成一块画布，使用<code>getContext()</code>方法可以返回一个对象，该对象提供了众多属性和方法去绘制图形。</p>
+                <p>Canvas 元素用于在网页上绘制图形….<br><code>&lt;canvas&gt;&lt;/canvas&gt;</code> 是 H5 新增的标签，主要用于绘制图像，但它本身不具有绘制能力，简单来说 canvas 通过 js 来绘制 2D 图形。<br>canvas 可以看成一块画布，使用<code>getContext()</code>方法可以返回一个对象，该对象提供了众多属性和方法去绘制图形。</p>
 <h2 id="canvas-的使用方法"><a href="#canvas-的使用方法" class="headerlink" title="canvas 的使用方法"></a>canvas 的使用方法</h2><pre class=" language-javascript"><code class="language-javascript">首先添加一个canvas元素
 <span class="token operator">&lt;</span>canvas id<span class="token operator">=</span><span class="token string">'canvas'</span><span class="token operator">></span><span class="token operator">&lt;</span><span class="token operator">/</span>canvas<span class="token operator">></span>
 
@@ -430,6 +430,18 @@ ctx<span class="token punctuation">.</span><span class="token function">stroke</
 <span class="token comment" spellcheck="true">//添加阴影</span>
 ctx<span class="token punctuation">.</span>shadowColor<span class="token operator">=</span><span class="token string">'black'</span>
 ctx<span class="token punctuation">.</span>shadowBlur<span class="token operator">=</span><span class="token number">20</span><span class="token comment" spellcheck="true">//设定阴影模糊程度</span></code></pre>
+<p>总结常用 API:</p>
+<ul>
+<li>getContext() 访问绘画上下文</li>
+<li>fillStyle 图形填充颜色</li>
+<li>strokeStyle 图形的轮廓颜色</li>
+<li>beginPath() 新建一条路径</li>
+<li>closePath() 闭合图形</li>
+<li>moveTo() 笔触移动到指定的坐标上</li>
+<li>lineTo() 绘制一条从当前位置到指定（x,y）位置的直线</li>
+<li>stroke() 开始绘制已定义路径</li>
+<li>fill() 填充路径的内容（实心）</li>
+</ul>
 <p>附上一个测试 demo:</p>
 <p class="codepen" data-height="417" data-theme-id="0" data-default-tab="js,result" data-user="lxyoryxl" data-slug-hash="ZgJEdg" style="height: 417px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="ZgJEdg">
   <span>See the Pen <a href="https://codepen.io/lxyoryxl/pen/ZgJEdg/" target="_blank" rel="noopener">
@@ -443,6 +455,7 @@ ctx<span class="token punctuation">.</span>shadowBlur<span class="token operator
 <li>canvas 绘制的图形是标量图，svg 是矢量图<br>所谓矢量图，就是放大图形时不会失真，这很适合用来做地图。</li>
 <li>canvas 绘图用 js 来实现的，svg 用标签实现</li>
 </ol>
+<p>最后附上 MDN 上的 <a href="https://developer.mozilla.org/zh-CN/docs/Web/API/Canvas_API/Tutorial/Drawing_shapes" target="_blank" rel="noopener">Canvas 教程</a>，里面有很多有趣的实例</p>
 
             </div>
             <hr/>

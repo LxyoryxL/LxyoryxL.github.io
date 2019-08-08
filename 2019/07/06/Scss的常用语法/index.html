@@ -5,15 +5,10 @@
 <head><meta name="generator" content="Hexo 3.9.0">
     <meta charset="utf-8">
     <meta name="keywords" content="Scss 的常用语法（变量 嵌套规则  混合 父选择器&amp;）, lxy&#39;s">
-    <meta name="description" content="本文总结：Scss 的常用语法，包括变量 嵌套规则 父选择器&amp;amp; 混合
+    <meta name="description" content="sass 基本不含括号，以缩进代表意义。scss 是 sass 的加强版，相比于 sass 加上了括号，分号，冒号，使得前端工程师能看懂
+sass 的官方解释器是开源的且用 Ruby 语言写成的，下面的图是语言的发展过程：
 
-
-一. 变量声明$write=23;
-二. 嵌套规则例子：
-#content article h1 {
-  color: #333;
-}
-#content ar">
+本文总结：Sc">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -407,11 +402,16 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>本文总结：<br>Scss 的常用语法，包括变量 嵌套规则 父选择器&amp; 混合</p>
+                <p>sass 基本不含括号，以缩进代表意义。<br>scss 是 sass 的加强版，相比于 sass 加上了括号，分号，冒号，使得前端工程师能看懂</p>
+<p>sass 的官方解释器是开源的且用 Ruby 语言写成的，下面的图是语言的发展过程：</p>
+<p><img src="https://github.com/LxyoryxL/All-Img/blob/master/lxy17761018921.github.io-img/Scss%E7%9A%84%E5%B8%B8%E7%94%A8%E8%AF%AD%E6%B3%95/scss%E5%8E%86%E5%8F%B2.png?raw=true" alt="scss历史"></p>
+<p>本文总结：<br>Scss 的常用语法，包括变量 嵌套规则 父选择器&amp; 混合</p>
 <a id="more"></a>
 
-<h2 id="一-变量声明"><a href="#一-变量声明" class="headerlink" title="一. 变量声明"></a>一. 变量声明</h2><pre class=" language-scss"><code class="language-scss"><span class="token variable">$write</span>=<span class="token number">23</span><span class="token punctuation">;</span></code></pre>
-<h2 id="二-嵌套规则"><a href="#二-嵌套规则" class="headerlink" title="二. 嵌套规则"></a>二. 嵌套规则</h2><p>例子：</p>
+<h2 id="一-变量声明"><a href="#一-变量声明" class="headerlink" title="一. 变量声明"></a>一. 变量声明</h2><p>变量可以再多处复用</p>
+<pre class=" language-scss"><code class="language-scss"><span class="token variable">$write</span>=<span class="token number">23</span><span class="token punctuation">;</span></code></pre>
+<h2 id="二-嵌套规则"><a href="#二-嵌套规则" class="headerlink" title="二. 嵌套规则"></a>二. 嵌套规则</h2><p>嵌套规则：父元素可以嵌套子元素来写</p>
+<p>例子：</p>
 <pre class=" language-css"><code class="language-css"><span class="token selector"><span class="token id">#content</span> article h1 </span><span class="token punctuation">{</span>
   <span class="token property">color</span><span class="token punctuation">:</span> <span class="token hexcode">#333</span><span class="token punctuation">;</span>
 <span class="token punctuation">}</span>
@@ -455,14 +455,28 @@
 <pre class=" language-css"><code class="language-css"><span class="token selector">article a<span class="token pseudo-class">:hover</span> </span><span class="token punctuation">{</span>
   <span class="token property">color</span><span class="token punctuation">:</span> red<span class="token punctuation">;</span>
 <span class="token punctuation">}</span></code></pre>
-<h2 id="四-混合"><a href="#四-混合" class="headerlink" title="四. 混合"></a>四. 混合</h2><p>如果有大量重用的样式，用混合器处理是个好方法<br>使用 @mixin 标识符定义，@include 来使用这个混合器</p>
-<pre class=" language-scss"><code class="language-scss"><span class="token keyword">@mixin</span> <span class="token selector">border-radius </span><span class="token punctuation">{</span>
-  <span class="token property">-webkit-border-radius</span><span class="token punctuation">:</span> <span class="token number">3</span>px<span class="token punctuation">;</span>
-  <span class="token property">border-radius</span><span class="token punctuation">:</span> <span class="token number">3</span>px<span class="token punctuation">;</span>
-<span class="token punctuation">}</span> <span class="token comment" spellcheck="true">//声明混合宏border-radius</span>
+<h2 id="四-混合-mixin"><a href="#四-混合-mixin" class="headerlink" title="四. 混合 mixin"></a>四. 混合 mixin</h2><p>混合类似于函数。<br>如果有大量重用的样式，用混合器处理是个好方法<br>使用 <code>@mixin</code> 标识符定义，<code>@include</code> 来使用这个混合器</p>
+<pre class=" language-scss"><code class="language-scss"><span class="token keyword">@mixin</span> <span class="token function">border</span><span class="token punctuation">(</span><span class="token variable">$border-color</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token property">border</span><span class="token punctuation">:</span> <span class="token number">1</span>px solid <span class="token variable">$border-color</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span> <span class="token comment" spellcheck="true">//声明混合宏border</span>
 <span class="token selector">button </span><span class="token punctuation">{</span>
-  <span class="token keyword">@include</span> border-radius<span class="token punctuation">;</span>
-<span class="token punctuation">}</span> <span class="token comment" spellcheck="true">//调用混合宏border-radius</span></code></pre>
+  <span class="token keyword">@include</span> <span class="token function">border</span><span class="token punctuation">(</span>red<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span> <span class="token comment" spellcheck="true">//调用混合宏border</span></code></pre>
+<h2 id="五-placeholder"><a href="#五-placeholder" class="headerlink" title="五. placeholder"></a>五. placeholder</h2><p>placeholder 和 mixin 不一样的是:</p>
+<ul>
+<li>mixin 在 scss 实际转换为 css 时，是重复了相同的样式,@include 在调用时只是机械的把代码拷过来：</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/LxyoryxL/All-Img/master/lxy17761018921.github.io-img/Scss%E7%9A%84%E5%B8%B8%E7%94%A8%E8%AF%AD%E6%B3%95/mixin.png" alt="mixin"></p>
+<ul>
+<li>placeholder 在 scss 实际转换为 css 时，没有重复了相同的样式，样式只写了一次，简化了代码：</li>
+</ul>
+<p><img src="https://github.com/LxyoryxL/All-Img/blob/master/lxy17761018921.github.io-img/Scss%E7%9A%84%E5%B8%B8%E7%94%A8%E8%AF%AD%E6%B3%95/placeholder.png?raw=true" alt="placeholder"></p>
+<pre class=" language-scss"><code class="language-scss"><span class="token selector"><span class="token placeholder">%border</span> </span><span class="token punctuation">{</span>
+  <span class="token property">border</span><span class="token punctuation">:</span> <span class="token number">1</span>px solid <span class="token variable">$border-color</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span> <span class="token comment" spellcheck="true">//声明混合宏border</span>
+<span class="token selector">button </span><span class="token punctuation">{</span>
+  <span class="token keyword">@extend</span> <span class="token number">%</span>border<span class="token punctuation">;</span>
+<span class="token punctuation">}</span> <span class="token comment" spellcheck="true">//调用混合宏border</span></code></pre>
 
             </div>
             <hr/>

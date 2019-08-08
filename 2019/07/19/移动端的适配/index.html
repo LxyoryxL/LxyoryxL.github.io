@@ -5,8 +5,10 @@
 <head><meta name="generator" content="Hexo 3.9.0">
     <meta charset="utf-8">
     <meta name="keywords" content="移动端的适配如何做？, lxy&#39;s">
-    <meta name="description" content="一.介绍由于在不同尺寸的手机下，如果使用 px 来设置内容的样式，会出现文字过小，或者内容过大无法全部显示在视口等不适配问题。所以做手机端的适配就显得尤为重要。下面介绍几种移动端适配的方法：
-二. viewportviewport 视口（设">
+    <meta name="description" content="一.介绍要做移动端的适配主要是解决两个问题：
+
+视口大小在不同尺寸的手机下，如果使用 px 来设置内容的样式，会出现文字过小，或者内容区域过大无法全部显示在视口等不适配问题，需要用户浏览时自行放大，用户体验不好
+交互方式在手机端没有 hov">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -400,7 +402,12 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="一-介绍"><a href="#一-介绍" class="headerlink" title="一.介绍"></a>一.介绍</h2><p>由于在不同尺寸的手机下，如果使用 px 来设置内容的样式，会出现文字过小，或者内容过大无法全部显示在视口等不适配问题。所以做手机端的适配就显得尤为重要。<br>下面介绍几种移动端适配的方法：</p>
+                <h2 id="一-介绍"><a href="#一-介绍" class="headerlink" title="一.介绍"></a>一.介绍</h2><p>要做移动端的适配主要是解决两个问题：</p>
+<ol>
+<li>视口大小<br>在不同尺寸的手机下，如果使用 px 来设置内容的样式，会出现文字过小，或者内容区域过大无法全部显示在视口等不适配问题，需要用户浏览时自行放大，用户体验不好</li>
+<li>交互方式<br>在手机端没有 hover 事件，只有 touch 事件</li>
+</ol>
+<p>下面介绍几种移动端适配的方法：</p>
 <h2 id="二-viewport"><a href="#二-viewport" class="headerlink" title="二. viewport"></a>二. viewport</h2><h4 id="viewport-视口（设置理想视口）"><a href="#viewport-视口（设置理想视口）" class="headerlink" title="viewport 视口（设置理想视口）"></a><strong>viewport 视口（设置理想视口）</strong></h4><p>大部分人都知道做移动端适配，可以在 <code>&lt;head&gt;&lt;/head&gt;</code> 中添加：<br><code>&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,initial-scale=1,user-scalable=0&quot;&gt;</code>，可是你知道其中指定的属性的具体含义吗？比如为什么要设置<code>width=device-width</code>,为什么<code>user-scalable</code>要等于 0？要想理解的话，我就先从 viewport 视口分类开始讲：</p>
 <pre><code>viewport 分为:
     visual viewport 可视视口
@@ -425,9 +432,29 @@
   <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>viewport<span class="token punctuation">"</span></span>
   <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>width<span class="token punctuation">=</span><span class="token punctuation">'</span>device-width,initial-scale<span class="token punctuation">=</span>1.0,maximum-scale<span class="token punctuation">=</span>1.0,user-scalable<span class="token punctuation">=</span>0<span class="token punctuation">'</span><span class="token punctuation">"</span></span>
 <span class="token punctuation">/></span></span></code></pre>
-<p>以上 meta 标签的作用其实就是把 视口宽度=设备宽度（<code>width=&#39;device-width</code>），不允许用户缩放（<code>user-scalable=0</code>）</p>
-<h2 id="三-Rem"><a href="#三-Rem" class="headerlink" title="三. Rem"></a>三. Rem</h2><p>说 rem 单位，就不得不说下 px,em 了。<br>px:像素<br>rem:相对于 html 根元素的 font-size<br>em:相对于当前元素的 font-size（有很多文章写是相对于父元素，其实是错的）<br>根据 rem 的特点，我们可以动态设置根元素的 font-size,使得以 rem 为单位的元素在不同设备下有相同的效果去呈现。</p>
-<h2 id="四-flex-布局"><a href="#四-flex-布局" class="headerlink" title="四. flex 布局"></a>四. flex 布局</h2><h2 id="五-vm-vh"><a href="#五-vm-vh" class="headerlink" title="五. vm/vh"></a>五. vm/vh</h2><h2 id="六-参考"><a href="#六-参考" class="headerlink" title="六. 参考"></a>六. 参考</h2><p><a href="https://segmentfault.com/a/1190000008767416" target="_blank" rel="noopener">移动端适配总结</a><br><a href="https://www.cnblogs.com/2050/p/3877280.html" target="_blank" rel="noopener">移动前端开发之 viewport 的深入理解</a></p>
+<p>以上 meta 标签的作用其实就是把 视口宽度=设备宽度（<code>width=&#39;device-width</code>），不允许用户缩放（<code>user-scalable=0</code>），网页初始大小占屏幕的 100%（<code>initial-scale=1.0</code>）</p>
+<ul>
+<li>width</li>
+<li>user-scalable</li>
+<li>initial-scale</li>
+<li>maximum-scale</li>
+<li>minmum-scale</li>
+</ul>
+<h2 id="三-Rem"><a href="#三-Rem" class="headerlink" title="三. Rem"></a>三. Rem</h2><p>说 rem 单位，就不得不说下 px,em 了。</p>
+<ul>
+<li>px: 像素</li>
+<li>rem: 相对于 <code>html</code> 根元素的 <code>font-size</code></li>
+<li>em: 相对于当前元素的 <code>font-size</code>（有很多文章写是相对于父元素，其实是错的）</li>
+</ul>
+<p>根据 rem 的特点，我们可以动态设置根元素的 <code>font-size</code>,使得以 rem 为单位的元素在不同设备下有相同的效果去呈现。</p>
+<h2 id="四-flex-布局"><a href="#四-flex-布局" class="headerlink" title="四. flex 布局"></a>四. flex 布局</h2><h2 id="五-vm-vh"><a href="#五-vm-vh" class="headerlink" title="五. vm/vh"></a>五. vm/vh</h2><h2 id="六-媒体查询"><a href="#六-媒体查询" class="headerlink" title="六. 媒体查询"></a>六. 媒体查询</h2><p>以下代码指定在不同视口宽度下，页面元素的样式</p>
+<pre class=" language-css"><code class="language-css"><span class="token atrule"><span class="token rule">@media</span> screen and <span class="token punctuation">(</span><span class="token property">max-width</span><span class="token punctuation">:</span> 500px<span class="token punctuation">)</span></span> <span class="token punctuation">{</span>
+  <span class="token comment" spellcheck="true">/* 下面设置元素样式 */</span>
+  <span class="token selector">body </span><span class="token punctuation">{</span>
+    <span class="token property">width</span><span class="token punctuation">:</span> <span class="token number">200</span>px<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span></code></pre>
+<h2 id="七-设备的交互事件"><a href="#七-设备的交互事件" class="headerlink" title="七. 设备的交互事件"></a>七. 设备的交互事件</h2><h2 id="八-参考"><a href="#八-参考" class="headerlink" title="八. 参考"></a>八. 参考</h2><p><a href="https://segmentfault.com/a/1190000008767416" target="_blank" rel="noopener">移动端适配总结</a><br><a href="https://www.cnblogs.com/2050/p/3877280.html" target="_blank" rel="noopener">移动前端开发之 viewport 的深入理解</a></p>
 
             </div>
             <hr/>
@@ -632,25 +659,19 @@
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;Previous</div>
             <div class="card">
-                <a href="/2019/07/20/踩坑集合/">
+                <a href="/2019/07/20/常见的Http状态码/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="踩坑">
+                        <img src="/medias/featureimages/21.jpg" class="responsive-img" alt="常见的Http状态码">
                         
-                        <span class="card-title">踩坑</span>
+                        <span class="card-title">常见的Http状态码</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            1.Vue 报错如下
-
-
-提示应该是 开启了 eslint 编码规范检查,于是准备关闭 eslint 来解决
-vue-cli 脚手架关闭 eslint 的步骤：
-
-找到bulid/webpack.base.conf.js文件，config/
+                            
                         
                     </div>
                     <div class="publish-info">
@@ -661,8 +682,8 @@ vue-cli 脚手架关闭 eslint 的步骤：
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/踩坑集合/" class="post-category" target="_blank">
-                                    踩坑集合
+                            <a href="/categories/计算机网络/" class="post-category" target="_blank">
+                                    计算机网络
                                 </a>
                             
                             
@@ -672,8 +693,8 @@ vue-cli 脚手架关闭 eslint 的步骤：
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/踩坑-Vue/" target="_blank">
-                        <span class="chip bg-color">踩坑 Vue</span>
+                    <a href="/tags/Http/" target="_blank">
+                        <span class="chip bg-color">Http</span>
                     </a>
                     
                 </div>
