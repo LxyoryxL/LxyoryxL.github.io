@@ -386,7 +386,7 @@
             <div class="post-info">
                 <div class="post-date info-break-policy">
                     <i class="fa fa-calendar-minus-o fa-fw"></i>Publish Date:&nbsp;&nbsp;
-                    2019-08-03
+                    2019-07-20
                 </div>
 
                 
@@ -699,7 +699,7 @@ console<span class="token punctuation">.</span><span class="token function">log<
                   property="dct:title" rel="dct:type">
                     《ES6 新特性》
                 </span> by
-            <a xmlns:cc="http://creativecommons.org/ns#" href="/2019/08/03/ES6的新特性/" property="cc:attributionName"
+            <a xmlns:cc="http://creativecommons.org/ns#" href="/2019/07/20/ES6的新特性/" property="cc:attributionName"
                rel="cc:attributionURL">
                 lxy
             </a> is licensed under a
@@ -739,51 +739,53 @@ console<span class="token punctuation">.</span><span class="token function">log<
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fa fa-dot-circle-o"></i>&nbsp;Current
-            </div>
+                <i class="fa fa-chevron-left"></i>&nbsp;Previous</div>
             <div class="card">
-                <a href="/2019/08/03/ES6的新特性/">
+                <a href="/2019/07/20/踩坑集合/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/18.jpg" class="responsive-img" alt="ES6 新特性">
+                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="踩坑">
                         
-                        <span class="card-title">ES6 新特性</span>
+                        <span class="card-title">踩坑</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            let var const对于 let var const ，先说说三者的区别：
+                            1. Vue 报错如下
 
-（块级作用域） let 可以声明块级作用域的变量，而 var 不行
-（变量提升） let 不存在变量提升，只允许在 let 声明之后才能使用变量，而 var
+
+解决办法
+提示应该是 开启了 eslint 编码规范检查,于是准备关闭 eslint 来解决
+vue-cli 脚手架关闭 eslint 的步骤：
+
+找到bulid/webpack.base.conf.js文件，c
                         
                     </div>
                     <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-08-03
-                            </span>
+                        <span class="publish-date">
+                            <i class="fa fa-clock-o fa-fw icon-date"></i>2019-07-20
+                        </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/ES6/" class="post-category" target="_blank">
-                                    ES6
+                            <a href="/categories/踩坑集合/" class="post-category" target="_blank">
+                                    踩坑集合
                                 </a>
                             
                             
                         </span>
                     </div>
                 </div>
-
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/ES6/" target="_blank">
-                        <span class="chip bg-color">ES6</span>
+                    <a href="/tags/踩坑-Vue/" target="_blank">
+                        <span class="chip bg-color">踩坑 Vue</span>
                     </a>
                     
                 </div>
@@ -797,40 +799,34 @@ console<span class="token punctuation">.</span><span class="token function">log<
                 Next&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2019/08/02/Js中的继承/">
+                <a href="/2019/07/19/移动端的适配/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/8.jpg" class="responsive-img" alt="JS中的继承">
+                        <img src="/medias/featureimages/13.jpg" class="responsive-img" alt="移动端的适配如何做？">
                         
-                        <span class="card-title">JS中的继承</span>
+                        <span class="card-title">移动端的适配如何做？</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            Class 继承class Student {
-  constructor(name) {
-    this.name = name
-  }
+                            一.介绍要做移动端的适配主要是解决两个问题：
 
-  hello() {
-    alert("Hello")
-  }
-}
-写一个 class 继
+视口大小在不同尺寸的手机下，如果使用 px 来设置内容的样式，会出现文字过小，或者内容区域过大无法全部显示在视口等不适配问题，需要用户浏览时自行放大，用户体验不好
+交互方式在手机端没有 hov
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-08-02
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-07-19
                             </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/ES6/" class="post-category" target="_blank">
-                                    ES6
+                            <a href="/categories/移动端适配/" class="post-category" target="_blank">
+                                    移动端适配
                                 </a>
                             
                             
@@ -840,8 +836,8 @@ console<span class="token punctuation">.</span><span class="token function">log<
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/class-ES6/" target="_blank">
-                        <span class="chip bg-color">class ES6</span>
+                    <a href="/tags/viewport视口-rem/" target="_blank">
+                        <span class="chip bg-color">viewport视口 rem</span>
                     </a>
                     
                 </div>

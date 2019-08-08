@@ -4,8 +4,17 @@
 
 <head><meta name="generator" content="Hexo 3.9.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="常见的Http状态码, lxy&#39;s">
-    <meta name="description" content="常见的Http状态码 | lxy&#39;s">
+    <meta name="keywords" content="JS中的继承, lxy&#39;s">
+    <meta name="description" content="Class 继承class Student {
+  constructor(name) {
+    this.name = name
+  }
+
+  hello() {
+    alert(&#34;Hello&#34;)
+  }
+}
+写一个 class 继">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -13,7 +22,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>常见的Http状态码 | lxy&#39;s</title>
+    <title>JS中的继承 | lxy&#39;s</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -242,13 +251,13 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/21.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/8.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        常见的Http状态码
+                        JS中的继承
                     </div>
                 </div>
             </div>
@@ -359,8 +368,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/Http/" target="_blank">
-                                <span class="chip bg-color">Http</span>
+                            <a href="/tags/class-ES6/" target="_blank">
+                                <span class="chip bg-color">class ES6</span>
                             </a>
                         
                     </div>
@@ -371,8 +380,8 @@
                     <div class="post-cate">
                         <i class="fa fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/计算机网络/" class="post-category" target="_blank">
-                                计算机网络
+                            <a href="/categories/ES6/" class="post-category" target="_blank">
+                                ES6
                             </a>
                         
                     </div>
@@ -383,7 +392,7 @@
             <div class="post-info">
                 <div class="post-date info-break-policy">
                     <i class="fa fa-calendar-minus-o fa-fw"></i>Publish Date:&nbsp;&nbsp;
-                    2019-07-20
+                    2019-08-01
                 </div>
 
                 
@@ -399,7 +408,51 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                
+                <h2 id="Class-继承"><a href="#Class-继承" class="headerlink" title="Class 继承"></a>Class 继承</h2><pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">class</span> <span class="token class-name">Student</span> <span class="token punctuation">{</span>
+  <span class="token function">constructor</span><span class="token punctuation">(</span>name<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>name <span class="token operator">=</span> name
+  <span class="token punctuation">}</span>
+
+  <span class="token function">hello</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token function">alert</span><span class="token punctuation">(</span><span class="token string">"Hello"</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span></code></pre>
+<p>写一个 class 继承一个 class:</p>
+<pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">class</span> <span class="token class-name">My</span> <span class="token keyword">extends</span> <span class="token class-name">Student</span> <span class="token punctuation">{</span>
+  <span class="token function">constructor</span><span class="token punctuation">(</span>name<span class="token punctuation">,</span> grade<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">super</span><span class="token punctuation">(</span>name<span class="token punctuation">)</span> <span class="token comment" spellcheck="true">//用 super 继承父类的构造方法</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>grade <span class="token operator">=</span> grade
+  <span class="token punctuation">}</span>
+
+  <span class="token function">hello</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token function">alert</span><span class="token punctuation">(</span><span class="token string">"hello"</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span></code></pre>
+<h2 id="原型继承"><a href="#原型继承" class="headerlink" title="原型继承"></a>原型继承</h2><p>写一个 构造函数：</p>
+<pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">function</span> <span class="token function">Student</span><span class="token punctuation">(</span>name<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">this</span><span class="token punctuation">.</span>name <span class="token operator">=</span> name
+<span class="token punctuation">}</span>
+Student<span class="token punctuation">.</span>prototype<span class="token punctuation">.</span>hello <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token function">alert</span><span class="token punctuation">(</span><span class="token string">"hello"</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span></code></pre>
+<p>写一个 PrimaryStudent 方法, 它可以调用 Student 的方法，但是这并没有实现真正的继承，必须想办法把原型链修改为：<br><code>new PrimaryStudent() ----&gt; PrimaryStudent.prototype ----&gt; Student.prototype ----&gt; Object.prototype ----&gt; null</code><br>下面再封装一个 inherits 方法实现继承:</p>
+<pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">function</span> <span class="token function">PrimaryStudent</span><span class="token punctuation">(</span>prop<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  Student<span class="token punctuation">.</span><span class="token function">call</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">,</span> prop<span class="token punctuation">)</span>
+  <span class="token keyword">this</span><span class="token punctuation">.</span>grad <span class="token operator">=</span> prop<span class="token punctuation">.</span>grad
+<span class="token punctuation">}</span>
+<span class="token keyword">function</span> <span class="token function">inherits</span><span class="token punctuation">(</span>Child<span class="token punctuation">,</span> Parent<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">var</span> F <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+  F<span class="token punctuation">.</span>prototype <span class="token operator">=</span> Parents<span class="token punctuation">.</span>prototype
+  Child<span class="token punctuation">.</span>prototype <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">F</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  Child<span class="token punctuation">.</span>prototype<span class="token punctuation">.</span>constractor <span class="token operator">=</span> Child
+<span class="token punctuation">}</span></code></pre>
+<p>用 Class 继承 相比原来的 原型继承 极大的简化了代码</p>
+<h2 id="new-运算符做了什么？"><a href="#new-运算符做了什么？" class="headerlink" title="new 运算符做了什么？"></a>new 运算符做了什么？</h2><pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">var</span> obj <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+obj<span class="token punctuation">.</span>__proto__ <span class="token operator">=</span> F<span class="token punctuation">.</span>prototype
+F<span class="token punctuation">.</span><span class="token function">call</span><span class="token punctuation">(</span>obj<span class="token punctuation">)</span></code></pre>
+<h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><p><a href="https://www.liaoxuefeng.com/wiki/1022910821149312/1072866346339712
+" target="_blank" rel="noopener">廖雪峰的 class 继承 原型继承</a></p>
+
             </div>
             <hr/>
 
@@ -557,9 +610,9 @@
             <br/>
             <span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text"
                   property="dct:title" rel="dct:type">
-                    《常见的Http状态码》
+                    《JS中的继承》
                 </span> by
-            <a xmlns:cc="http://creativecommons.org/ns#" href="/2019/07/20/常见的Http状态码/" property="cc:attributionName"
+            <a xmlns:cc="http://creativecommons.org/ns#" href="/2019/08/01/Js中的继承/" property="cc:attributionName"
                rel="cc:attributionURL">
                 lxy
             </a> is licensed under a
@@ -603,38 +656,31 @@
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;Previous</div>
             <div class="card">
-                <a href="/2019/07/20/踩坑集合/">
+                <a href="/2019/08/04/Canvas的使用/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="踩坑">
+                        <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="Canvas 的使用">
                         
-                        <span class="card-title">踩坑</span>
+                        <span class="card-title">Canvas 的使用</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            1. Vue 报错如下
-
-
-解决办法
-提示应该是 开启了 eslint 编码规范检查,于是准备关闭 eslint 来解决
-vue-cli 脚手架关闭 eslint 的步骤：
-
-找到bulid/webpack.base.conf.js文件，c
+                            Canvas 元素用于在网页上绘制图形….&lt;canvas&gt;&lt;/canvas&gt; 是 H5 新增的标签，主要用于绘制图像，但它本身不具有绘制能力，简单来说 canvas 通过 js 来绘制 2D 图形。canvas 可以
                         
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="fa fa-clock-o fa-fw icon-date"></i>2019-07-20
+                            <i class="fa fa-clock-o fa-fw icon-date"></i>2019-08-04
                         </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/踩坑集合/" class="post-category" target="_blank">
-                                    踩坑集合
+                            <a href="/categories/Html5/" class="post-category" target="_blank">
+                                    Html5
                                 </a>
                             
                             
@@ -644,8 +690,8 @@ vue-cli 脚手架关闭 eslint 的步骤：
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/踩坑-Vue/" target="_blank">
-                        <span class="chip bg-color">踩坑 Vue</span>
+                    <a href="/tags/Canvas-H5/" target="_blank">
+                        <span class="chip bg-color">Canvas H5</span>
                     </a>
                     
                 </div>
@@ -659,34 +705,34 @@ vue-cli 脚手架关闭 eslint 的步骤：
                 Next&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2019/07/19/移动端的适配/">
+                <a href="/2019/07/30/解决单行或者多行文本溢出的方法总结/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/13.jpg" class="responsive-img" alt="移动端的适配如何做？">
+                        <img src="/medias/featureimages/13.jpg" class="responsive-img" alt="解决单行或者多行文本溢出的方法总结">
                         
-                        <span class="card-title">移动端的适配如何做？</span>
+                        <span class="card-title">解决单行或者多行文本溢出的方法总结</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            一.介绍要做移动端的适配主要是解决两个问题：
+                            本文总结了：‘列表文字太多,溢出使用省略号’ 的解决方法包括单行文字溢出，多行文本溢出，主要使用 css 来做
 
-视口大小在不同尺寸的手机下，如果使用 px 来设置内容的样式，会出现文字过小，或者内容区域过大无法全部显示在视口等不适配问题，需要用户浏览时自行放大，用户体验不好
-交互方式在手机端没有 hov
+
+一. 前言今天再写页面的时候，看到几行文字，感觉这部分的文字在这个部分显得很冗余，而且因为文字长度的不确定性，还容易影响布局
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-07-19
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-07-30
                             </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/移动端适配/" class="post-category" target="_blank">
-                                    移动端适配
+                            <a href="/categories/css/" class="post-category" target="_blank">
+                                    css
                                 </a>
                             
                             
@@ -696,8 +742,8 @@ vue-cli 脚手架关闭 eslint 的步骤：
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/viewport视口-rem/" target="_blank">
-                        <span class="chip bg-color">viewport视口 rem</span>
+                    <a href="/tags/单行文本溢出-多行文本溢出-css/" target="_blank">
+                        <span class="chip bg-color">单行文本溢出 多行文本溢出 css</span>
                     </a>
                     
                 </div>

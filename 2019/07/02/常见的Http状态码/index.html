@@ -4,11 +4,8 @@
 
 <head><meta name="generator" content="Hexo 3.9.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="空元素是什么？可替换元素又是什么？, lxy&#39;s">
-    <meta name="description" content="一. 空元素空元素的含义用我的话说来解释空元素，就是不存在子节点（文字节点呀之类的），没有内容的元素。而且空元素是自封闭标签，比如：&amp;lt;br/&amp;gt;
-再比如：那些非空标签都能在里面嵌套子元素：
-&amp;lt;div&gt;
-  &amp;lt;a&gt;&amp;lt">
+    <meta name="keywords" content="常见的Http状态码, lxy&#39;s">
+    <meta name="description" content="常见的Http状态码 | lxy&#39;s">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -16,7 +13,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>空元素是什么？可替换元素又是什么？ | lxy&#39;s</title>
+    <title>常见的Http状态码 | lxy&#39;s</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -245,13 +242,13 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/16.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/21.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        空元素是什么？可替换元素又是什么？
+                        常见的Http状态码
                     </div>
                 </div>
             </div>
@@ -362,8 +359,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/空元素-可替换元素-html-标签/" target="_blank">
-                                <span class="chip bg-color">空元素  可替换元素  html  标签</span>
+                            <a href="/tags/Http/" target="_blank">
+                                <span class="chip bg-color">Http</span>
                             </a>
                         
                     </div>
@@ -374,8 +371,8 @@
                     <div class="post-cate">
                         <i class="fa fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/元素标签/" class="post-category" target="_blank">
-                                元素标签
+                            <a href="/categories/计算机网络/" class="post-category" target="_blank">
+                                计算机网络
                             </a>
                         
                     </div>
@@ -386,7 +383,7 @@
             <div class="post-info">
                 <div class="post-date info-break-policy">
                     <i class="fa fa-calendar-minus-o fa-fw"></i>Publish Date:&nbsp;&nbsp;
-                    2019-07-16
+                    2019-07-02
                 </div>
 
                 
@@ -402,37 +399,7 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="一-空元素"><a href="#一-空元素" class="headerlink" title="一. 空元素"></a>一. 空元素</h2><h3 id="空元素的含义"><a href="#空元素的含义" class="headerlink" title="空元素的含义"></a><strong>空元素的含义</strong></h3><p>用我的话说来解释空元素，就是不存在子节点（文字节点呀之类的），没有内容的元素。而且空元素是自封闭标签，比如：<code>&lt;br/&gt;</code></p>
-<p>再比如：<br>那些非空标签都能在里面嵌套子元素：</p>
-<pre class=" language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">></span></span>
-  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span></code></pre>
-<p>而空元素就不能这样写:<code>&lt;hr &lt;a&gt;&lt;/a&gt; /&gt;</code> ×<br>如果想试图使用一个闭标签，也是错误的：<code>&lt;hr&gt; &lt;a&gt;&lt;/a&gt; &lt;hr/&gt;</code> ×</p>
-<h3 id="列举几个常见的空元素："><a href="#列举几个常见的空元素：" class="headerlink" title="列举几个常见的空元素："></a><strong>列举几个常见的空元素：</strong></h3><ul>
-<li><code>&lt;br/&gt;</code></li>
-<li><code>&lt;hr/&gt;</code></li>
-<li><code>&lt;input/&gt;</code></li>
-<li><code>&lt;img/&gt;</code></li>
-<li><code>&lt;source/&gt;</code></li>
-<li><code>&lt;link/&gt;</code></li>
-<li><code>&lt;meta/&gt;</code></li>
-</ul>
-<h2 id="二-可替换元素"><a href="#二-可替换元素" class="headerlink" title="二. 可替换元素"></a>二. 可替换元素</h2><p>我们都知道元素标签分为行内元素，块元素，还有行内块元素，可你还知道有可替换元素这一类吗？</p>
-<p>其实平时我们常用到的标签 <code>&lt;img/&gt;</code> 就是个可替换元素标签。标签 <code>&lt;img/&gt;</code> 是行内元素，在使用 img 的时候我们会发现其实是可以修改它的宽高的，这是为什么呢？是因为可替换元素（在这儿是 img 元素）在其显示中生成了框，这就是有些内联元素能够设置宽高的原因。</p>
-<h3 id="可替换元素的含义"><a href="#可替换元素的含义" class="headerlink" title="可替换元素的含义"></a><strong>可替换元素的含义</strong></h3><p>在 mdn 上的解释是这样的：<br>在 CSS 中，可替换元素（replaced element）的展现效果不是由 CSS 来控制的。简单来说，它们的内容不受当前文档的样式的影响。CSS 可以影响可替换元素的位置，但不会影响到可替换元素自身的内容。</p>
-<p>我的理解是，这些可替换元素的样式可以由标签本身来决定（比如<code>&lt;img/&gt;</code>的图片），不是由自己写的 css 来控制的。也就是浏览器根据元素的标签和属性，来决定元素的具体显示内容。</p>
-<p>我举个例子来解释：<br>比如 <code>&lt;img/&gt;</code> 标签的图片就是由 src 控制，图片是可替换的。<br>再比如 <code>&lt;video/&gt;</code> 标签的 音频由 src 控制，音频是可替换的。</p>
-<h3 id="以下列举几个常见的可替换元素"><a href="#以下列举几个常见的可替换元素" class="headerlink" title="以下列举几个常见的可替换元素"></a><strong>以下列举几个常见的可替换元素</strong></h3><ul>
-<li><code>&lt;img/&gt;</code></li>
-<li><code>&lt;input/&gt;</code></li>
-<li><code>&lt;textarea/&gt;</code></li>
-<li><code>&lt;select/&gt;</code></li>
-<li><code>&lt;canvas/&gt;</code></li>
-<li><code>&lt;audio/&gt;</code></li>
-<li><code>&lt;video/&gt;</code></li>
-</ul>
-<h2 id="三-参考链接"><a href="#三-参考链接" class="headerlink" title="三.参考链接"></a>三.参考链接</h2><p><a href="https://www.cnblogs.com/lalong/p/9330609.html" target="_blank" rel="noopener">https://www.cnblogs.com/lalong/p/9330609.html</a></p>
-
+                
             </div>
             <hr/>
 
@@ -590,9 +557,9 @@
             <br/>
             <span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text"
                   property="dct:title" rel="dct:type">
-                    《空元素是什么？可替换元素又是什么？》
+                    《常见的Http状态码》
                 </span> by
-            <a xmlns:cc="http://creativecommons.org/ns#" href="/2019/07/16/空元素是什么？可替换元素又是什么？/" property="cc:attributionName"
+            <a xmlns:cc="http://creativecommons.org/ns#" href="/2019/07/02/常见的Http状态码/" property="cc:attributionName"
                rel="cc:attributionURL">
                 lxy
             </a> is licensed under a
@@ -636,34 +603,39 @@
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;Previous</div>
             <div class="card">
-                <a href="/2019/07/19/移动端的适配/">
+                <a href="/2019/07/04/Markdown-常用语法/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/13.jpg" class="responsive-img" alt="移动端的适配如何做？">
+                        <img src="/medias/featureimages/23.jpg" class="responsive-img" alt="Markdown 常用语法">
                         
-                        <span class="card-title">移动端的适配如何做？</span>
+                        <span class="card-title">Markdown 常用语法</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            一.介绍要做移动端的适配主要是解决两个问题：
+                            本文总结:Markdown 常用语法，包括 Markdown 标题 列表 区块引用 链接 字体 代码框
 
-视口大小在不同尺寸的手机下，如果使用 px 来设置内容的样式，会出现文字过小，或者内容区域过大无法全部显示在视口等不适配问题，需要用户浏览时自行放大，用户体验不好
-交互方式在手机端没有 hov
+
+一. 标题写法# 一级标题
+## 二级标题
+### 三级标题
+#### 四级标题
+一级标题二级标题三级标题四级标题
+注意，#号后面有
                         
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="fa fa-clock-o fa-fw icon-date"></i>2019-07-19
+                            <i class="fa fa-clock-o fa-fw icon-date"></i>2019-07-04
                         </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/移动端适配/" class="post-category" target="_blank">
-                                    移动端适配
+                            <a href="/categories/语法/" class="post-category" target="_blank">
+                                    语法
                                 </a>
                             
                             
@@ -673,8 +645,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/viewport视口-rem/" target="_blank">
-                        <span class="chip bg-color">viewport视口 rem</span>
+                    <a href="/tags/Markdown-标题-列表-区块引用-链接-字体-代码框/" target="_blank">
+                        <span class="chip bg-color">Markdown 标题 列表 区块引用 链接 字体 代码框</span>
                     </a>
                     
                 </div>
@@ -685,47 +657,46 @@
         
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge right-badge text-color">
-                Next&nbsp;<i class="fa fa-chevron-right"></i>
+                Current&nbsp;<i class="fa fa-dot-circle-o"></i>
             </div>
             <div class="card">
-                <a href="/2019/07/16/git-配置和语法/">
+                <a href="/2019/07/02/常见的Http状态码/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="git 配置和使用">
+                        <img src="/medias/featureimages/21.jpg" class="responsive-img" alt="常见的Http状态码">
                         
-                        <span class="card-title">git 配置和使用</span>
+                        <span class="card-title">常见的Http状态码</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            git 的 6 行配置git config --global user.name 你的英文名
-git config --global user.email 你的邮箱
-git config --global push.default simp
+                            
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-07-16
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-07-02
                             </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/工具/" class="post-category" target="_blank">
-                                    工具
+                            <a href="/categories/计算机网络/" class="post-category" target="_blank">
+                                    计算机网络
                                 </a>
                             
                             
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/git/" target="_blank">
-                        <span class="chip bg-color">git</span>
+                    <a href="/tags/Http/" target="_blank">
+                        <span class="chip bg-color">Http</span>
                     </a>
                     
                 </div>

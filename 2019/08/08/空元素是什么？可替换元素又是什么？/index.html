@@ -4,17 +4,11 @@
 
 <head><meta name="generator" content="Hexo 3.9.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="JS中的继承, lxy&#39;s">
-    <meta name="description" content="Class 继承class Student {
-  constructor(name) {
-    this.name = name
-  }
-
-  hello() {
-    alert(&#34;Hello&#34;)
-  }
-}
-写一个 class 继">
+    <meta name="keywords" content="空元素是什么？可替换元素又是什么？, lxy&#39;s">
+    <meta name="description" content="一. 空元素空元素的含义用我的话说来解释空元素，就是不存在子节点（文字节点呀之类的），没有内容的元素。而且空元素是自封闭标签，比如：&amp;lt;br/&amp;gt;
+再比如：那些非空标签都能在里面嵌套子元素：
+&amp;lt;div&gt;
+  &amp;lt;a&gt;&amp;lt">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -22,7 +16,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>JS中的继承 | lxy&#39;s</title>
+    <title>空元素是什么？可替换元素又是什么？ | lxy&#39;s</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -251,13 +245,13 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/8.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/16.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        JS中的继承
+                        空元素是什么？可替换元素又是什么？
                     </div>
                 </div>
             </div>
@@ -368,8 +362,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/class-ES6/" target="_blank">
-                                <span class="chip bg-color">class ES6</span>
+                            <a href="/tags/空元素-可替换元素-html-标签/" target="_blank">
+                                <span class="chip bg-color">空元素  可替换元素  html  标签</span>
                             </a>
                         
                     </div>
@@ -380,8 +374,8 @@
                     <div class="post-cate">
                         <i class="fa fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/ES6/" class="post-category" target="_blank">
-                                ES6
+                            <a href="/categories/元素标签/" class="post-category" target="_blank">
+                                元素标签
                             </a>
                         
                     </div>
@@ -392,7 +386,7 @@
             <div class="post-info">
                 <div class="post-date info-break-policy">
                     <i class="fa fa-calendar-minus-o fa-fw"></i>Publish Date:&nbsp;&nbsp;
-                    2019-08-02
+                    2019-08-08
                 </div>
 
                 
@@ -408,50 +402,36 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="Class-继承"><a href="#Class-继承" class="headerlink" title="Class 继承"></a>Class 继承</h2><pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">class</span> <span class="token class-name">Student</span> <span class="token punctuation">{</span>
-  <span class="token function">constructor</span><span class="token punctuation">(</span>name<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    <span class="token keyword">this</span><span class="token punctuation">.</span>name <span class="token operator">=</span> name
-  <span class="token punctuation">}</span>
-
-  <span class="token function">hello</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    <span class="token function">alert</span><span class="token punctuation">(</span><span class="token string">"Hello"</span><span class="token punctuation">)</span>
-  <span class="token punctuation">}</span>
-<span class="token punctuation">}</span></code></pre>
-<p>写一个 class 继承一个 class:</p>
-<pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">class</span> <span class="token class-name">My</span> <span class="token keyword">extends</span> <span class="token class-name">Student</span> <span class="token punctuation">{</span>
-  <span class="token function">constructor</span><span class="token punctuation">(</span>name<span class="token punctuation">,</span> grade<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    <span class="token keyword">super</span><span class="token punctuation">(</span>name<span class="token punctuation">)</span> <span class="token comment" spellcheck="true">//用 super 继承父类的构造方法</span>
-    <span class="token keyword">this</span><span class="token punctuation">.</span>grade <span class="token operator">=</span> grade
-  <span class="token punctuation">}</span>
-
-  <span class="token function">hello</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    <span class="token function">alert</span><span class="token punctuation">(</span><span class="token string">"hello"</span><span class="token punctuation">)</span>
-  <span class="token punctuation">}</span>
-<span class="token punctuation">}</span></code></pre>
-<h2 id="原型继承"><a href="#原型继承" class="headerlink" title="原型继承"></a>原型继承</h2><p>写一个 构造函数：</p>
-<pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">function</span> <span class="token function">Student</span><span class="token punctuation">(</span>name<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-  <span class="token keyword">this</span><span class="token punctuation">.</span>name <span class="token operator">=</span> name
-<span class="token punctuation">}</span>
-Student<span class="token punctuation">.</span>prototype<span class="token punctuation">.</span>hello <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-  <span class="token function">alert</span><span class="token punctuation">(</span><span class="token string">"hello"</span><span class="token punctuation">)</span>
-<span class="token punctuation">}</span></code></pre>
-<p>写一个 PrimaryStudent 方法, 它可以调用 Student 的方法，但是这并没有实现真正的继承，必须想办法把原型链修改为：<br><code>new PrimaryStudent() ----&gt; PrimaryStudent.prototype ----&gt; Student.prototype ----&gt; Object.prototype ----&gt; null</code><br>下面再封装一个 inherits 方法实现继承:</p>
-<pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">function</span> <span class="token function">PrimaryStudent</span><span class="token punctuation">(</span>prop<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-  Student<span class="token punctuation">.</span><span class="token function">call</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">,</span> prop<span class="token punctuation">)</span>
-  <span class="token keyword">this</span><span class="token punctuation">.</span>grad <span class="token operator">=</span> prop<span class="token punctuation">.</span>grad
-<span class="token punctuation">}</span>
-<span class="token keyword">function</span> <span class="token function">inherits</span><span class="token punctuation">(</span>Child<span class="token punctuation">,</span> Parent<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-  <span class="token keyword">var</span> F <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
-  F<span class="token punctuation">.</span>prototype <span class="token operator">=</span> Parents<span class="token punctuation">.</span>prototype
-  Child<span class="token punctuation">.</span>prototype <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">F</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
-  Child<span class="token punctuation">.</span>prototype<span class="token punctuation">.</span>constractor <span class="token operator">=</span> Child
-<span class="token punctuation">}</span></code></pre>
-<p>用 Class 继承 相比原来的 原型继承 极大的简化了代码</p>
-<h2 id="new-运算符做了什么？"><a href="#new-运算符做了什么？" class="headerlink" title="new 运算符做了什么？"></a>new 运算符做了什么？</h2><pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">var</span> obj <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
-obj<span class="token punctuation">.</span>__proto__ <span class="token operator">=</span> F<span class="token punctuation">.</span>prototype
-F<span class="token punctuation">.</span><span class="token function">call</span><span class="token punctuation">(</span>obj<span class="token punctuation">)</span></code></pre>
-<h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><p><a href="https://www.liaoxuefeng.com/wiki/1022910821149312/1072866346339712
-" target="_blank" rel="noopener">廖雪峰的 class 继承 原型继承</a></p>
+                <h2 id="一-空元素"><a href="#一-空元素" class="headerlink" title="一. 空元素"></a>一. 空元素</h2><h3 id="空元素的含义"><a href="#空元素的含义" class="headerlink" title="空元素的含义"></a><strong>空元素的含义</strong></h3><p>用我的话说来解释空元素，就是不存在子节点（文字节点呀之类的），没有内容的元素。而且空元素是自封闭标签，比如：<code>&lt;br/&gt;</code></p>
+<p>再比如：<br>那些非空标签都能在里面嵌套子元素：</p>
+<pre class=" language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span></code></pre>
+<p>而空元素就不能这样写:<code>&lt;hr &lt;a&gt;&lt;/a&gt; /&gt;</code> ×<br>如果想试图使用一个闭标签，也是错误的：<code>&lt;hr&gt; &lt;a&gt;&lt;/a&gt; &lt;hr/&gt;</code> ×</p>
+<h3 id="列举几个常见的空元素："><a href="#列举几个常见的空元素：" class="headerlink" title="列举几个常见的空元素："></a><strong>列举几个常见的空元素：</strong></h3><ul>
+<li><code>&lt;br/&gt;</code></li>
+<li><code>&lt;hr/&gt;</code></li>
+<li><code>&lt;input/&gt;</code></li>
+<li><code>&lt;img/&gt;</code></li>
+<li><code>&lt;source/&gt;</code></li>
+<li><code>&lt;link/&gt;</code></li>
+<li><code>&lt;meta/&gt;</code></li>
+</ul>
+<h2 id="二-可替换元素"><a href="#二-可替换元素" class="headerlink" title="二. 可替换元素"></a>二. 可替换元素</h2><p>我们都知道元素标签分为行内元素，块元素，还有行内块元素，可你还知道有可替换元素这一类吗？</p>
+<p>其实平时我们常用到的标签 <code>&lt;img/&gt;</code> 就是个可替换元素标签。标签 <code>&lt;img/&gt;</code> 是行内元素，在使用 img 的时候我们会发现其实是可以修改它的宽高的，这是为什么呢？是因为可替换元素（在这儿是 img 元素）在其显示中生成了框，这就是有些内联元素能够设置宽高的原因。</p>
+<h3 id="可替换元素的含义"><a href="#可替换元素的含义" class="headerlink" title="可替换元素的含义"></a><strong>可替换元素的含义</strong></h3><p>在 mdn 上的解释是这样的：<br>在 CSS 中，可替换元素（replaced element）的展现效果不是由 CSS 来控制的。简单来说，它们的内容不受当前文档的样式的影响。CSS 可以影响可替换元素的位置，但不会影响到可替换元素自身的内容。</p>
+<p>我的理解是，这些可替换元素的样式可以由标签本身来决定（比如<code>&lt;img/&gt;</code>的图片），不是由自己写的 css 来控制的。也就是浏览器根据元素的标签和属性，来决定元素的具体显示内容。</p>
+<p>我举个例子来解释：<br>比如 <code>&lt;img/&gt;</code> 标签的图片就是由 src 控制，图片是可替换的。<br>再比如 <code>&lt;video/&gt;</code> 标签的 音频由 src 控制，音频是可替换的。</p>
+<h3 id="以下列举几个常见的可替换元素"><a href="#以下列举几个常见的可替换元素" class="headerlink" title="以下列举几个常见的可替换元素"></a><strong>以下列举几个常见的可替换元素</strong></h3><ul>
+<li><code>&lt;img/&gt;</code></li>
+<li><code>&lt;input/&gt;</code></li>
+<li><code>&lt;textarea/&gt;</code></li>
+<li><code>&lt;select/&gt;</code></li>
+<li><code>&lt;canvas/&gt;</code></li>
+<li><code>&lt;audio/&gt;</code></li>
+<li><code>&lt;video/&gt;</code></li>
+</ul>
+<h2 id="三-参考链接"><a href="#三-参考链接" class="headerlink" title="三.参考链接"></a>三.参考链接</h2><p><a href="https://www.cnblogs.com/lalong/p/9330609.html" target="_blank" rel="noopener">https://www.cnblogs.com/lalong/p/9330609.html</a></p>
 
             </div>
             <hr/>
@@ -610,9 +590,9 @@ F<span class="token punctuation">.</span><span class="token function">call</span
             <br/>
             <span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text"
                   property="dct:title" rel="dct:type">
-                    《JS中的继承》
+                    《空元素是什么？可替换元素又是什么？》
                 </span> by
-            <a xmlns:cc="http://creativecommons.org/ns#" href="/2019/08/02/Js中的继承/" property="cc:attributionName"
+            <a xmlns:cc="http://creativecommons.org/ns#" href="/2019/08/08/空元素是什么？可替换元素又是什么？/" property="cc:attributionName"
                rel="cc:attributionURL">
                 lxy
             </a> is licensed under a
@@ -652,49 +632,51 @@ F<span class="token punctuation">.</span><span class="token function">call</span
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fa fa-chevron-left"></i>&nbsp;Previous</div>
+                <i class="fa fa-dot-circle-o"></i>&nbsp;Current
+            </div>
             <div class="card">
-                <a href="/2019/08/03/ES6的新特性/">
+                <a href="/2019/08/08/空元素是什么？可替换元素又是什么？/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/18.jpg" class="responsive-img" alt="ES6 新特性">
+                        <img src="/medias/featureimages/16.jpg" class="responsive-img" alt="空元素是什么？可替换元素又是什么？">
                         
-                        <span class="card-title">ES6 新特性</span>
+                        <span class="card-title">空元素是什么？可替换元素又是什么？</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            let var const对于 let var const ，先说说三者的区别：
-
-（块级作用域） let 可以声明块级作用域的变量，而 var 不行
-（变量提升） let 不存在变量提升，只允许在 let 声明之后才能使用变量，而 var
+                            一. 空元素空元素的含义用我的话说来解释空元素，就是不存在子节点（文字节点呀之类的），没有内容的元素。而且空元素是自封闭标签，比如：&lt;br/&gt;
+再比如：那些非空标签都能在里面嵌套子元素：
+&lt;div>
+  &lt;a>&lt
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="fa fa-clock-o fa-fw icon-date"></i>2019-08-03
-                        </span>
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-08-08
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/ES6/" class="post-category" target="_blank">
-                                    ES6
+                            <a href="/categories/元素标签/" class="post-category" target="_blank">
+                                    元素标签
                                 </a>
                             
                             
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/ES6/" target="_blank">
-                        <span class="chip bg-color">ES6</span>
+                    <a href="/tags/空元素-可替换元素-html-标签/" target="_blank">
+                        <span class="chip bg-color">空元素  可替换元素  html  标签</span>
                     </a>
                     
                 </div>
@@ -708,31 +690,33 @@ F<span class="token punctuation">.</span><span class="token function">call</span
                 Next&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2019/08/01/Canvas的使用/">
+                <a href="/2019/08/06/git-配置和语法/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="Canvas 的使用">
+                        <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="git 配置和使用">
                         
-                        <span class="card-title">Canvas 的使用</span>
+                        <span class="card-title">git 配置和使用</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            Canvas 元素用于在网页上绘制图形….&lt;canvas&gt;&lt;/canvas&gt; 是 H5 新增的标签，主要用于绘制图像，但它本身不具有绘制能力，简单来说 canvas 通过 js 来绘制 2D 图形。canvas 可以
+                            git 的 6 行配置git config --global user.name 你的英文名
+git config --global user.email 你的邮箱
+git config --global push.default simp
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-08-01
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-08-06
                             </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/Html5/" class="post-category" target="_blank">
-                                    Html5
+                            <a href="/categories/工具/" class="post-category" target="_blank">
+                                    工具
                                 </a>
                             
                             
@@ -742,8 +726,8 @@ F<span class="token punctuation">.</span><span class="token function">call</span
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/Canvas-H5/" target="_blank">
-                        <span class="chip bg-color">Canvas H5</span>
+                    <a href="/tags/git/" target="_blank">
+                        <span class="chip bg-color">git</span>
                     </a>
                     
                 </div>

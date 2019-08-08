@@ -4,8 +4,11 @@
 
 <head><meta name="generator" content="Hexo 3.9.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="Canvas 的使用, lxy&#39;s">
-    <meta name="description" content="Canvas 元素用于在网页上绘制图形….&amp;lt;canvas&amp;gt;&amp;lt;/canvas&amp;gt; 是 H5 新增的标签，主要用于绘制图像，但它本身不具有绘制能力，简单来说 canvas 通过 js 来绘制 2D 图形。canvas 可以">
+    <meta name="keywords" content="解决单行或者多行文本溢出的方法总结, lxy&#39;s">
+    <meta name="description" content="本文总结了：‘列表文字太多,溢出使用省略号’ 的解决方法包括单行文字溢出，多行文本溢出，主要使用 css 来做
+
+
+一. 前言今天再写页面的时候，看到几行文字，感觉这部分的文字在这个部分显得很冗余，而且因为文字长度的不确定性，还容易影响布局">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -13,7 +16,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>Canvas 的使用 | lxy&#39;s</title>
+    <title>解决单行或者多行文本溢出的方法总结 | lxy&#39;s</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -242,13 +245,13 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/11.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/13.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        Canvas 的使用
+                        解决单行或者多行文本溢出的方法总结
                     </div>
                 </div>
             </div>
@@ -359,8 +362,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/Canvas-H5/" target="_blank">
-                                <span class="chip bg-color">Canvas H5</span>
+                            <a href="/tags/单行文本溢出-多行文本溢出-css/" target="_blank">
+                                <span class="chip bg-color">单行文本溢出 多行文本溢出 css</span>
                             </a>
                         
                     </div>
@@ -371,8 +374,8 @@
                     <div class="post-cate">
                         <i class="fa fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/Html5/" class="post-category" target="_blank">
-                                Html5
+                            <a href="/categories/css/" class="post-category" target="_blank">
+                                css
                             </a>
                         
                     </div>
@@ -383,7 +386,7 @@
             <div class="post-info">
                 <div class="post-date info-break-policy">
                     <i class="fa fa-calendar-minus-o fa-fw"></i>Publish Date:&nbsp;&nbsp;
-                    2019-08-01
+                    2019-07-30
                 </div>
 
                 
@@ -399,63 +402,65 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>Canvas 元素用于在网页上绘制图形….<br><code>&lt;canvas&gt;&lt;/canvas&gt;</code> 是 H5 新增的标签，主要用于绘制图像，但它本身不具有绘制能力，简单来说 canvas 通过 js 来绘制 2D 图形。<br>canvas 可以看成一块画布，使用<code>getContext()</code>方法可以返回一个对象，该对象提供了众多属性和方法去绘制图形。</p>
-<h2 id="canvas-的使用方法"><a href="#canvas-的使用方法" class="headerlink" title="canvas 的使用方法"></a>canvas 的使用方法</h2><pre class=" language-javascript"><code class="language-javascript">首先添加一个canvas元素
-<span class="token operator">&lt;</span>canvas id<span class="token operator">=</span><span class="token string">'canvas'</span><span class="token operator">></span><span class="token operator">&lt;</span><span class="token operator">/</span>canvas<span class="token operator">></span>
+                <p>本文总结了：<br>‘列表文字太多,溢出使用省略号’ 的解决方法<br>包括单行文字溢出，多行文本溢出，主要使用 css 来做</p>
+<a id="more"></a>
 
-<span class="token keyword">var</span> canvas<span class="token operator">=</span>document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">'canvas'</span><span class="token punctuation">)</span><span class="token comment" spellcheck="true">//获取canvas元素</span>
-<span class="token keyword">var</span> ctx<span class="token operator">=</span>canvas<span class="token punctuation">.</span><span class="token function">getContext</span><span class="token punctuation">(</span><span class="token string">'2d'</span><span class="token punctuation">)</span><span class="token comment" spellcheck="true">//访问绘画上下文</span>
+<h3 id="一-前言"><a href="#一-前言" class="headerlink" title="一. 前言"></a>一. 前言</h3><p>今天再写页面的时候，看到几行文字，感觉这部分的文字在这个部分显得很冗余，而且因为文字长度的不确定性，还容易影响布局。</p>
+<p>然后我查看了下百度新闻的网页，发现他们都是用对文字溢出做了处理，显示的文字内容多少有规定，末尾用省略号代替。</p>
+<blockquote>
+<p><img src="https://raw.githubusercontent.com/lxy17761018921/All-Img/master/lxy17761018921.github.io-img/%E8%A7%A3%E5%86%B3%E5%8D%95%E8%A1%8C%E6%88%96%E8%80%85%E5%A4%9A%E8%A1%8C%E6%96%87%E6%9C%AC%E6%BA%A2%E5%87%BA%E7%9A%84%E6%96%B9%E6%B3%95%E6%80%BB%E7%BB%93/baidu_news.png" alt="baidu_news"></p>
+</blockquote>
+<p>于是就搜了下‘列表文字太多,溢出使用省略号’的解决方法，本文就此进行总结。</p>
+<br>
 
-<span class="token comment" spellcheck="true">// 添加画布样式</span>
-ctx<span class="token punctuation">.</span>fillStyle<span class="token operator">=</span><span class="token string">'orange'</span> <span class="token comment" spellcheck="true">//fillStyle设置图形填充颜色</span>
-ctx<span class="token punctuation">.</span>strokeStyle<span class="token operator">=</span><span class="token string">'red'</span> <span class="token comment" spellcheck="true">//strokeStyle设置图形的轮廓颜色</span>
-ctx<span class="token punctuation">.</span>lineWidth<span class="token operator">=</span><span class="token number">3</span> <span class="token comment" spellcheck="true">//lineWidth设置图形的线条宽度</span>
+<h3 id="二-单行文本溢出"><a href="#二-单行文本溢出" class="headerlink" title="二. 单行文本溢出"></a>二. 单行文本溢出</h3><p>主要使用 <code>text-overflow</code> 属性，具体使用如下：</p>
+<pre class=" language-css"><code class="language-css"><span class="token property">over-flow</span><span class="token punctuation">:</span> hidden<span class="token punctuation">;</span>
+<span class="token property">text-overflow</span><span class="token punctuation">:</span> ellipsis<span class="token punctuation">;</span>
+<span class="token property">white-space</span><span class="token punctuation">:</span> nowrap<span class="token punctuation">;</span></code></pre>
+<blockquote>
+<p><img src="https://raw.githubusercontent.com/lxy17761018921/All-Img/master/lxy17761018921.github.io-img/%E8%A7%A3%E5%86%B3%E5%8D%95%E8%A1%8C%E6%88%96%E8%80%85%E5%A4%9A%E8%A1%8C%E6%96%87%E6%9C%AC%E6%BA%A2%E5%87%BA%E7%9A%84%E6%96%B9%E6%B3%95%E6%80%BB%E7%BB%93/%E5%8D%95%E8%A1%8C%E6%96%87%E6%9C%AC%E6%BA%A2%E5%87%BA.png" alt="单行"></p>
+</blockquote>
+<br>
 
-<span class="token comment" spellcheck="true">// 绘制矩形</span>
-ctx<span class="token punctuation">.</span><span class="token function">fillRect</span><span class="token punctuation">(</span>x<span class="token punctuation">,</span>y<span class="token punctuation">,</span>width<span class="token punctuation">,</span>height<span class="token punctuation">)</span>
-ctx<span class="token punctuation">.</span><span class="token function">clearRect</span><span class="token punctuation">(</span>x<span class="token punctuation">,</span>y<span class="token punctuation">,</span>width<span class="token punctuation">,</span>height<span class="token punctuation">)</span>
-ctx<span class="token punctuation">.</span><span class="token function">strokeRect</span><span class="token punctuation">(</span>x<span class="token punctuation">,</span>y<span class="token punctuation">,</span>width<span class="token punctuation">,</span>height<span class="token punctuation">)</span><span class="token comment" spellcheck="true">//绘制一个矩形的边框</span>
+<h3 id="三-多行文本溢出"><a href="#三-多行文本溢出" class="headerlink" title="三. 多行文本溢出"></a>三. 多行文本溢出</h3><h5 id="方法一-使用-webkit-line-clamp-属性"><a href="#方法一-使用-webkit-line-clamp-属性" class="headerlink" title="方法一. 使用 -webkit-line-clamp 属性"></a>方法一. 使用 -webkit-line-clamp 属性</h5><p>-webkit-line-clamp 属性限制块元素显示的文本行数，但它是一个不规范的属性，它没有在 CSS 的规范草案中。该方法主要适用与 webkit 内核的浏览器或移动端,firefox 不适用。具体使用如下：</p>
+<pre class=" language-css"><code class="language-css"><span class="token property">display</span><span class="token punctuation">:</span> -webkit-box<span class="token punctuation">;</span>
+<span class="token property">-webkit-line-clamp</span><span class="token punctuation">:</span> <span class="token number">2</span><span class="token punctuation">;</span>
+<span class="token property">-webkit-box-orient</span><span class="token punctuation">:</span> vertical<span class="token punctuation">;</span>
+<span class="token property">overflow</span><span class="token punctuation">:</span> hidden<span class="token punctuation">;</span></code></pre>
+<br>
 
-<span class="token comment" spellcheck="true">//绘制路径</span>
-ctx<span class="token punctuation">.</span><span class="token function">beginPath</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token comment" spellcheck="true">//新建一条路径</span>
-ctx<span class="token punctuation">.</span><span class="token function">moveTo</span><span class="token punctuation">(</span>x<span class="token punctuation">,</span>y<span class="token punctuation">)</span><span class="token comment" spellcheck="true">//将笔触移动到指定的坐标上</span>
-ctx<span class="token punctuation">.</span><span class="token function">lineTo</span><span class="token punctuation">(</span>x<span class="token punctuation">,</span>y<span class="token punctuation">)</span><span class="token comment" spellcheck="true">//绘制一条从当前位置到制定（x,y）位置的直线</span>
-ctx<span class="token punctuation">.</span><span class="token function">stroke</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token comment" spellcheck="true">//开始绘制已定义路径</span>
+<p>这是在 chrome 里的结果：</p>
+<blockquote>
+<p><img src="https://raw.githubusercontent.com/lxy17761018921/lxy17761018921.github.io/master/2019/07/08/%E8%A7%A3%E5%86%B3%E5%8D%95%E8%A1%8C%E6%88%96%E8%80%85%E5%A4%9A%E8%A1%8C%E6%96%87%E6%9C%AC%E6%BA%A2%E5%87%BA%E7%9A%84%E6%96%B9%E6%B3%95%E6%80%BB%E7%BB%93/%E5%A4%9A%E8%A1%8C%E6%96%87%E6%9C%AC%E6%BA%A2%E5%87%BA.png" alt="chrome 多行"></p>
+</blockquote>
+<br>
 
-<span class="token comment" spellcheck="true">//绘制圆形</span>
-ctx<span class="token punctuation">.</span><span class="token function">beginPath</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
-ctx<span class="token punctuation">.</span><span class="token function">arc</span><span class="token punctuation">(</span>x<span class="token punctuation">,</span>y<span class="token punctuation">,</span>r<span class="token punctuation">,</span>startAngle<span class="token punctuation">,</span>endAngle<span class="token punctuation">,</span>counterclockwise<span class="token punctuation">)</span><span class="token comment" spellcheck="true">//counterclockwise默认为true,表示逆时针绘制圆</span>
-ctx<span class="token punctuation">.</span><span class="token function">stroke</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<p>这是在 firefox 里的结果（不支持）：</p>
+<blockquote>
+<p><img src="https://github.com/lxy17761018921/All-Img/blob/master/lxy17761018921.github.io-img/%E8%A7%A3%E5%86%B3%E5%8D%95%E8%A1%8C%E6%88%96%E8%80%85%E5%A4%9A%E8%A1%8C%E6%96%87%E6%9C%AC%E6%BA%A2%E5%87%BA%E7%9A%84%E6%96%B9%E6%B3%95%E6%80%BB%E7%BB%93/%E5%A4%9A%E8%A1%8C%E6%96%87%E6%9C%AC%E6%BA%A2%E5%87%BA.png?raw=true" alt="firefox 多行"></p>
+</blockquote>
+<br>
 
-<span class="token comment" spellcheck="true">//添加阴影</span>
-ctx<span class="token punctuation">.</span>shadowColor<span class="token operator">=</span><span class="token string">'black'</span>
-ctx<span class="token punctuation">.</span>shadowBlur<span class="token operator">=</span><span class="token number">20</span><span class="token comment" spellcheck="true">//设定阴影模糊程度</span></code></pre>
-<p>总结常用 API:</p>
-<ul>
-<li>getContext() 访问绘画上下文</li>
-<li>fillStyle 图形填充颜色</li>
-<li>strokeStyle 图形的轮廓颜色</li>
-<li>beginPath() 新建一条路径</li>
-<li>closePath() 闭合图形</li>
-<li>moveTo() 笔触移动到指定的坐标上</li>
-<li>lineTo() 绘制一条从当前位置到指定（x,y）位置的直线</li>
-<li>stroke() 开始绘制已定义路径</li>
-<li>fill() 填充路径的内容（实心）</li>
-</ul>
-<p>附上一个测试 demo:</p>
-<p class="codepen" data-height="417" data-theme-id="0" data-default-tab="js,result" data-user="lxyoryxl" data-slug-hash="ZgJEdg" style="height: 417px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="ZgJEdg">
-  <span>See the Pen <a href="https://codepen.io/lxyoryxl/pen/ZgJEdg/" target="_blank" rel="noopener">
-  ZgJEdg</a> by lxy (<a href="https://codepen.io/lxyoryxl" target="_blank" rel="noopener">@lxyoryxl</a>)
+<h5 id="方法二-使用-after-伪元素"><a href="#方法二-使用-after-伪元素" class="headerlink" title="方法二.使用 after 伪元素"></a>方法二.使用 after 伪元素</h5><p>使用伪元素在元素，在文字最后添加省略号 ‘…’，这是一个比较简单靠谱的做法，兼容性较好</p>
+<pre class=" language-css"><code class="language-css"><span class="token selector">xx<span class="token pseudo-element">::after</span> </span><span class="token punctuation">{</span>
+  <span class="token property">content</span><span class="token punctuation">:</span> <span class="token string">"..."</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code></pre>
+<blockquote>
+<p><img src="https://github.com/lxy17761018921/All-Img/blob/master/lxy17761018921.github.io-img/%E8%A7%A3%E5%86%B3%E5%8D%95%E8%A1%8C%E6%88%96%E8%80%85%E5%A4%9A%E8%A1%8C%E6%96%87%E6%9C%AC%E6%BA%A2%E5%87%BA%E7%9A%84%E6%96%B9%E6%B3%95%E6%80%BB%E7%BB%93/%E5%A4%9A%E8%A1%8C%E7%81%AB%E7%8B%90.png?raw=true" alt="伪元素 多行"></p>
+</blockquote>
+<br>
+
+<h3 id="四-总结"><a href="#四-总结" class="headerlink" title="四. 总结"></a>四. 总结</h3><p>解决文本溢出的方法很多，最好不使用 -webkit-line-clamp 属性 的方式，推荐使用伪元素方法和 js 的方法<br>这是附上我的测试 demo:</p>
+<p class="codepen" data-height="400" data-theme-id="0" data-default-tab="html,result" data-user="lxyoryxl" data-slug-hash="mNJGWQ" style="height: 737px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="文字溢出处理">
+  <span>See the Pen <a href="https://codepen.io/lxyoryxl/pen/mNJGWQ/" target="_blank" rel="noopener">
+  文字溢出处理</a> by lxy (<a href="https://codepen.io/lxyoryxl" target="_blank" rel="noopener">@lxyoryxl</a>)
   on <a href="https://codepen.io" target="_blank" rel="noopener">CodePen</a>.</span>
 </p>
 <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
 
-<p>说到 canvas，其实还有一个不得不提到的东西就是 svg,svg 出来的要比 canvas 早很多，那么下面就说下这两个的区别吧：</p>
-<ol>
-<li>canvas 绘制的图形是标量图，svg 是矢量图<br>所谓矢量图，就是放大图形时不会失真，这很适合用来做地图。</li>
-<li>canvas 绘图用 js 来实现的，svg 用标签实现</li>
-</ol>
-<p>最后附上 MDN 上的 <a href="https://developer.mozilla.org/zh-CN/docs/Web/API/Canvas_API/Tutorial/Drawing_shapes" target="_blank" rel="noopener">Canvas 教程</a>，里面有很多有趣的实例</p>
+<br>
+
+<h3 id="五-参考链接"><a href="#五-参考链接" class="headerlink" title="五. 参考链接"></a>五. 参考链接</h3><p><a src="https://www.zhangxinxu.com/wordpress/2009/09/%E5%85%B3%E4%BA%8E%E6%96%87%E5%AD%97%E5%86%85%E5%AE%B9%E6%BA%A2%E5%87%BA%E7%94%A8%E7%82%B9%E7%82%B9%E7%82%B9-%E7%9C%81%E7%95%A5%E5%8F%B7%E8%A1%A8%E7%A4%BA/comment-page-1/">关于文字内容溢出用点点点(…)省略号表示</a></p>
 
             </div>
             <hr/>
@@ -614,9 +619,9 @@ ctx<span class="token punctuation">.</span>shadowBlur<span class="token operator
             <br/>
             <span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text"
                   property="dct:title" rel="dct:type">
-                    《Canvas 的使用》
+                    《解决单行或者多行文本溢出的方法总结》
                 </span> by
-            <a xmlns:cc="http://creativecommons.org/ns#" href="/2019/08/01/Canvas的使用/" property="cc:attributionName"
+            <a xmlns:cc="http://creativecommons.org/ns#" href="/2019/07/30/解决单行或者多行文本溢出的方法总结/" property="cc:attributionName"
                rel="cc:attributionURL">
                 lxy
             </a> is licensed under a
@@ -660,7 +665,7 @@ ctx<span class="token punctuation">.</span>shadowBlur<span class="token operator
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;Previous</div>
             <div class="card">
-                <a href="/2019/08/02/Js中的继承/">
+                <a href="/2019/08/01/Js中的继承/">
                     <div class="card-image">
                         
                         
@@ -686,7 +691,7 @@ ctx<span class="token punctuation">.</span>shadowBlur<span class="token operator
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="fa fa-clock-o fa-fw icon-date"></i>2019-08-02
+                            <i class="fa fa-clock-o fa-fw icon-date"></i>2019-08-01
                         </span>
                         <span class="publish-author">
                             
