@@ -5,15 +5,13 @@
 <head><meta name="generator" content="Hexo 3.9.0">
     <meta charset="utf-8">
     <meta name="keywords" content="lxy&#39;s">
-    <meta name="description" content="一面
-数组扁平化
-深拷贝(比较两个对象是否相同)
-异步
+    <meta name="description" content="
 
-function Async() {
-  for (var i = 0; i &amp;lt; 10; i++) {
-    setTimeout(() =&gt; {
-      console">
+
+\n 只算一个字符，\表示转义，考转义字符
+黑盒测试方法中，设计测试用例的主要根据是：程序外部功能
+目前移动设备主流的屏幕帧率是每秒(60)帧
+严格模式：禁止未定义就使用的变量禁止使用 with严格模式下无法删除变量。只有 confi">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -378,7 +376,7 @@ function Async() {
             <div class="post-info">
                 <div class="post-date info-break-policy">
                     <i class="fa fa-calendar-minus-o fa-fw"></i>Publish Date:&nbsp;&nbsp;
-                    2019-08-31
+                    2019-08-10
                 </div>
 
                 
@@ -394,31 +392,23 @@ function Async() {
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="一面"><a href="#一面" class="headerlink" title="一面"></a>一面</h2><ol>
-<li>数组扁平化</li>
-<li>深拷贝(比较两个对象是否相同)</li>
-<li>异步</li>
-</ol>
-<pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">function</span> <span class="token function">Async</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-  <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">var</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> <span class="token number">10</span><span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    <span class="token function">setTimeout</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">></span> <span class="token punctuation">{</span>
-      console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span>
-    <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token number">1000</span><span class="token punctuation">)</span>
-  <span class="token punctuation">}</span>
-<span class="token punctuation">}</span>
+                <!-- ---
+title: 笔试笔记
+date: 2019-07-03 21:20:34
+tags: 笔试
+categories: 笔试
+--- -->
 
-<span class="token number">1</span><span class="token punctuation">.</span> <span class="token keyword">var</span> 改成 <span class="token keyword">let</span>
-<span class="token number">2</span><span class="token punctuation">.</span></code></pre>
-<ol start="4">
-<li><p>Vue 的生命周期</p>
-</li>
-<li><p>tcp 了解不</p>
-</li>
-<li><p>父子组件传值，兄弟组件传值？</p>
-</li>
-<li><p>发布订阅模式</p>
-</li>
+<ol>
+<li>\n 只算一个字符，\表示转义，考转义字符</li>
+<li>黑盒测试方法中，设计测试用例的主要根据是：程序外部功能</li>
+<li>目前移动设备主流的屏幕帧率是每秒(60)帧</li>
+<li>严格模式：<br>禁止未定义就使用的变量<br>禁止使用 with<br>严格模式下无法删除变量。只有 configurable 设置为 true 的对象属性，才能被删除。<br>严格模式下，arguments 不再追踪参数变化</li>
+<li>JS 在做==运算时会将操作数转换为 Number 类型之后再操作，而’ ‘，false，0，[]都能转换为为数字类型 0，而{}却转换不了，转换后为 NaN,而 NaN 做任何运算返回都是 false</li>
+<li>type function(){} //“function”<br>type null //object<br>typeof undifined //undifined</li>
+<li>使用 CSS3 画出一个线性渐变，渐变的方向是从右上角到左下角，起点颜色是从白色到黑色，请写出标准的写法 1</li>
 </ol>
+<pre class=" language-css"><code class="language-css"><span class="token property">background</span><span class="token punctuation">:</span> <span class="token function">linear-gradient</span><span class="token punctuation">(</span>to bottom left, <span class="token hexcode">#fff</span>, <span class="token hexcode">#000</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
 
             </div>
             <hr/>
@@ -579,7 +569,7 @@ function Async() {
                   property="dct:title" rel="dct:type">
                     《》
                 </span> by
-            <a xmlns:cc="http://creativecommons.org/ns#" href="/2019/08/31/美团面试/" property="cc:attributionName"
+            <a xmlns:cc="http://creativecommons.org/ns#" href="/2019/08/10/笔试笔记/" property="cc:attributionName"
                rel="cc:attributionURL">
                 lxy
             </a> is licensed under a
@@ -623,58 +613,7 @@ function Async() {
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;Previous</div>
             <div class="card">
-                <a href="/2019/08/31/浅析-URL/">
-                    <div class="card-image">
-                        
-                        
-                        <img src="/medias/featureimages/10.jpg" class="responsive-img" alt="浅析 URL">
-                        
-                        <span class="card-title">浅析 URL</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            URL 包含哪几部分，每部分分别有什么作用URL=协议+域名/IP+端口号+路径+查询字符串+锚点比如：
-下面来分别介绍一下各部分的含义和作用：
-协议 （protocol）协议是计算机通信所必须遵循的规则，简单来说就是规定书写的请求格式，响
-                        
-                    </div>
-                    <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="fa fa-clock-o fa-fw icon-date"></i>2019-08-31
-                        </span>
-                        <span class="publish-author">
-                            
-                            <i class="fa fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/URL/" class="post-category" target="_blank">
-                                    URL
-                                </a>
-                            
-                            
-                        </span>
-                    </div>
-                </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/URL/" target="_blank">
-                        <span class="chip bg-color">URL</span>
-                    </a>
-                    
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                Next&nbsp;<i class="fa fa-chevron-right"></i>
-            </div>
-            <div class="card">
-                <a href="/2019/08/24/京东笔试/">
+                <a href="/2019/08/23/完美世界笔试/">
                     <div class="card-image">
                         
                         
@@ -686,20 +625,18 @@ function Async() {
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            选择题
-二叉查找树就是排序二叉树，节点的值大小是：左&lt;根&lt;右
+                            简答题
+canvas 绘制 10 个圆canvas 绘制 100 个圆
 
-完美平衡二叉树（AVL）,当且仅当两个子树的高度差不超过 1 时，这个树是平衡二叉树（同时是排序二叉树）
-
-红黑树，b+树，b 树都是自平衡树？红黑树是自平衡树
-
-
+&lt;canvas id='canvas'  height="1000" width="1000">&lt;/canvas>
+  &lt;script>
+    v
                         
                     </div>
                     <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-08-24
-                            </span>
+                        <span class="publish-date">
+                            <i class="fa fa-clock-o fa-fw icon-date"></i>2019-08-23
+                        </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-user fa-fw"></i>
@@ -707,6 +644,58 @@ function Async() {
                             
                         </span>
                     </div>
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                Next&nbsp;<i class="fa fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2019/08/08/空元素是什么？可替换元素又是什么？/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/16.jpg" class="responsive-img" alt="空元素是什么？可替换元素又是什么？">
+                        
+                        <span class="card-title">空元素是什么？可替换元素又是什么？</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            一. 空元素空元素的含义用我的话说来解释空元素，就是不存在子节点（文字节点呀之类的），没有内容的元素。而且空元素是自封闭标签，比如：&lt;br/&gt;
+再比如：那些非空标签都能在里面嵌套子元素：
+&lt;div>
+  &lt;a>&lt
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-08-08
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fa fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/元素标签/" class="post-category" target="_blank">
+                                    元素标签
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/空元素-可替换元素-html-标签/" target="_blank">
+                        <span class="chip bg-color">空元素  可替换元素  html  标签</span>
+                    </a>
+                    
                 </div>
                 
             </div>

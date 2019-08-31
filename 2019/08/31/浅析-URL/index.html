@@ -4,16 +4,10 @@
 
 <head><meta name="generator" content="Hexo 3.9.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="lxy&#39;s">
-    <meta name="description" content="一面
-数组扁平化
-深拷贝(比较两个对象是否相同)
-异步
-
-function Async() {
-  for (var i = 0; i &amp;lt; 10; i++) {
-    setTimeout(() =&gt; {
-      console">
+    <meta name="keywords" content="浅析 URL, lxy&#39;s">
+    <meta name="description" content="URL 包含哪几部分，每部分分别有什么作用URL=协议+域名/IP+端口号+路径+查询字符串+锚点比如：
+下面来分别介绍一下各部分的含义和作用：
+协议 （protocol）协议是计算机通信所必须遵循的规则，简单来说就是规定书写的请求格式，响">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -21,7 +15,7 @@ function Async() {
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>lxy&#39;s</title>
+    <title>浅析 URL | lxy&#39;s</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -250,13 +244,13 @@ function Async() {
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/0.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/10.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        
+                        浅析 URL
                     </div>
                 </div>
             </div>
@@ -365,12 +359,25 @@ function Async() {
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                          <div class="article-tag">
-                            <span class="chip bg-color">No tag</span>
-                          </div>
+                    <div class="article-tag">
+                        
+                            <a href="/tags/URL/" target="_blank">
+                                <span class="chip bg-color">URL</span>
+                            </a>
+                        
+                    </div>
                     
                 </div>
                 <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fa fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/URL/" class="post-category" target="_blank">
+                                URL
+                            </a>
+                        
+                    </div>
                     
                 </div>
             </div>
@@ -394,31 +401,99 @@ function Async() {
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="一面"><a href="#一面" class="headerlink" title="一面"></a>一面</h2><ol>
-<li>数组扁平化</li>
-<li>深拷贝(比较两个对象是否相同)</li>
-<li>异步</li>
-</ol>
-<pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">function</span> <span class="token function">Async</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-  <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">var</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> <span class="token number">10</span><span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    <span class="token function">setTimeout</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">></span> <span class="token punctuation">{</span>
-      console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span>
-    <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token number">1000</span><span class="token punctuation">)</span>
-  <span class="token punctuation">}</span>
-<span class="token punctuation">}</span>
-
-<span class="token number">1</span><span class="token punctuation">.</span> <span class="token keyword">var</span> 改成 <span class="token keyword">let</span>
-<span class="token number">2</span><span class="token punctuation">.</span></code></pre>
-<ol start="4">
-<li><p>Vue 的生命周期</p>
-</li>
-<li><p>tcp 了解不</p>
-</li>
-<li><p>父子组件传值，兄弟组件传值？</p>
-</li>
-<li><p>发布订阅模式</p>
-</li>
-</ol>
+                <h2 id="URL-包含哪几部分，每部分分别有什么作用"><a href="#URL-包含哪几部分，每部分分别有什么作用" class="headerlink" title="URL 包含哪几部分，每部分分别有什么作用"></a>URL 包含哪几部分，每部分分别有什么作用</h2><p>URL=协议+域名/IP+端口号+路径+查询字符串+锚点<br>比如：<img src alt="URL举例"></p>
+<p>下面来分别介绍一下各部分的含义和作用：</p>
+<p><strong>协议 （protocol）</strong><br>协议是计算机通信所必须遵循的规则，简单来说就是规定书写的请求格式，响应的格式等。</p>
+<p>这里主要讲 HTTP 协议：</p>
+<ul>
+<li>HTTP 协议是一个应用层的协议</li>
+<li>HTTP 协议是无状态的:无状态是指，如果后续处理需要前面的信息，则它必须重传，这样可能导致每次连接传送的数据量增大。</li>
+<li>HTTP 协议是基于 TCP 和 IP 的两个协议<br><img src alt="Http基于TCP和IP"></li>
+</ul>
+<p><strong>域名</strong><br>域名是 IP 的别称。</p>
+<p>域名和 IP 是如何对应起来的呢？<br>通过 DNS。当你输入一个 url 时，域名解析服务器（DNS）就把域名解析为 IP 地址，从而去找到相应的设备。</p>
+<ul>
+<li>一个域名对应多个 IP 叫做负载均衡</li>
+<li>一个 IP 对应多个域名叫做共享主机</li>
+</ul>
+<p>域名的分类：</p>
+<ul>
+<li>com 是顶级域名</li>
+<li>baidu.com 二级域名（俗称一级域名）</li>
+<li><a href="http://www.baidu.com" target="_blank" rel="noopener">www.baidu.com</a> 三级域名（俗称二级域名）</li>
+</ul>
+<p><strong>IP （Internet Protocol）</strong><br>IP 的主要作用是定位一台设备。</p>
+<p>IP 分为内网和外网，如下图：<br><img src alt="IP 分为内网和外网"></p>
+<p>通过上图可以得知一个流程：</p>
+<ul>
+<li>路由器连接上电信的服务器，从而得到一个外网 IP（这个外网 IP 会在路由器重启后再次更新）</li>
+<li>路由器会在家里创建一个内网，对在内网的每一台设备分配一个 内网 IP</li>
+<li>我们用电脑和手机连接路由器广播出来的 WIFI</li>
+</ul>
+<p>路由器（网关）的功能：</p>
+<ul>
+<li>路由器有两个 IP，内网 IP 和外网 IP</li>
+<li>内网中的设备能互相访问，但不能直接访问外网</li>
+<li>外网中的设备能互相访问，但不能直接访问内网</li>
+<li>内网设备如果要访问外网，必须要经过路由器进行中转</li>
+<li>外网设备如果要访问外网，必须要经过路由器进行中转</li>
+<li>外网和内网就像两个独立的空间，无法互通，唯一的连接点就是路由器</li>
+</ul>
+<p>几个特殊的 IP:</p>
+<ul>
+<li>127.0.0.1 表示自己</li>
+<li>localhost 通过 hosts（电脑中的一个文件） 指定为自己</li>
+<li>0.0.0.0 不表示任何设备</li>
+</ul>
+<p><strong>端口号</strong><br>通过 IP 定位到服务器后，还要查询端口，不同端口提供不同的服务。</p>
+<p>常用的端口：</p>
+<ul>
+<li>要提供 Http 服务，使用 80 端口</li>
+<li>要提供 Https 服务，使用 443 端口</li>
+<li>一共有 65535 个端口</li>
+</ul>
+<p>端口的使用规则：</p>
+<ul>
+<li>0-1023 号端口是留给系统用的</li>
+<li>要使用 1024 号端口必须有管理员权限</li>
+<li>其他端口可以给普通用户使用</li>
+<li>比如 http-server 默认使用 8080 号端口</li>
+<li>一个端口被占用，就只能换用其他端口</li>
+</ul>
+<p>记住：IP 和端口缺一不可</p>
+<p><strong>路径</strong><br>路径可以做到：一个域名下请求不同的页面。</p>
+<blockquote>
+<p><a href="https://developer.mozilla.org/zh-CN/docs/Web/HTML" target="_blank" rel="noopener">https://developer.mozilla.org/zh-CN/docs/Web/HTML</a></p>
+</blockquote>
+<p><strong>查询字符串</strong><br>查询字符串可以做到：同一个页面下，不同内容。</p>
+<blockquote>
+<p><a href="https://www.baidu.com/s?wd=hi" target="_blank" rel="noopener">https://www.baidu.com/s?wd=hi</a></p>
+</blockquote>
+<p><strong>锚点</strong><br>锚点可以做到：同一个内容下，不同位置。</p>
+<blockquote>
+<p><a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS#教程" target="_blank" rel="noopener">https://developer.mozilla.org/zh-CN/docs/Web/CSS#教程</a></p>
+</blockquote>
+<p>锚点复制之后粘贴，是无法被看到的，因为锚点不会传给服务器</p>
+<h2 id="DNS-的作用是什么，nslookup-命令怎么用"><a href="#DNS-的作用是什么，nslookup-命令怎么用" class="headerlink" title="DNS 的作用是什么，nslookup 命令怎么用"></a>DNS 的作用是什么，nslookup 命令怎么用</h2><p><strong>DNS 的作用：</strong><br>把域名转换成网络可识别的 IP 地址。</p>
+<p><strong>nslookup 命令怎么用</strong></p>
+<ul>
+<li>通过域名 ，查询 IP 地址：<code>nslookup 域名</code></li>
+<li>通过 IP 地址 ，查询域名：<code>nslookup IP地址</code></li>
+</ul>
+<h2 id="IP-的作用是什么，ping-命令怎么用"><a href="#IP-的作用是什么，ping-命令怎么用" class="headerlink" title="IP 的作用是什么，ping 命令怎么用"></a>IP 的作用是什么，ping 命令怎么用</h2><p><strong>IP 的作用是什么：</strong><br>IP 的主要作用是定位一台设备。</p>
+<p><strong>ping 命令怎么用</strong><br>ping 命令主要用于测试网络连通性。<br>ping 命令发送数据使用的是 ICMP 协议。</p>
+<ul>
+<li><code>ping 域名</code></li>
+<li><code>ping IP地址</code></li>
+</ul>
+<h2 id="域名是什么，分别哪几类域名"><a href="#域名是什么，分别哪几类域名" class="headerlink" title="域名是什么，分别哪几类域名"></a>域名是什么，分别哪几类域名</h2><p>域名是 IP 的别称。</p>
+<p>域名的分类：</p>
+<ul>
+<li>com 是顶级域名</li>
+<li>baidu.com 二级域名（俗称一级域名）</li>
+<li><a href="http://www.baidu.com" target="_blank" rel="noopener">www.baidu.com</a> 三级域名（俗称二级域名）</li>
+</ul>
+<h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><p><a href="https://static.xiedaimala.com/xdml/file/3ac7c224-c23d-491f-84b5-4fabfbeab9b8/2019-8-27-11-33-39.pdf" target="_blank" rel="noopener">HTTP 入门</a></p>
 
             </div>
             <hr/>
@@ -577,9 +652,9 @@ function Async() {
             <br/>
             <span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text"
                   property="dct:title" rel="dct:type">
-                    《》
+                    《浅析 URL》
                 </span> by
-            <a xmlns:cc="http://creativecommons.org/ns#" href="/2019/08/31/美团面试/" property="cc:attributionName"
+            <a xmlns:cc="http://creativecommons.org/ns#" href="/2019/08/31/浅析-URL/" property="cc:attributionName"
                rel="cc:attributionURL">
                 lxy
             </a> is licensed under a
@@ -623,58 +698,7 @@ function Async() {
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;Previous</div>
             <div class="card">
-                <a href="/2019/08/31/浅析-URL/">
-                    <div class="card-image">
-                        
-                        
-                        <img src="/medias/featureimages/10.jpg" class="responsive-img" alt="浅析 URL">
-                        
-                        <span class="card-title">浅析 URL</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            URL 包含哪几部分，每部分分别有什么作用URL=协议+域名/IP+端口号+路径+查询字符串+锚点比如：
-下面来分别介绍一下各部分的含义和作用：
-协议 （protocol）协议是计算机通信所必须遵循的规则，简单来说就是规定书写的请求格式，响
-                        
-                    </div>
-                    <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="fa fa-clock-o fa-fw icon-date"></i>2019-08-31
-                        </span>
-                        <span class="publish-author">
-                            
-                            <i class="fa fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/URL/" class="post-category" target="_blank">
-                                    URL
-                                </a>
-                            
-                            
-                        </span>
-                    </div>
-                </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/URL/" target="_blank">
-                        <span class="chip bg-color">URL</span>
-                    </a>
-                    
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                Next&nbsp;<i class="fa fa-chevron-right"></i>
-            </div>
-            <div class="card">
-                <a href="/2019/08/24/京东笔试/">
+                <a href="/2019/08/31/聊一聊HTML5/">
                     <div class="card-image">
                         
                         
@@ -686,19 +710,61 @@ function Async() {
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            选择题
-二叉查找树就是排序二叉树，节点的值大小是：左&lt;根&lt;右
+                            
 
-完美平衡二叉树（AVL）,当且仅当两个子树的高度差不超过 1 时，这个树是平衡二叉树（同时是排序二叉树）
+类似问题：
+HTML5 有哪些新特性、移除了哪些元素？HTML5 废弃了哪些 HTML4 标签？HTML5 标准提供了哪些新的 API？HTML5 和 CSS3 用的多吗？你了解它们的新属性吗？有在项目中用过吗？
+HTML5 有哪些新特
+                        
+                    </div>
+                    <div class="publish-info">
+                        <span class="publish-date">
+                            <i class="fa fa-clock-o fa-fw icon-date"></i>2019-08-31
+                        </span>
+                        <span class="publish-author">
+                            
+                            <i class="fa fa-user fa-fw"></i>
+                            lxy
+                            
+                        </span>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                Next&nbsp;<i class="fa fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2019/08/31/美团面试/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="">
+                        
+                        <span class="card-title"></span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            一面
+数组扁平化
+深拷贝(比较两个对象是否相同)
+异步
 
-红黑树，b+树，b 树都是自平衡树？红黑树是自平衡树
-
-
+function Async() {
+  for (var i = 0; i &lt; 10; i++) {
+    setTimeout(() => {
+      console
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-08-24
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-08-31
                             </span>
                         <span class="publish-author">
                             

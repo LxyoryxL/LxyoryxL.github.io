@@ -5,15 +5,11 @@
 <head><meta name="generator" content="Hexo 3.9.0">
     <meta charset="utf-8">
     <meta name="keywords" content="lxy&#39;s">
-    <meta name="description" content="一面
-数组扁平化
-深拷贝(比较两个对象是否相同)
-异步
+    <meta name="description" content="
 
-function Async() {
-  for (var i = 0; i &amp;lt; 10; i++) {
-    setTimeout(() =&gt; {
-      console">
+类似问题：
+HTML5 有哪些新特性、移除了哪些元素？HTML5 废弃了哪些 HTML4 标签？HTML5 标准提供了哪些新的 API？HTML5 和 CSS3 用的多吗？你了解它们的新属性吗？有在项目中用过吗？
+HTML5 有哪些新特">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -394,32 +390,42 @@ function Async() {
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="一面"><a href="#一面" class="headerlink" title="一面"></a>一面</h2><ol>
-<li>数组扁平化</li>
-<li>深拷贝(比较两个对象是否相同)</li>
-<li>异步</li>
-</ol>
-<pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">function</span> <span class="token function">Async</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-  <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">var</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> <span class="token number">10</span><span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    <span class="token function">setTimeout</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">></span> <span class="token punctuation">{</span>
-      console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span>
-    <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token number">1000</span><span class="token punctuation">)</span>
-  <span class="token punctuation">}</span>
-<span class="token punctuation">}</span>
+                <!-- ---
+title: 聊一聊HTML5
+date: 2019-07-25 16:04:53
+tags: HTML5
+categories: HTML5
+cover: true
+--- -->
 
-<span class="token number">1</span><span class="token punctuation">.</span> <span class="token keyword">var</span> 改成 <span class="token keyword">let</span>
-<span class="token number">2</span><span class="token punctuation">.</span></code></pre>
-<ol start="4">
-<li><p>Vue 的生命周期</p>
-</li>
-<li><p>tcp 了解不</p>
-</li>
-<li><p>父子组件传值，兄弟组件传值？</p>
-</li>
-<li><p>发布订阅模式</p>
-</li>
+<p>类似问题：</p>
+<p>HTML5 有哪些新特性、移除了哪些元素？<br>HTML5 废弃了哪些 HTML4 标签？<br>HTML5 标准提供了哪些新的 API？<br>HTML5 和 CSS3 用的多吗？你了解它们的新属性吗？有在项目中用过吗？</p>
+<h2 id="HTML5-有哪些新特性？"><a href="#HTML5-有哪些新特性？" class="headerlink" title="HTML5 有哪些新特性？"></a>HTML5 有哪些新特性？</h2><ol>
+<li>新增了一些语义化的标签，比如：header footer main section figure 等，拥有更丰富的表单类型：search email range number datetime</li>
+<li>离线存储的支持，比如：localStorage indexdb 等</li>
+<li>2d 和 3d 绘图，比如：Canvas SVG WebGL</li>
+<li>多媒体的支持，比如：video audio</li>
+<li>更丰富的效果，比如：阴影 边框 过渡 动画等</li>
 </ol>
+<h2 id="HTML5-能做什么？最典型的是网页游戏"><a href="#HTML5-能做什么？最典型的是网页游戏" class="headerlink" title="HTML5 能做什么？最典型的是网页游戏"></a>HTML5 能做什么？最典型的是网页游戏</h2><ol>
+<li>WebGL 用于 3D 渲染</li>
+<li>HTML Audio 用于音频</li>
+<li>LocalStorage 用于本地持久化存储</li>
+</ol>
+<h2 id="HTML5-新增的语义化标签？"><a href="#HTML5-新增的语义化标签？" class="headerlink" title="HTML5 新增的语义化标签？"></a>HTML5 新增的语义化标签？</h2><h4 id="区块段落"><a href="#区块段落" class="headerlink" title="区块段落"></a>区块段落</h4><section>, <article>, <nav>, <header>, <footer>, <aside>，<main>
 
+<h4 id="音频视频"><a href="#音频视频" class="headerlink" title="音频视频"></a>音频视频</h4><p><audio>,<video></video></audio></p>
+<h4 id="新增表单类型"><a href="#新增表单类型" class="headerlink" title="新增表单类型"></a>新增表单类型</h4><p>type=”color”<br>type=”date”<br>type=”email”<br>type=”number”<br>type=”search”<br>type=”range”<br>type=”tel”<br>type=”time”</p>
+<h4 id="新的语义元素"><a href="#新的语义元素" class="headerlink" title="新的语义元素"></a>新的语义元素</h4><p><mark>， <figure>， <figcaption>， <time>，<output>，<progress></progress></output></time></figcaption></figure></mark></p>
+<h2 id="HTML5-废弃了哪些-HTML4-标签？？"><a href="#HTML5-废弃了哪些-HTML4-标签？？" class="headerlink" title="HTML5 废弃了哪些 HTML4 标签？？"></a>HTML5 废弃了哪些 HTML4 标签？？</h2><p><font>，<s>, <center>, <frameset>, <frame>, <frame>, <rb></rb></frameset></center></s></font></p>
+<h2 id="HTML5-标准提供了哪些新的-API？"><a href="#HTML5-标准提供了哪些新的-API？" class="headerlink" title="HTML5 标准提供了哪些新的 API？"></a>HTML5 标准提供了哪些新的 API？</h2><ol>
+<li>Media API</li>
+<li>Canvas API</li>
+</ol>
+<h2 id="HTML5-和-CSS3-用的多吗？你了解它们的新属性吗？有在项目中用过吗？"><a href="#HTML5-和-CSS3-用的多吗？你了解它们的新属性吗？有在项目中用过吗？" class="headerlink" title="HTML5 和 CSS3 用的多吗？你了解它们的新属性吗？有在项目中用过吗？"></a>HTML5 和 CSS3 用的多吗？你了解它们的新属性吗？有在项目中用过吗？</h2><ol>
+<li>更丰富的效果，比如：阴影 边框 过渡 动画等</li>
+</ol>
+</main></aside></footer></header></nav></article></section>
             </div>
             <hr/>
 
@@ -579,7 +585,7 @@ function Async() {
                   property="dct:title" rel="dct:type">
                     《》
                 </span> by
-            <a xmlns:cc="http://creativecommons.org/ns#" href="/2019/08/31/美团面试/" property="cc:attributionName"
+            <a xmlns:cc="http://creativecommons.org/ns#" href="/2019/08/31/聊一聊HTML5/" property="cc:attributionName"
                rel="cc:attributionURL">
                 lxy
             </a> is licensed under a
@@ -623,6 +629,48 @@ function Async() {
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;Previous</div>
             <div class="card">
+                <a href="/2019/08/31/Canvas、SVG、WebGL/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="">
+                        
+                        <span class="card-title"></span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+
+常见问题：
+Canvas、SVG 有什么区别说说你对 SVG 理解?HTML5 Canvas 元素有什么用？什么是 WebGL,它有什么优点?
+SVGSVG 是一种使用 XML 描述 2D 图形的语言。
+SVG 基于 XML，这意味着 
+                        
+                    </div>
+                    <div class="publish-info">
+                        <span class="publish-date">
+                            <i class="fa fa-clock-o fa-fw icon-date"></i>2019-08-31
+                        </span>
+                        <span class="publish-author">
+                            
+                            <i class="fa fa-user fa-fw"></i>
+                            lxy
+                            
+                        </span>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                Next&nbsp;<i class="fa fa-chevron-right"></i>
+            </div>
+            <div class="card">
                 <a href="/2019/08/31/浅析-URL/">
                     <div class="card-image">
                         
@@ -641,9 +689,9 @@ function Async() {
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="fa fa-clock-o fa-fw icon-date"></i>2019-08-31
-                        </span>
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-08-31
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
@@ -663,50 +711,6 @@ function Async() {
                         <span class="chip bg-color">URL</span>
                     </a>
                     
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                Next&nbsp;<i class="fa fa-chevron-right"></i>
-            </div>
-            <div class="card">
-                <a href="/2019/08/24/京东笔试/">
-                    <div class="card-image">
-                        
-                        
-                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="">
-                        
-                        <span class="card-title"></span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            选择题
-二叉查找树就是排序二叉树，节点的值大小是：左&lt;根&lt;右
-
-完美平衡二叉树（AVL）,当且仅当两个子树的高度差不超过 1 时，这个树是平衡二叉树（同时是排序二叉树）
-
-红黑树，b+树，b 树都是自平衡树？红黑树是自平衡树
-
-
-                        
-                    </div>
-                    <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-08-24
-                            </span>
-                        <span class="publish-author">
-                            
-                            <i class="fa fa-user fa-fw"></i>
-                            lxy
-                            
-                        </span>
-                    </div>
                 </div>
                 
             </div>

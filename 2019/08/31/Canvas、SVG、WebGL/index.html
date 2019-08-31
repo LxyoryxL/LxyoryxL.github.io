@@ -4,12 +4,13 @@
 
 <head><meta name="generator" content="Hexo 3.9.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="笔试笔记, lxy&#39;s">
+    <meta name="keywords" content="lxy&#39;s">
     <meta name="description" content="
-\n 只算一个字符，\表示转义，考转义字符
-黑盒测试方法中，设计测试用例的主要根据是：程序外部功能
-目前移动设备主流的屏幕帧率是每秒(60)帧
-严格模式：禁止未定义就使用的变量禁止使用 with严格模式下无法删除变量。只有 configu">
+
+常见问题：
+Canvas、SVG 有什么区别说说你对 SVG 理解?HTML5 Canvas 元素有什么用？什么是 WebGL,它有什么优点?
+SVGSVG 是一种使用 XML 描述 2D 图形的语言。
+SVG 基于 XML，这意味着 ">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -17,7 +18,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>笔试笔记 | lxy&#39;s</title>
+    <title>lxy&#39;s</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -246,13 +247,13 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/5.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/0.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        笔试笔记
+                        
                     </div>
                 </div>
             </div>
@@ -361,25 +362,12 @@
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                    <div class="article-tag">
-                        
-                            <a href="/tags/笔试/" target="_blank">
-                                <span class="chip bg-color">笔试</span>
-                            </a>
-                        
-                    </div>
+                          <div class="article-tag">
+                            <span class="chip bg-color">No tag</span>
+                          </div>
                     
                 </div>
                 <div class="col s5 right-align">
-                    
-                    <div class="post-cate">
-                        <i class="fa fa-bookmark fa-fw icon-category"></i>
-                        
-                            <a href="/categories/笔试/" class="post-category" target="_blank">
-                                笔试
-                            </a>
-                        
-                    </div>
                     
                 </div>
             </div>
@@ -387,7 +375,7 @@
             <div class="post-info">
                 <div class="post-date info-break-policy">
                     <i class="fa fa-calendar-minus-o fa-fw"></i>Publish Date:&nbsp;&nbsp;
-                    2019-07-03
+                    2019-08-31
                 </div>
 
                 
@@ -403,16 +391,28 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <ol>
-<li>\n 只算一个字符，\表示转义，考转义字符</li>
-<li>黑盒测试方法中，设计测试用例的主要根据是：程序外部功能</li>
-<li>目前移动设备主流的屏幕帧率是每秒(60)帧</li>
-<li>严格模式：<br>禁止未定义就使用的变量<br>禁止使用 with<br>严格模式下无法删除变量。只有 configurable 设置为 true 的对象属性，才能被删除。<br>严格模式下，arguments 不再追踪参数变化</li>
-<li>JS 在做==运算时会将操作数转换为 Number 类型之后再操作，而’ ‘，false，0，[]都能转换为为数字类型 0，而{}却转换不了，转换后为 NaN,而 NaN 做任何运算返回都是 false</li>
-<li>type function(){} //“function”<br>type null //object<br>typeof undifined //undifined</li>
-<li>使用 CSS3 画出一个线性渐变，渐变的方向是从右上角到左下角，起点颜色是从白色到黑色，请写出标准的写法 1</li>
-</ol>
-<pre class=" language-css"><code class="language-css"><span class="token property">background</span><span class="token punctuation">:</span> <span class="token function">linear-gradient</span><span class="token punctuation">(</span>to bottom left, <span class="token hexcode">#fff</span>, <span class="token hexcode">#000</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+                <!-- ---
+title: 聊一聊Canvas、SVG、WebGL、Three.js、D3.js
+date: 2019-07-25 16:04:53
+tags: HTML5
+categories: HTML5
+cover: true
+--- -->
+
+<p>常见问题：</p>
+<p>Canvas、SVG 有什么区别<br>说说你对 SVG 理解?<br>HTML5 Canvas 元素有什么用？<br>什么是 WebGL,它有什么优点?</p>
+<h2 id="SVG"><a href="#SVG" class="headerlink" title="SVG"></a>SVG</h2><p>SVG 是一种使用 XML 描述 2D 图形的语言。</p>
+<p>SVG 基于 XML，这意味着 SVG DOM 中的每个元素都是可用的。您可以为某个元素附加 JavaScript 事件处理器。</p>
+<p>在 SVG 中，每个被绘制的图形均被视为对象。如果 SVG 对象的属性发生变化，那么浏览器能够自动重现图形。</p>
+<h2 id="Canvas"><a href="#Canvas" class="headerlink" title="Canvas"></a>Canvas</h2><p>Canvas 通过 JavaScript 来绘制 2D 图形。</p>
+<p>Canvas 是逐像素进行渲染的。</p>
+<p>在 canvas 中，一旦图形被绘制完成，它就不会继续得到浏览器的关注。如果其位置发生变化，那么整个场景也需要重新绘制，包括任何或许已被图形覆盖的对象。</p>
+<h2 id="Canvas-与-SVG-的比较"><a href="#Canvas-与-SVG-的比较" class="headerlink" title="Canvas 与 SVG 的比较"></a>Canvas 与 SVG 的比较</h2><p>Canvas</p>
+<p>依赖分辨率<br>不支持事件处理器<br>弱的文本渲染能力<br>能够以 .png 或 .jpg 格式保存结果图像<br>最适合图像密集型的游戏，其中的许多对象会被频繁重绘</p>
+<p>SVG</p>
+<p>不依赖分辨率<br>支持事件处理器<br>最适合带有大型渲染区域的应用程序（比如地图）<br>复杂度高会减慢渲染速度<br>不适合游戏应用</p>
+<h2 id="WebGL"><a href="#WebGL" class="headerlink" title="WebGL"></a>WebGL</h2><p>WebGL 是一项使用 JavaScript 实现 3D 绘图的技术，浏览器无需插件支持，Web 开发者就能借助系统显卡（GPU）进行编写代码从而呈现 3D 场景和对象。</p>
+<p>WebGL 基于 OpenGL ES 2.0，OpenGL ES 是 OpenGL 三维图形 API 的子集，针对手机、平板电脑和游戏主机等嵌入式设备而设计。浏览器内核通过对 OpenGL API 的封装，实现了通过 JavaScript 调用 3D 的能力。WebGL 内容作为 HTML5 中的 Canvas 标签的特殊上下文实现在浏览器中。</p>
 
             </div>
             <hr/>
@@ -571,9 +571,9 @@
             <br/>
             <span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text"
                   property="dct:title" rel="dct:type">
-                    《笔试笔记》
+                    《》
                 </span> by
-            <a xmlns:cc="http://creativecommons.org/ns#" href="/2019/07/03/笔试笔记/" property="cc:attributionName"
+            <a xmlns:cc="http://creativecommons.org/ns#" href="/2019/08/31/Canvas、SVG、WebGL/" property="cc:attributionName"
                rel="cc:attributionURL">
                 lxy
             </a> is licensed under a
@@ -613,57 +613,44 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fa fa-chevron-left"></i>&nbsp;Previous</div>
+                <i class="fa fa-dot-circle-o"></i>&nbsp;Current
+            </div>
             <div class="card">
-                <a href="/2019/07/04/Markdown-常用语法/">
+                <a href="/2019/08/31/Canvas、SVG、WebGL/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/23.jpg" class="responsive-img" alt="Markdown 常用语法">
+                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="">
                         
-                        <span class="card-title">Markdown 常用语法</span>
+                        <span class="card-title"></span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            本文总结:Markdown 常用语法，包括 Markdown 标题 列表 区块引用 链接 字体 代码框
+                            
 
-
-一. 标题写法# 一级标题
-## 二级标题
-### 三级标题
-#### 四级标题
-一级标题二级标题三级标题四级标题
-注意，#号后面有
+常见问题：
+Canvas、SVG 有什么区别说说你对 SVG 理解?HTML5 Canvas 元素有什么用？什么是 WebGL,它有什么优点?
+SVGSVG 是一种使用 XML 描述 2D 图形的语言。
+SVG 基于 XML，这意味着 
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="fa fa-clock-o fa-fw icon-date"></i>2019-07-04
-                        </span>
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-08-31
+                            </span>
                         <span class="publish-author">
                             
-                            <i class="fa fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/语法/" class="post-category" target="_blank">
-                                    语法
-                                </a>
-                            
+                            <i class="fa fa-user fa-fw"></i>
+                            lxy
                             
                         </span>
                     </div>
                 </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/Markdown-标题-列表-区块引用-链接-字体-代码框/" target="_blank">
-                        <span class="chip bg-color">Markdown 标题 列表 区块引用 链接 字体 代码框</span>
-                    </a>
-                    
-                </div>
+
                 
             </div>
         </div>
@@ -671,52 +658,39 @@
         
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge right-badge text-color">
-                Current&nbsp;<i class="fa fa-dot-circle-o"></i>
+                Next&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2019/07/03/笔试笔记/">
+                <a href="/2019/08/31/聊一聊HTML5/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/5.jpg" class="responsive-img" alt="笔试笔记">
+                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="">
                         
-                        <span class="card-title">笔试笔记</span>
+                        <span class="card-title"></span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
                             
-\n 只算一个字符，\表示转义，考转义字符
-黑盒测试方法中，设计测试用例的主要根据是：程序外部功能
-目前移动设备主流的屏幕帧率是每秒(60)帧
-严格模式：禁止未定义就使用的变量禁止使用 with严格模式下无法删除变量。只有 configu
+
+类似问题：
+HTML5 有哪些新特性、移除了哪些元素？HTML5 废弃了哪些 HTML4 标签？HTML5 标准提供了哪些新的 API？HTML5 和 CSS3 用的多吗？你了解它们的新属性吗？有在项目中用过吗？
+HTML5 有哪些新特
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-07-03
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-08-31
                             </span>
                         <span class="publish-author">
                             
-                            <i class="fa fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/笔试/" class="post-category" target="_blank">
-                                    笔试
-                                </a>
-                            
+                            <i class="fa fa-user fa-fw"></i>
+                            lxy
                             
                         </span>
                     </div>
-                </div>
-
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/笔试/" target="_blank">
-                        <span class="chip bg-color">笔试</span>
-                    </a>
-                    
                 </div>
                 
             </div>
