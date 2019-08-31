@@ -5,11 +5,15 @@
 <head><meta name="generator" content="Hexo 3.9.0">
     <meta charset="utf-8">
     <meta name="keywords" content="lxy&#39;s">
-    <meta name="description" content="
+    <meta name="description" content="一面
+数组扁平化
+深拷贝(比较两个对象是否相同)
+异步
 
-以下是我整理的面试题，按技能点区分
-HTML
-（必考） 你是如何理解 HTML 语义化的？概念：用有意义的标签来编码历史：tabel 布局—-div+css 布局—-h1 p article 专业的语义化标签好处：便于阅读维护 利于 S">
+function Async() {
+  for (var i = 0; i &amp;lt; 10; i++) {
+    setTimeout(() =&gt; {
+      console">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -374,7 +378,7 @@ HTML
             <div class="post-info">
                 <div class="post-date info-break-policy">
                     <i class="fa fa-calendar-minus-o fa-fw"></i>Publish Date:&nbsp;&nbsp;
-                    2019-07-30
+                    2019-08-31
                 </div>
 
                 
@@ -390,223 +394,30 @@ HTML
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <!-- ---
-title: 面试集锦
-date: 2019-07-06 21:20:34
-tags: 面试
-categories: 面试
---- -->
-
-<p>以下是我整理的面试题，按技能点区分</p>
-<h4 id="HTML"><a href="#HTML" class="headerlink" title="HTML"></a>HTML</h4><ol>
-<li><p>（必考） 你是如何理解 HTML 语义化的？<br>概念：用有意义的标签来编码<br>历史：tabel 布局—-div+css 布局—-h1 p article 专业的语义化标签<br>好处：便于阅读维护 利于 SEO 利于其他设备的解析（盲人阅读器）</p>
-</li>
-<li><p><code>&lt;strong&gt;</code> 和 <code>&lt;b&gt;</code> 和 <code>&lt;em&gt;</code> 和 <code>&lt;i&gt;</code> 的区别？<br><code>&lt;strong&gt;</code> <code>&lt;b&gt;</code> 都是字体加粗，但是前者表示强调重点内容，后者没有实际含义<br><code>&lt;em&gt;</code> <code>&lt;i&gt;</code> 都是字体变斜体，但是前者表示强调，引用等，后者没有实际含义<br>我们尽量使用<code>&lt;strong&gt;</code> <code>&lt;em&gt;</code> 这两个有语义化的标签</p>
-</li>
-<li><p>块级元素和行内元素区别？<br>块级元素：</p>
-<ol>
-<li>独占一行 2. 可设置宽高</li>
+                <h2 id="一面"><a href="#一面" class="headerlink" title="一面"></a>一面</h2><ol>
+<li>数组扁平化</li>
+<li>深拷贝(比较两个对象是否相同)</li>
+<li>异步</li>
 </ol>
-<p>行内元素：</p>
-<ol>
-<li>不独占一行 2. 宽高由内容物决定</li>
-</ol>
-</li>
-<li><p>doctype 是什么？它的作用？<br>声明文档类型，作用是：告诉浏览器以何种文档类型规范来解析文档</p>
-</li>
-<li><p>meta viewport 是做什么用的，怎么写？<br>做移动端适配用的，使用它来自适应设备屏幕宽度</p>
-</li>
-</ol>
-<pre class=" language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>viewport<span class="token punctuation">"</span></span> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>width<span class="token punctuation">=</span>device-width,user-scalabel<span class="token punctuation">=</span>no<span class="token punctuation">"</span></span> <span class="token punctuation">/></span></span></code></pre>
-<ul>
-<li>width=device-width 宽度设置为理想视口宽度</li>
-<li>user-scalabel=no 不允许用户去放大缩小</li>
-</ul>
-<ol start="6">
-<li>你用过哪些 HTML 5 新增的标签？</li>
-</ol>
-<ul>
-<li><code>&lt;audio&gt;&lt;/audio&gt;</code> 音频</li>
-<li><code>&lt;video&gt;&lt;/video&gt;</code> 视频</li>
-<li><code>&lt;canvas&gt;&lt;/canvas&gt;</code></li>
-<li><code>&lt;header&gt;&lt;/header&gt;</code></li>
-<li><code>&lt;footer&gt;&lt;/footer&gt;</code></li>
-<li><code>&lt;nav&gt;&lt;/nav&gt;</code></li>
-<li><code>&lt;section&gt;&lt;/section&gt;</code> 定义文章中的区段</li>
-<li><code>&lt;article&gt;&lt;/article&gt;</code> 论坛，评论等</li>
-<li><code>&lt;main&gt;&lt;/main&gt;</code> 定义文档主要内容</li>
-<li><code>&lt;aside&gt;&lt;/aside&gt;</code> 内容可以用作文章的侧边栏</li>
-</ul>
-<ol start="7">
-<li><p>h5 是什么？</p>
-</li>
-<li><p>canvas 元素是干什么的？简单使用？<br>Canvas 元素用于在网页上绘制图形<br><a href="https://lxyoryxl.github.io/2019/08/01/Canvas%E7%9A%84%E4%BD%BF%E7%94%A8/" target="_blank" rel="noopener">Canvas 的使用</a></p>
-</li>
-<li><p>audio 元素是干什么的？<br>插入音频</p>
-</li>
-</ol>
-<ul>
-<li>autoplay</li>
-<li>controls 显示控件</li>
-<li>loop</li>
-</ul>
-<ol start="9">
-<li>video 元素的属性？<br>插入视频</li>
-</ol>
-<ul>
-<li>muted 规定视频的音频输出应该被静音</li>
-<li>autoplay</li>
-<li>loop</li>
-</ul>
-<h4 id="css"><a href="#css" class="headerlink" title="css"></a>css</h4><ol>
-<li>两种盒模型</li>
-</ol>
-<ul>
-<li>标准盒子模型：width=content</li>
-<li>IE 盒子模型: width=content+padding+border<br>可用 css3 的 box-sizing 属性切换盒子模型:box-sizing:content-box/border-box</li>
-</ul>
-<ol start="2">
-<li><p>CSS 选择器优先级<br>!important &gt; 行内样式&gt;ID 选择器 &gt; 类选择器=伪类=属性 &gt; 标签 &gt; 通配符 &gt; 继承 &gt; 浏览器默认属性</p>
-</li>
-<li><p>如何垂直居中（分情况讨论）？</p>
-</li>
-<li><p>清除浮动说一下？<br><a href="http://js.jirengu.com/foguz/10/edit" target="_blank" rel="noopener">清除浮动</a></p>
-</li>
-<li><p>css3 里的动画是怎样写的？<br><a href="http://js.jirengu.com/lidem/5/edit" target="_blank" rel="noopener">Animation</a><br>属性有：<code>animation-name</code> <code>animation-duration</code> <code>animation</code></p>
-</li>
-<li><p>css3 里的过渡是怎样写的？<br><a href="http://js.jirengu.com/micuc/3/edit" target="_blank" rel="noopener">Animation</a><br>属性有:<code>transition-property</code> <code>transition-duration</code> <code>transition</code></p>
-</li>
-<li><p>css3 中的媒体查询？<br>根据不同的媒体类型来定义不同的样式</p>
-<pre class=" language-css"><code class="language-css"><span class="token atrule"><span class="token rule">@media</span> screen and <span class="token punctuation">(</span><span class="token property">max-width</span><span class="token punctuation">:</span> 300px<span class="token punctuation">)</span></span> <span class="token punctuation">{</span>
-  <span class="token selector">body </span><span class="token punctuation">{</span>
-    <span class="token property">width</span><span class="token punctuation">:</span> <span class="token number">200</span>px<span class="token punctuation">;</span>
+<pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">function</span> <span class="token function">Async</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">var</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> <span class="token number">10</span><span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token function">setTimeout</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">></span> <span class="token punctuation">{</span>
+      console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token number">1000</span><span class="token punctuation">)</span>
   <span class="token punctuation">}</span>
-<span class="token punctuation">}</span></code></pre>
-</li>
-<li><p>移动端的适配？<br><a href="https://lxyoryxl.github.io/2019/07/19/%E7%A7%BB%E5%8A%A8%E7%AB%AF%E7%9A%84%E9%80%82%E9%85%8D/" target="_blank" rel="noopener">移动端的适配</a></p>
-</li>
-<li><p>bfc 是什么？</p>
-</li>
-<li><p>flex 是什么？常用属性有哪些？</p>
-</li>
-</ol>
-<h4 id="js"><a href="#js" class="headerlink" title="js"></a>js</h4><ol>
-<li><p>写一个 class，写一个构造函数 ，class 继承 的好处？<br><a href="https://lxyoryxl.github.io/2019/08/02/Js%E4%B8%AD%E7%9A%84%E7%BB%A7%E6%89%BF/" target="_blank" rel="noopener">Js 的继承</a><br>class 写继承 大大简化了代码</p>
-</li>
-<li><p>ES6 新特性（重点 promise class）</p>
-</li>
-<li><p>let 和 var 和 const 区别，具体用 var 会出现什么错误</p>
-<ol>
-<li>（块级作用域） let 可以声明块级作用域的变量，而 var 不行</li>
-<li>（变量提升） let 不存在变量提升，只允许在 let 声明之后才能使用变量，而 var 存在变量提升</li>
-<li>（变量重复声明）let 不能重复声明一个变量，var 可以</li>
-<li>const 声明的是常量，不能修改，也就是不能修改指向那个值的地址</li>
-</ol>
-</li>
-</ol>
-<pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">var</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> <span class="token number">10</span><span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-  <span class="token function">setTimeOut</span><span class="token punctuation">(</span>i <span class="token operator">=</span><span class="token operator">></span> <span class="token punctuation">{</span>
-    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span>
-  <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token number">1000</span><span class="token punctuation">)</span>
-<span class="token punctuation">}</span></code></pre>
+<span class="token punctuation">}</span>
+
+<span class="token number">1</span><span class="token punctuation">.</span> <span class="token keyword">var</span> 改成 <span class="token keyword">let</span>
+<span class="token number">2</span><span class="token punctuation">.</span></code></pre>
 <ol start="4">
-<li><p>手写一个 Promise<br>Promise.all Promise.race</p>
+<li><p>Vue 的生命周期</p>
 </li>
-<li><p>webpack 配置</p>
-</li>
-<li><p>什么事 JSONP,什么是 CORS,什么是跨域？</p>
-</li>
-<li><p>async/await 怎么用，如何捕获异常？</p>
-</li>
-<li><p>如何实现深拷贝（比较两个对象是否相同）？</p>
-</li>
-<li><p>如何用政策实现 trim()？</p>
-</li>
-<li><p>手写函数防抖和节流</p>
-</li>
-<li><p>手写 AJAX</p>
-</li>
-<li><p>如何实现数组去重？</p>
-</li>
-<li><p>放弃： ==相关题目（反着答）</p>
-</li>
-<li><p>数组扁平化</p>
-</li>
-<li><p>数据类型如何判断，如何判断数组？</p>
-</li>
-<li><p>发布订阅模式</p>
-</li>
-</ol>
-<h4 id="Dom"><a href="#Dom" class="headerlink" title="Dom"></a>Dom</h4><ol>
-<li>写事件委托（事件冒泡）</li>
-<li>用 mouse 事件写一个可拖拽的 div</li>
-</ol>
-<h4 id="Http"><a href="#Http" class="headerlink" title="Http"></a>Http</h4><ol>
-<li><p>从输入 url 到页面加载完成经历了那些过程？</p>
-</li>
-<li><p>常见的 Http 状态码？<br>100<br>200 请求成功<br>201<br>204<br>301 临时重定向<br>302 永久重定向<br>303<br>304 Not Modified<br>400 Bad Request url 参数错误<br>401 没有认证，需要登陆<br>403 Forbidden<br>404 Not Found<br>405 Nethod Not Allowd 请求的方法错误。例如：一个资源只支持 GET 方法，但是客户端使用 PUT 方法访问。<br>414 请求过长<br>500 Internal Server Error<br>502 内部错误<br>503 Service Unavailable 一般是 cpu 占用的频率大导致的</p>
-</li>
-<li><p>http 缓存有哪些,Expire 和 Cache-Control 的区别？<br>Expire,ETag,Cache-Control</p>
-</li>
-<li><p>GET 和 POST 的区别？</p>
-</li>
-</ol>
-<p>错误答案：</p>
-<ul>
-<li>POST 安全 GET 不安全</li>
-<li>GET URL 有长度限制，POST 没有</li>
-<li>GET 参数是放在 URL 里面，POST 是放在请求体里面</li>
-<li>GET 只需要一个报文，POST 需要两个以上</li>
-<li>GET 幂等，POST 不幂等</li>
-<li>GET 能被缓存，POST 不能被缓存</li>
-</ul>
-<p>正确答案：<br>get 是获取数据，post 是提交数据</p>
-<ol start="5">
-<li><p>Cookie Session &amp; localStorage SessionStorage？<br>cookie:服务器发给浏览器的一段字符串<br>session:会话</p>
-</li>
-<li><p>tcp 和 udp 区别？</p>
-</li>
-<li><p>HTTP1.0、HTTP1.1 和 HTTP2.0 的区别<br>http2.0:多路复用，服务器推送，强制推荐 https\</p>
-</li>
-<li><p>TCP 的慢开始和拥塞避免</p>
-</li>
-<li><p>gpu 加速？</p>
-</li>
-<li><p>重排和重绘？</p>
-</li>
-</ol>
-<h4 id="Vue"><a href="#Vue" class="headerlink" title="Vue"></a>Vue</h4><ol>
-<li><p>vue-router 是什么？<br>vue-router 就是路由，地址栏输什么，就显示什么页面，就是页面跳转。它还可以实现页面间的传参</p>
-</li>
-<li><p>vuex 是什么？<br>状态管理工具，就是集中管理所有组件需要共用的属性</p>
-</li>
-<li><p>axios 是什么，有哪些常用方法？<br>是一个基于 Promise 的一个库，发送请求时用<br>方法：</p>
-<ul>
-<li>axios.get</li>
-<li>axios.post</li>
-<li>axios.put</li>
-<li>axios.delete</li>
-</ul>
-</li>
-<li><p>git 常用命令？代码仓库协同工作流程？</p>
-<ul>
-<li>git init 初始化仓库，变成我们可以管理的仓库</li>
-<li>git add 文件添加到暂存区</li>
-<li>git commit -m ‘说明’ 暂存区文件提交到分支（默认 master）</li>
-<li>git status 查看工作区和暂存区状态</li>
-<li>git push 提交到远程仓库</li>
-<li>git clone 克隆远程仓库</li>
-<li>git checkout 切换分支</li>
-</ul>
-<p>工作流程：<br>fork 别人的仓库，相当于建立了一个分支<br>然后开发者 B 在 clone 自己的 Github 上的仓库到本地<br>fetch 从远程仓库中抓取本地仓库中的没有的数据<br>在 Github 上 Pull request 一下，就是给主开发者 A 发送一个请求，请求合并项目<br>merge 合并一下分支</p>
-</li>
-<li><p>axios 的配置，axios 跨域的一些问题如何解决？</p>
+<li><p>tcp 了解不</p>
 </li>
 <li><p>父子组件传值，兄弟组件传值？</p>
 </li>
-</ol>
-<h2 id="数据结构"><a href="#数据结构" class="headerlink" title="数据结构"></a>数据结构</h2><ol>
-<li>排序有哪些？那些稳定那些不稳定？</li>
+<li><p>发布订阅模式</p>
+</li>
 </ol>
 
             </div>
@@ -768,7 +579,7 @@ categories: 面试
                   property="dct:title" rel="dct:type">
                     《》
                 </span> by
-            <a xmlns:cc="http://creativecommons.org/ns#" href="/2019/07/30/面试/" property="cc:attributionName"
+            <a xmlns:cc="http://creativecommons.org/ns#" href="/2019/08/31/post-美团面试/" property="cc:attributionName"
                rel="cc:attributionURL">
                 lxy
             </a> is licensed under a
@@ -812,40 +623,33 @@ categories: 面试
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;Previous</div>
             <div class="card">
-                <a href="/2019/08/01/Js中的继承/">
+                <a href="/2019/08/31/浅析-URL/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/8.jpg" class="responsive-img" alt="JS中的继承">
+                        <img src="/medias/featureimages/10.jpg" class="responsive-img" alt="浅析 URL">
                         
-                        <span class="card-title">JS中的继承</span>
+                        <span class="card-title">浅析 URL</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            Class 继承class Student {
-  constructor(name) {
-    this.name = name
-  }
-
-  hello() {
-    alert("Hello")
-  }
-}
-写一个 class 继
+                            浅析 URLURL 包含哪几部分，每部分分别有什么作用URL=协议+域名/IP+端口号+路径+查询字符串+锚点比如：
+下面来分别介绍一下各部分的含义和作用：
+协议 （protocol）协议是计算机通信所必须遵循的规则，简单来说就是规定书写的
                         
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="fa fa-clock-o fa-fw icon-date"></i>2019-08-01
+                            <i class="fa fa-clock-o fa-fw icon-date"></i>2019-08-31
                         </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/ES6/" class="post-category" target="_blank">
-                                    ES6
+                            <a href="/categories/URL/" class="post-category" target="_blank">
+                                    URL
                                 </a>
                             
                             
@@ -855,8 +659,8 @@ categories: 面试
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/class-ES6/" target="_blank">
-                        <span class="chip bg-color">class ES6</span>
+                    <a href="/tags/URL/" target="_blank">
+                        <span class="chip bg-color">URL</span>
                     </a>
                     
                 </div>
@@ -870,47 +674,39 @@ categories: 面试
                 Next&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2019/07/30/解决单行或者多行文本溢出的方法总结/">
+                <a href="/2019/08/24/post-京东笔试/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/13.jpg" class="responsive-img" alt="解决单行或者多行文本溢出的方法总结">
+                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="">
                         
-                        <span class="card-title">解决单行或者多行文本溢出的方法总结</span>
+                        <span class="card-title"></span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            本文总结了：‘列表文字太多,溢出使用省略号’ 的解决方法包括单行文字溢出，多行文本溢出，主要使用 css 来做
+                            选择题
+二叉查找树就是排序二叉树，节点的值大小是：左&lt;根&lt;右
+
+完美平衡二叉树（AVL）,当且仅当两个子树的高度差不超过 1 时，这个树是平衡二叉树（同时是排序二叉树）
+
+红黑树，b+树，b 树都是自平衡树？红黑树是自平衡树
 
 
-一. 前言今天再写页面的时候，看到几行文字，感觉这部分的文字在这个部分显得很冗余，而且因为文字长度的不确定性，还容易影响布局
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-07-30
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-08-24
                             </span>
                         <span class="publish-author">
                             
-                            <i class="fa fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/css/" class="post-category" target="_blank">
-                                    css
-                                </a>
-                            
+                            <i class="fa fa-user fa-fw"></i>
+                            lxy
                             
                         </span>
                     </div>
-                </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/单行文本溢出-多行文本溢出-css/" target="_blank">
-                        <span class="chip bg-color">单行文本溢出 多行文本溢出 css</span>
-                    </a>
-                    
                 </div>
                 
             </div>

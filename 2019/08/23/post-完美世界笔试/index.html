@@ -5,14 +5,12 @@
 <head><meta name="generator" content="Hexo 3.9.0">
     <meta charset="utf-8">
     <meta name="keywords" content="lxy&#39;s">
-    <meta name="description" content="选择题
-二叉查找树就是排序二叉树，节点的值大小是：左&amp;lt;根&amp;lt;右
+    <meta name="description" content="简答题
+canvas 绘制 10 个圆canvas 绘制 100 个圆
 
-完美平衡二叉树（AVL）,当且仅当两个子树的高度差不超过 1 时，这个树是平衡二叉树（同时是排序二叉树）
-
-红黑树，b+树，b 树都是自平衡树？红黑树是自平衡树
-
-">
+&amp;lt;canvas id=&#39;canvas&#39;  height=&#34;1000&#34; width=&#34;1000&#34;&gt;&amp;lt;/canvas&gt;
+  &amp;lt;script&gt;
+    v">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -377,7 +375,7 @@
             <div class="post-info">
                 <div class="post-date info-break-policy">
                     <i class="fa fa-calendar-minus-o fa-fw"></i>Publish Date:&nbsp;&nbsp;
-                    2019-08-24
+                    2019-08-23
                 </div>
 
                 
@@ -393,78 +391,148 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="选择题"><a href="#选择题" class="headerlink" title="选择题"></a>选择题</h2><ol>
-<li><p>二叉查找树就是排序二叉树，节点的值大小是：左&lt;根&lt;右</p>
-</li>
-<li><p>完美平衡二叉树（AVL）,当且仅当两个子树的高度差不超过 1 时，这个树是平衡二叉树（同时是排序二叉树）</p>
-</li>
-<li><p>红黑树，b+树，b 树都是自平衡树？<br>红黑树是自平衡树</p>
-</li>
-<li><p>程序=算法+数据结构<br><a href="https://zhidao.baidu.com/question/338644384.html" target="_blank" rel="noopener">算法与数据结构的关系</a><br>数据结构是按照逻辑关系组织起来的一批数据，最后还要定义一些运算，就是这个数据能完成那些操作，这些就是算法</p>
-</li>
-<li><p>\W,\w？<br>\W ： 匹配非单词数字下划线<br>\w ： 匹配单词数字下划线</p>
-</li>
-<li><p>new String(‘0’)===’0’<br>//false<br>new String(‘0’)==’0’<br>//true</p>
-</li>
+                <h2 id="简答题"><a href="#简答题" class="headerlink" title="简答题"></a>简答题</h2><ol>
+<li>canvas 绘制 10 个圆<br><a href="http://js.jirengu.com/vajev/12/edit" target="_blank" rel="noopener">canvas 绘制 100 个圆</a></li>
 </ol>
-<p>7.</p>
-<pre class=" language-css"><code class="language-css"><span class="token selector">*<span class="token pseudo-class">:not(input, textarea)</span> </span><span class="token punctuation">{</span>
-  <span class="token property">-webkit-touch-callout</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span>
-  <span class="token property">-webkit-user-select</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span>
-<span class="token punctuation">}</span></code></pre>
-<ol start="8">
-<li>创建节点的方法？</li>
-</ol>
+<pre class=" language-javascript"><code class="language-javascript"><span class="token operator">&lt;</span>canvas id<span class="token operator">=</span><span class="token string">'canvas'</span>  height<span class="token operator">=</span><span class="token string">"1000"</span> width<span class="token operator">=</span><span class="token string">"1000"</span><span class="token operator">></span><span class="token operator">&lt;</span><span class="token operator">/</span>canvas<span class="token operator">></span>
+  <span class="token operator">&lt;</span>script<span class="token operator">></span>
+    <span class="token keyword">var</span> canvas<span class="token operator">=</span>document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">'canvas'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">var</span> ctx<span class="token operator">=</span>canvas<span class="token punctuation">.</span><span class="token function">getContext</span><span class="token punctuation">(</span><span class="token string">'2d'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">var</span> i<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">;</span>i<span class="token operator">&lt;=</span><span class="token number">10</span><span class="token punctuation">;</span>i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      ctx<span class="token punctuation">.</span><span class="token function">beginPath</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      ctx<span class="token punctuation">.</span><span class="token function">arc</span><span class="token punctuation">(</span><span class="token number">10</span><span class="token operator">*</span>i<span class="token punctuation">,</span><span class="token number">10</span><span class="token operator">*</span>i<span class="token punctuation">,</span><span class="token number">5</span><span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">,</span>Math<span class="token punctuation">.</span>PI<span class="token operator">*</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token boolean">true</span><span class="token punctuation">)</span>
+      ctx<span class="token punctuation">.</span><span class="token function">stroke</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+  <span class="token operator">&lt;</span><span class="token operator">/</span>script<span class="token operator">></span></code></pre>
+<p>小知识：</p>
 <ul>
-<li>createTextNode</li>
-<li>createElement</li>
-<li>appendChild</li>
+<li><p>在 canvas 标签设置 width,height 是设置的绘图表面和元素本身的大小</p>
+</li>
+<li><p>在 css 里设置 canvas 的 width,heigth 是设置的元素本身的大小</p>
+</li>
+<li><p>由于上面两个原因，当绘图表面比元素本身小时就会产生拉伸效果，这儿是例子：<a href="http://js.jirengu.com/pukel/2/edit" target="_blank" rel="noopener">demo</a></p>
+</li>
 </ul>
-<ol start="9">
-<li>死锁的 4 个必要条件？</li>
+<ol start="2">
+<li>原生 js 写 ajax</li>
+</ol>
+<p>一个完整的 AJAX 请求有以下步骤：</p>
+<ul>
+<li>实例化 XMLHttpRequest 对象</li>
+<li>连接服务器</li>
+<li>发送请求</li>
+<li>接受响应数据</li>
+</ul>
+<h2 id="选择题"><a href="#选择题" class="headerlink" title="选择题"></a>选择题</h2><ol>
+<li><code>&lt;embed&gt;</code> 外部内容嵌入元素</li>
+</ol>
+<pre class=" language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>embed</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>video/quicktime<span class="token punctuation">"</span></span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>movie.mov<span class="token punctuation">"</span></span> <span class="token attr-name">width</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>640<span class="token punctuation">"</span></span> <span class="token attr-name">height</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>480<span class="token punctuation">"</span></span> <span class="token punctuation">/></span></span></code></pre>
+<ol start="2">
+<li><p>HTTP 502<br>网关错误。<br>此服务器访问一个上游服务器， 但收到无效响应。这通常并不意味着上游服务器已关闭（对网关 / 代理无响应）， 而是上游服务器和网关 / 代理在交换数据的协议上不一致。</p>
+</li>
+<li><p>选择器优先级<br>!important &gt; 行内样式&gt;ID 选择器 &gt; 类选择器=伪类=属性 &gt; 标签 &gt; 通配符 &gt; 继承 &gt; 浏览器默认属性</p>
+</li>
+<li><p>viedeo 标签支持的 mimetype<br>video/mp4<br>video/webm<br>video/ogg</p>
+</li>
+<li><p>eval(变量)</p>
+</li>
+<li><p>什么情况下会创建 bfc<br><a href="http://js.jirengu.com/hupam/20/edit" target="_blank" rel="noopener">demo</a></p>
+</li>
 </ol>
 <ul>
-<li>互斥</li>
-<li>非剥夺</li>
-<li>循环等待</li>
-<li>占有且等待（请求与保持）</li>
+<li>float</li>
+<li>根元素 html</li>
+<li>overflow 不为 visible 的元素</li>
+<li>display:inline-block</li>
+<li>position 为 absolute/fixed</li>
+</ul>
+<ol start="7">
+<li>什么情况下有堆叠上下文（stacking context）<br><a href="https://www.cnblogs.com/CCCLARITY/p/8290403.html" target="_blank" rel="noopener">堆叠上下文的简介</a></li>
+</ol>
+<ul>
+<li>根元素 html</li>
+<li>z-index 不为 auto 的元素</li>
+<li>opacity 属性值小于 1 的元素</li>
+<li>perspective 值不为 none 的元素</li>
+</ul>
+<ol start="8">
+<li><p>流行的页面布局方式有？</p>
+</li>
+<li><p>input 的 autocomplete 属性的值有哪些？<br>该属性表示这个控件的值是否可被浏览器自动填充</p>
+</li>
+</ol>
+<ul>
+<li>nickname</li>
+<li>name</li>
+<li>email</li>
+<li>username</li>
+<li>language</li>
+<li>url</li>
+<li>photo<br>注意：没有 file 这个值</li>
 </ul>
 <ol start="10">
-<li>http 状态码的分类描述？</li>
+<li>input 的 type 属性的值？<br><a href="http://js.jirengu.com/galew/5/edit" target="_blank" rel="noopener">input 的 type 属性值</a></li>
 </ol>
 <ul>
-<li>1** 信息，服务器收到请求，需要请求者继续执行操作</li>
-<li>2** 成功，操作被成功接收并处理</li>
-<li>3** 重定向，需要进一步的操作以完成请求</li>
-<li>4** 客户端错误，请求包含语法错误或无法完成请求</li>
-<li>5** 服务器错误，服务器在处理请求的过程中发生了错误</li>
+<li>text</li>
+<li>color|date|datetime|datetime-local|email|file</li>
+<li>hidden|month|number|password|range</li>
+<li>search|submit</li>
+<li>image</li>
 </ul>
 <ol start="11">
-<li>各种排序的时间复杂度？</li>
+<li>严格模式 ？ 禁止强制类型转化吗？</li>
 </ol>
 <ul>
-<li>冒泡排序 O(n^2)</li>
-<li>选择排序 O(n^2)</li>
-<li>插入排序 O(n^2)</li>
-<li>归并排序 O(nlogn)</li>
-<li>快速排序 O(nlogn)</li>
+<li>禁用 with</li>
+<li>禁止删除变量</li>
+<li>arguments 不再追踪参数的变化,并且不支持 arguments.callee，不能对 arguments 赋值</li>
+<li>不支持八进制语法<code>0o20</code></li>
+<li>一部分字符成了保留字：implements,private,protected, public,yield,let,package</li>
+<li>变量未定义会报错</li>
+<li>eval 创建新的作用域</li>
 </ul>
 <ol start="12">
-<li>innerHtml 的缺点？</li>
+<li>typeof 返回那些类型？有哪些经典的例子？<br><a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Operators/typeof" target="_blank" rel="noopener">经典例子</a></li>
 </ol>
 <ul>
-<li>内容随处可见；</li>
-<li>即使你使用+ = like“innerHTML = innerHTML +’html’”旧的内容仍然会被 html 替换；</li>
-<li>整个 innerHTML 内容被重新解析并构建成元素，因此它的速度要慢得多；</li>
+<li>string|number|function|undefined|boolean|object</li>
 </ul>
-<!-- 13. http 首先把数据封装到 tcp? -->
-
-<ol start="14">
-<li><p>Array 的方法有 join()?<br>yep</p>
+<ol start="13">
+<li><p>instanceof 和 typeof 判断一个变量是否为空?</p>
 </li>
-<li><p>JavaScript 中不同类型的错误有几种？<br>有三种类型的错误：<br>Load time errors：该错误发生于加载网页时，例如出现语法错误等状况，称为加载时间错误，并且会动态生成错误。<br>Run time errors：由于在 HTML 语言中滥用命令而导致的错误。<br>Logical Errors：这是由于在具有不同操作的函数上执行了错误逻辑而发生的错误。</p>
+<li><p>判断数组类型？<br>先用 instanceof,再用 Array.isArray()判断</p>
+</li>
+<li><p>判断一个值是否为 null 类型？<br>将它直接与 null 比较<br>value === null</p>
+</li>
+<li><p>Array 的方法中可返回新的数组,但不会改变原始数组的是？</p>
 </li>
 </ol>
+<ul>
+<li>Array.from(arr,function)</li>
+<li>Array.prototype.concat()</li>
+<li>Array.slice()</li>
+<li>Array.map()</li>
+<li>Array.prototype.filter()</li>
+</ul>
+<ol start="17">
+<li><p>http 的安全威胁有？</p>
+</li>
+<li><p>dom 元素的 js 事件流？<br>捕获阶段，目标阶段，冒泡阶段</p>
+</li>
+</ol>
+<ul>
+<li>冒泡可以被阻止（stopPropagation()）</li>
+</ul>
+<ol start="19">
+<li>组合选择器？</li>
+</ol>
+<ul>
+<li>A&gt;B 子选择器</li>
+<li>A+B 兄弟选择器</li>
+<li>A~B</li>
+</ul>
 
             </div>
             <hr/>
@@ -625,7 +693,7 @@
                   property="dct:title" rel="dct:type">
                     《》
                 </span> by
-            <a xmlns:cc="http://creativecommons.org/ns#" href="/2019/08/24/京东笔试/" property="cc:attributionName"
+            <a xmlns:cc="http://creativecommons.org/ns#" href="/2019/08/23/post-完美世界笔试/" property="cc:attributionName"
                rel="cc:attributionURL">
                 lxy
             </a> is licensed under a
@@ -669,7 +737,7 @@
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;Previous</div>
             <div class="card">
-                <a href="/2019/08/31/美团面试/">
+                <a href="/2019/08/24/post-京东笔试/">
                     <div class="card-image">
                         
                         
@@ -681,20 +749,19 @@
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            一面
-数组扁平化
-深拷贝(比较两个对象是否相同)
-异步
+                            选择题
+二叉查找树就是排序二叉树，节点的值大小是：左&lt;根&lt;右
 
-function Async() {
-  for (var i = 0; i &lt; 10; i++) {
-    setTimeout(() => {
-      console
+完美平衡二叉树（AVL）,当且仅当两个子树的高度差不超过 1 时，这个树是平衡二叉树（同时是排序二叉树）
+
+红黑树，b+树，b 树都是自平衡树？红黑树是自平衡树
+
+
                         
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="fa fa-clock-o fa-fw icon-date"></i>2019-08-31
+                            <i class="fa fa-clock-o fa-fw icon-date"></i>2019-08-24
                         </span>
                         <span class="publish-author">
                             
@@ -714,7 +781,7 @@ function Async() {
                 Next&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2019/08/23/完美世界笔试/">
+                <a href="/2019/08/10/post-笔试笔记/">
                     <div class="card-image">
                         
                         
@@ -726,17 +793,18 @@ function Async() {
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            简答题
-canvas 绘制 10 个圆canvas 绘制 100 个圆
+                            
 
-&lt;canvas id='canvas'  height="1000" width="1000">&lt;/canvas>
-  &lt;script>
-    v
+
+\n 只算一个字符，\表示转义，考转义字符
+黑盒测试方法中，设计测试用例的主要根据是：程序外部功能
+目前移动设备主流的屏幕帧率是每秒(60)帧
+严格模式：禁止未定义就使用的变量禁止使用 with严格模式下无法删除变量。只有 confi
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-08-23
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-08-10
                             </span>
                         <span class="publish-author">
                             
