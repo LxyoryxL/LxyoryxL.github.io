@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-08-08T06:04:12.411Z</updated>
+  <updated>2019-08-31T03:34:23.990Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,78 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title></title>
+    <link href="http://yoursite.com/2019/08/31/%E7%BE%8E%E5%9B%A2%E9%9D%A2%E8%AF%95/"/>
+    <id>http://yoursite.com/2019/08/31/美团面试/</id>
+    <published>2019-08-31T02:43:23.174Z</published>
+    <updated>2019-08-31T03:34:23.990Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;一面&quot;&gt;&lt;a href=&quot;#一面&quot; class=&quot;headerlink&quot; title=&quot;一面&quot;&gt;&lt;/a&gt;一面&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;数组扁平化&lt;/li&gt;
+&lt;li&gt;深拷贝(比较两个对象是否相同)&lt;/li&gt;
+&lt;li&gt;异步&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="http://yoursite.com/2019/08/24/%E4%BA%AC%E4%B8%9C%E7%AC%94%E8%AF%95/"/>
+    <id>http://yoursite.com/2019/08/24/京东笔试/</id>
+    <published>2019-08-24T13:04:49.115Z</published>
+    <updated>2019-08-25T04:27:36.600Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;选择题&quot;&gt;&lt;a href=&quot;#选择题&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="http://yoursite.com/2019/08/23/%E5%AE%8C%E7%BE%8E%E4%B8%96%E7%95%8C%E7%AC%94%E8%AF%95/"/>
+    <id>http://yoursite.com/2019/08/23/完美世界笔试/</id>
+    <published>2019-08-23T11:13:46.160Z</published>
+    <updated>2019-08-24T07:47:19.622Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;简答题&quot;&gt;&lt;a href=&quot;#简答题&quot; class=&quot;headerlink&quot; title=&quot;简答题&quot;&gt;&lt;/a&gt;简答题&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;canvas 绘制 10 个圆&lt;br&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>空元素是什么？可替换元素又是什么？</title>
@@ -47,7 +119,7 @@
     <link href="http://yoursite.com/2019/08/06/git-%E9%85%8D%E7%BD%AE%E5%92%8C%E8%AF%AD%E6%B3%95/"/>
     <id>http://yoursite.com/2019/08/06/git-配置和语法/</id>
     <published>2019-08-06T11:04:53.000Z</published>
-    <updated>2019-08-08T06:02:57.295Z</updated>
+    <updated>2019-08-09T14:40:32.915Z</updated>
     
     <summary type="html">
     
@@ -73,7 +145,7 @@
     <link href="http://yoursite.com/2019/08/04/Canvas%E7%9A%84%E4%BD%BF%E7%94%A8/"/>
     <id>http://yoursite.com/2019/08/04/Canvas的使用/</id>
     <published>2019-08-04T08:04:53.000Z</published>
-    <updated>2019-08-08T06:04:32.502Z</updated>
+    <updated>2019-08-23T11:43:52.563Z</updated>
     
     <summary type="html">
     
@@ -91,6 +163,34 @@
     
     
       <category term="Canvas H5" scheme="http://yoursite.com/tags/Canvas-H5/"/>
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="http://yoursite.com/2019/08/02/%E5%B8%B8%E8%A7%81%E7%9A%84Http%E7%8A%B6%E6%80%81%E7%A0%81/"/>
+    <id>http://yoursite.com/2019/08/02/常见的Http状态码/</id>
+    <published>2019-08-02T08:42:00.792Z</published>
+    <updated>2019-08-31T08:12:58.367Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;!-- ---
+title: 常见的Http状态码
+date: 2019-07-02 16:04:53
+tags: Http
+categories: 计算机网络
+cover: true
+---
+        
+      
+    
+    </summary>
+    
     
   </entry>
   
@@ -117,6 +217,36 @@
     
     
       <category term="class ES6" scheme="http://yoursite.com/tags/class-ES6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="http://yoursite.com/2019/07/30/%E9%9D%A2%E8%AF%95/"/>
+    <id>http://yoursite.com/2019/07/30/面试/</id>
+    <published>2019-07-30T15:10:21.780Z</published>
+    <updated>2019-08-31T08:12:40.853Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;!-- ---
+title: 面试集锦
+date: 2019-07-06 21:20:34
+tags: 面试
+categories: 面试
+--- --&gt;
+
+&lt;p&gt;以下是我整理的面试题，按技能点区分&lt;/p&gt;
+&lt;h4 id=&quot;HTML&quot;&gt;&lt;a href=&quot;#HTML&quot;
+        
+      
+    
+    </summary>
+    
     
   </entry>
   
@@ -219,7 +349,7 @@
     <link href="http://yoursite.com/2019/07/20/ES6%E7%9A%84%E6%96%B0%E7%89%B9%E6%80%A7/"/>
     <id>http://yoursite.com/2019/07/20/ES6的新特性/</id>
     <published>2019-07-20T01:04:53.000Z</published>
-    <updated>2019-08-08T06:06:45.402Z</updated>
+    <updated>2019-08-10T07:12:12.554Z</updated>
     
     <summary type="html">
     
@@ -245,7 +375,7 @@
     <link href="http://yoursite.com/2019/07/19/%E7%A7%BB%E5%8A%A8%E7%AB%AF%E7%9A%84%E9%80%82%E9%85%8D/"/>
     <id>http://yoursite.com/2019/07/19/移动端的适配/</id>
     <published>2019-07-19T12:04:53.000Z</published>
-    <updated>2019-08-02T09:33:29.483Z</updated>
+    <updated>2019-08-22T12:04:48.270Z</updated>
     
     <summary type="html">
     
@@ -253,9 +383,7 @@
       
         
         
-          &lt;h2 id=&quot;一-介绍&quot;&gt;&lt;a href=&quot;#一-介绍&quot; class=&quot;headerlink&quot; title=&quot;一.介绍&quot;&gt;&lt;/a&gt;一.介绍&lt;/h2&gt;&lt;p&gt;要做移动端的适配主要是解决两个问题：&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;视口大小&lt;br&gt;在不同尺寸的手机下，如果使用 px
+          &lt;h2 id=&quot;概念&quot;&gt;&lt;a href=&quot;#概念&quot; class=&quot;headerlink&quot; title=&quot;概念&quot;&gt;&lt;/a&gt;概念&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;设备像素&lt;/strong&gt;&lt;br&gt;也称为物理像素，显示器的最小物理单位。不同设备的设备像素大小不同&lt;br&gt;&lt;img
         
       
     
@@ -273,7 +401,7 @@
     <link href="http://yoursite.com/2019/07/16/%E5%89%8D%E7%AB%AF%E8%BD%AF%E4%BB%B6%E5%AE%89%E8%A3%85-%E7%9B%B8%E5%85%B3%E5%91%BD%E4%BB%A4%E8%A1%8C/"/>
     <id>http://yoursite.com/2019/07/16/前端软件安装-相关命令行/</id>
     <published>2019-07-16T11:04:53.000Z</published>
-    <updated>2019-08-09T09:04:28.958Z</updated>
+    <updated>2019-08-09T14:30:35.091Z</updated>
     
     <summary type="html">
     
@@ -338,34 +466,6 @@
   </entry>
   
   <entry>
-    <title>面试集锦</title>
-    <link href="http://yoursite.com/2019/07/06/%E9%9D%A2%E8%AF%95/"/>
-    <id>http://yoursite.com/2019/07/06/面试/</id>
-    <published>2019-07-06T13:20:34.000Z</published>
-    <updated>2019-08-03T01:26:36.313Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;以下是我整理的面试题，按技能点区分&lt;/p&gt;
-&lt;h4 id=&quot;HTML&quot;&gt;&lt;a href=&quot;#HTML&quot; class=&quot;headerlink&quot; title=&quot;HTML&quot;&gt;&lt;/a&gt;HTML&lt;/h4&gt;&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;（必考） 你是如何理解 HTML
-        
-      
-    
-    </summary>
-    
-      <category term="面试" scheme="http://yoursite.com/categories/%E9%9D%A2%E8%AF%95/"/>
-    
-    
-      <category term="面试" scheme="http://yoursite.com/tags/%E9%9D%A2%E8%AF%95/"/>
-    
-  </entry>
-  
-  <entry>
     <title>Markdown 常用语法</title>
     <link href="http://yoursite.com/2019/07/04/Markdown-%E5%B8%B8%E7%94%A8%E8%AF%AD%E6%B3%95/"/>
     <id>http://yoursite.com/2019/07/04/Markdown-常用语法/</id>
@@ -386,20 +486,32 @@
   </entry>
   
   <entry>
-    <title>常见的Http状态码</title>
-    <link href="http://yoursite.com/2019/07/02/%E5%B8%B8%E8%A7%81%E7%9A%84Http%E7%8A%B6%E6%80%81%E7%A0%81/"/>
-    <id>http://yoursite.com/2019/07/02/常见的Http状态码/</id>
-    <published>2019-07-02T08:04:53.000Z</published>
-    <updated>2019-08-08T06:05:39.500Z</updated>
+    <title>笔试笔记</title>
+    <link href="http://yoursite.com/2019/07/03/%E7%AC%94%E8%AF%95%E7%AC%94%E8%AE%B0/"/>
+    <id>http://yoursite.com/2019/07/03/笔试笔记/</id>
+    <published>2019-07-03T13:20:34.000Z</published>
+    <updated>2019-08-15T05:50:44.629Z</updated>
     
     <summary type="html">
     
+      
+      
+        
+        
+          &lt;ol&gt;
+&lt;li&gt;\n 只算一个字符，\表示转义，考转义字符&lt;/li&gt;
+&lt;li&gt;黑盒测试方法中，设计测试用例的主要根据是：程序外部功能&lt;/li&gt;
+&lt;li&gt;目前移动设备主流的屏幕帧率是每秒(60)帧&lt;/li&gt;
+&lt;li&gt;严格模式：&lt;br&gt;禁止未定义就使用的变量&lt;br&gt;禁止使用
+        
+      
+    
     </summary>
     
-      <category term="计算机网络" scheme="http://yoursite.com/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
+      <category term="笔试" scheme="http://yoursite.com/categories/%E7%AC%94%E8%AF%95/"/>
     
     
-      <category term="Http" scheme="http://yoursite.com/tags/Http/"/>
+      <category term="笔试" scheme="http://yoursite.com/tags/%E7%AC%94%E8%AF%95/"/>
     
   </entry>
   

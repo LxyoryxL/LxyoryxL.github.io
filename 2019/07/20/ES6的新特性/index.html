@@ -410,12 +410,22 @@
 <li>const 声明的是常量，不能修改，也就是不能修改指向那个值的地址</li>
 <li>const 在声明时必须赋值</li>
 </ol>
-<p>let 和 var 一般推荐使用 let，因为用 var 可能会出现一些不明的错误，比如下面的代码，会输出 10 个 10：</p>
+<p>let 和 var 一般推荐使用 let，因为用 var 可能会出现一些不明的错误，比如：</p>
 <pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">var</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> <span class="token number">10</span><span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
   <span class="token function">setTimeOut</span><span class="token punctuation">(</span>i <span class="token operator">=</span><span class="token operator">></span> <span class="token punctuation">{</span>
     console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span>
   <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token number">1000</span><span class="token punctuation">)</span>
-<span class="token punctuation">}</span></code></pre>
+<span class="token punctuation">}</span>
+<span class="token comment" spellcheck="true">//上面的代码，会输出 10 个 10</span>
+
+或者：
+<span class="token keyword">if</span><span class="token punctuation">(</span><span class="token boolean">true</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token keyword">else</span><span class="token punctuation">{</span>
+  <span class="token keyword">var</span> a<span class="token operator">=</span><span class="token number">2</span><span class="token punctuation">;</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'2'</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+<span class="token comment" spellcheck="true">//undifiend 2</span></code></pre>
 <p>const 声明的常量，其实是个地址，该地址指向一个变量的值，说的‘不能修改’，其实指的是不能修改地址，里面的值还是可以改变的。<br>比如：</p>
 <pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">const</span> obj<span class="token operator">=</span><span class="token punctuation">{</span>
   name<span class="token punctuation">:</span><span class="token string">'lxy'</span><span class="token punctuation">;</span>
@@ -811,10 +821,8 @@ vue-cli 脚手架关闭 eslint 的步骤：
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            一.介绍要做移动端的适配主要是解决两个问题：
-
-视口大小在不同尺寸的手机下，如果使用 px 来设置内容的样式，会出现文字过小，或者内容区域过大无法全部显示在视口等不适配问题，需要用户浏览时自行放大，用户体验不好
-交互方式在手机端没有 hov
+                            概念设备像素也称为物理像素，显示器的最小物理单位。不同设备的设备像素大小不同
+设备独立像素一个设备独立像素里可能包含 1 个或者多个物理像素点，包含的越多则屏幕看起来越清晰。平时我们所说的 iphoneX 的逻辑分辨率 375 x 812 
                         
                     </div>
                     <div class="publish-info">
